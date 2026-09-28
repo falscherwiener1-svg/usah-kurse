@@ -1,0 +1,52 @@
+name: IEX-Schlusskurse
+
+on:
+  schedule:
+    - cron: "30 11 * * 2-6"     # Di–Sa 11:30 UTC (IEX stellt HIST am Folgetag bereit)
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Monatsschlüsse nachtragen (Anzahl Monate, leer = nur täglich)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency: kurse
+
+jobs:
+  daily:
+    if: ${{ !inputs.backfill }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python update.py
+      - name: Speichern
+        run: |
+          git config user.name  "kurse-bot"
+          git config user.email "kurse-bot@users.noreply.github.com"
+          git add data/prices.json
+          git diff --cached --quiet || (git commit -m "Kurse $(date -u +%F)" && git push)
+
+  backfill:
+    if: ${{ inputs.backfill }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      max-parallel: 1           # nacheinander, damit sich die Commits nicht in die Quere kommen
+      matrix: { part: [0, 1, 2, 3, 4, 5] }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: git pull --rebase || true
+      - run: python update.py --backfill ${{ inputs.backfill }} --part ${{ matrix.part }}/6
+      - name: Speichern
+        run: |
+          git config user.name  "kurse-bot"
+          git config user.email "kurse-bot@users.noreply.github.com"
+          git add data/prices.json
+          git diff --cached --quiet || (git commit -m "Backfill Teil ${{ matrix.part }}" && git pull --rebase && git push)

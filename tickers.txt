@@ -1,0 +1,13 @@
+# Watchlist (ein Ticker pro Zeile)
+GOOGL
+TXN
+V
+JNJ
+MSFT
+BRK.B
+COST
+ADBE
+AAPL
+# Marktleiste (ETFs als Index-Näherung)
+SPY
+QQQ
