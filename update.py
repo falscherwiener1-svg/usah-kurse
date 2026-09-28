@@ -14,6 +14,7 @@ from iex_close import scan, HIST_API
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "data", "prices.json")
+PARTS = os.path.join(HERE, "parts")
 
 
 def load_tickers():
@@ -33,23 +34,52 @@ def hist_index():
     return {day: next((f for f in files if f.get("feed") == "TOPS"), None) for day, files in d.items()}
 
 
-def load():
-    if os.path.exists(OUT):
-        with open(OUT) as f:
+def load(path=None):
+    path = path or OUT
+    if os.path.exists(path):
+        with open(path) as f:
             return json.load(f)
     return {"source": "IEX HIST (TOPS) – letzter Trade der regulären Sitzung auf IEX", "tickers": {}}
 
 
-def save(db):
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+def save(db, path=None):
+    path = path or db.get("_path") or OUT
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     db["updated"] = date.today().isoformat()
     for t, v in db["tickers"].items():
         v["daily"] = sorted({d[0]: d for d in v.get("daily", [])}.values())[-400:]
         v["monthly"] = sorted({m[0]: m for m in v.get("monthly", [])}.values())[-72:]
-    tmp = OUT + ".tmp"
+    out = {k: v for k, v in db.items() if k != "_path"}
+    tmp = path + ".tmp"
     with open(tmp, "w") as f:
-        json.dump(db, f, separators=(",", ":"))
-    os.replace(tmp, OUT)
+        json.dump(out, f, separators=(",", ":"))
+    os.replace(tmp, path)
+
+
+def merge_into(db, part):
+    for t, v in part.get("tickers", {}).items():
+        cur = db["tickers"].setdefault(t, {"daily": [], "monthly": []})
+        have = {m[0]: m for m in cur.get("monthly", [])}
+        for m in v.get("monthly", []):
+            if m[0] not in have or have[m[0]][2] <= m[2]:
+                have[m[0]] = m
+        cur["monthly"] = list(have.values())
+        days = {d[0]: d for d in cur.get("daily", [])}
+        days.update({d[0]: d for d in v.get("daily", [])})
+        cur["daily"] = list(days.values())
+
+
+def merge_parts(files=None):
+    """Teil-Ergebnisse (paralleler Backfill oder eigener Tageslauf) in prices.json übernehmen."""
+    db = load()
+    if files is None:
+        files = [os.path.join(PARTS, f) for f in sorted(os.listdir(PARTS))] if os.path.isdir(PARTS) else []
+    for fn in files:
+        if fn.endswith(".json") and os.path.exists(fn):
+            with open(fn) as f:
+                merge_into(db, json.load(f))
+            print(f"übernommen: {fn}", file=sys.stderr)
+    save(db, OUT)
 
 
 def process_day(db, day, meta, tickers, daily=True):
@@ -80,7 +110,13 @@ def main():
     ap.add_argument("--backfill", type=int)
     ap.add_argument("--part", default="0/1")
     ap.add_argument("--max-days", type=int, default=5)
+    ap.add_argument("--merge", action="store_true")
+    ap.add_argument("--merge-file")
     a = ap.parse_args()
+    if a.merge:
+        return merge_parts()
+    if a.merge_file:
+        return merge_parts([a.merge_file])
 
     tickers = load_tickers()
     idx = {d: m for d, m in hist_index().items() if m}
@@ -94,6 +130,7 @@ def main():
             months = sorted({d[:4] + "-" + d[4:6] for d in days})[-a.backfill - 1:-1]
             k, n = map(int, a.part.split("/"))
             months = months[k::n]
+            db = {"source": db["source"], "tickers": {}, "_path": os.path.join(PARTS, f"part_{k}.json")}
         for ym in months:
             last = [d for d in days if d.startswith(ym.replace("-", ""))]
             if last:
