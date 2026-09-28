@@ -1,0 +1,10 @@
+# Aktiensplits: TICKER DATUM(erster Handelstag nach Split) VERHÄLTNIS
+# Künftige Splits erkennt der tägliche Lauf automatisch; hier nur zur Sicherheit/Korrektur.
+GOOGL 2022-07-18 20
+GOOG  2022-07-18 20
+AMZN  2022-06-06 20
+TSLA  2022-08-25 3
+NVDA  2024-06-10 10
+AVGO  2024-07-15 10
+WMT   2024-02-26 3
+CMG   2024-06-26 50

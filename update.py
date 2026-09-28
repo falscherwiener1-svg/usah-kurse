@@ -27,6 +27,42 @@ def iex_syms(t):            # Aktiengattungen: beide Schreibweisen prüfen ("BRK
     return sorted({t, t.replace(".", " ").replace("-", " ")})
 
 
+SPLIT_FACTORS = (2, 3, 4, 5, 10, 15, 20, 25, 50)
+
+
+def load_splits():
+    out = {}
+    fn = os.path.join(HERE, "splits.txt")
+    if os.path.exists(fn):
+        for line in open(fn):
+            p = line.split("#")[0].split()
+            if len(p) == 3:
+                out.setdefault(p[0].upper(), []).append([p[1], float(p[2])])
+    return out
+
+
+def merge_splits(*sets):
+    out = {}
+    for st in sets:
+        for t, lst in (st or {}).items():
+            have = {x[0]: x for x in out.get(t, [])}
+            for x in lst:
+                have[x[0]] = x
+            out[t] = sorted(have.values())
+    return out
+
+
+def detect_split(prev_close, close):
+    """Kurssprung um einen glatten Faktor (±4 %) = wahrscheinlich Split."""
+    if not prev_close or not close:
+        return None
+    r = prev_close / close
+    for f in SPLIT_FACTORS:
+        if abs(r / f - 1) < 0.04:
+            return f
+    return None
+
+
 def hist_index():
     req = urllib.request.Request(HIST_API, headers={"User-Agent": "usah-iex-close"})
     with urllib.request.urlopen(req, timeout=120) as r:
@@ -46,6 +82,7 @@ def save(db, path=None):
     path = path or db.get("_path") or OUT
     os.makedirs(os.path.dirname(path), exist_ok=True)
     db["updated"] = date.today().isoformat()
+    db["splits"] = merge_splits(db.get("splits"), load_splits())
     for t, v in db["tickers"].items():
         v["daily"] = sorted({d[0]: d for d in v.get("daily", [])}.values())[-400:]
         v["monthly"] = sorted({m[0]: m for m in v.get("monthly", [])}.values())[-72:]
@@ -57,6 +94,7 @@ def save(db, path=None):
 
 
 def merge_into(db, part):
+    db["splits"] = merge_splits(db.get("splits"), part.get("splits"))
     for t, v in part.get("tickers", {}).items():
         cur = db["tickers"].setdefault(t, {"daily": [], "monthly": []})
         have = {m[0]: m for m in cur.get("monthly", [])}
@@ -95,6 +133,11 @@ def process_day(db, day, meta, tickers, daily=True):
         r = max(found, key=lambda x: x["n"])
         v = db["tickers"].setdefault(t, {"daily": [], "monthly": []})
         if daily:
+            prev = sorted((d for d in v["daily"] if d[0] < iso), key=lambda d: d[0])
+            f = detect_split(prev[-1][1] if prev else None, r["last"])
+            if f:
+                print(f"  {t}: Split {f}:1 erkannt ({iso})", file=sys.stderr)
+                db["splits"] = merge_splits(db.get("splits"), {t: [[iso, float(f)]]})
             v["daily"].append([iso, r["last"], r["hi"], r["lo"], r["vol"]])
         # Monatsschluss: letzter bekannter Handelstag des Monats gewinnt
         ym = iso[:7]
