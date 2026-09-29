@@ -43,3 +43,6 @@ Finanz-/Versicherungskonzerne (SIC 6000–6799) werden nicht per DCF bewertet.
 Das WordPress-Plugin übernimmt Werte erst nach Freigabe im Admin („DCF-Vorschläge“).
 
 Optional: Repository-Variable `SEC_UA` = „Name E-Mail“ als Kontakt für die SEC setzen.
+
+## Makrodaten (FRED)
+`macro.py` schreibt `data/macro.json` (Zinsen, S&P 500, Nasdaq 100, VIX, EUR/USD, Inflation, Arbeitslosenquote). Workflow `macro.yml`, Key als Secret `FRED_API_KEY`. Quelle: FRED, Federal Reserve Bank of St. Louis.

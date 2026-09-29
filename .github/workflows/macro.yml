@@ -1,0 +1,39 @@
+name: FRED Makrodaten
+
+on:
+  schedule:
+    - cron: "15 22 * * 1-5"     # Mo bis Fr 22:15 UTC, nach US Börsenschluss
+    - cron: "15 13 * * 2-6"     # Di bis Sa 13:15 UTC, FRED Nachträge (Zinsen T+1)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: macro
+
+jobs:
+  macro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python macro.py
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - name: Speichern
+        run: |
+          git config user.name  "kurse-bot"
+          git config user.email "kurse-bot@users.noreply.github.com"
+          cp data/macro.json /tmp/macro.json
+          for i in 1 2 3 4 5; do
+            git fetch origin main && git reset --hard origin/main
+            cp /tmp/macro.json data/macro.json
+            git add data/macro.json
+            git diff --cached --quiet && exit 0
+            git commit -m "Makro $(date -u +%F)" && git push && exit 0
+            sleep 10
+          done
+          exit 1
