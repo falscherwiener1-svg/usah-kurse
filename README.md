@@ -30,3 +30,16 @@ für ihre 5-Jahres-Historie den Backfill erneut starten.
 - Aktiensplits werden nicht automatisch bereinigt: nach einem Split den Backfill neu starten
   bzw. die Monatswerte vor dem Split in `prices.json` teilen.
 - IEX stellt die Dateien für die Vergangenheit bereit (aktuell bis Dezember 2016 zurück).
+
+## DCF-Bewertung (`dcf.py` → `data/dcf.json`)
+
+Läuft automatisch nach jedem Kurs-Update (Workflow „DCF-Bewertung“). Nur kostenlose, veröffentlichbare Quellen:
+SEC EDGAR (XBRL-Zahlen, 8-K-Quartalsmitteilungen für die Guidance), U.S. Treasury (10-J.-Rendite),
+Damodaran/NYU Stern (implizite Marktrisikoprämie), IEX-Kurse aus `prices.json` (Beta vs. SPY).
+
+Modell: FCFF-DCF über 10 Jahre (FCFF = operativer Cashflow − Capex − aktienbasierte Vergütung + Zinsen × (1 − t)),
+WACC über CAPM + synthetisches Rating, Szenarien Bear/Base/Bull (25/50/25), Reverse-DCF und Sensitivität.
+Finanz-/Versicherungskonzerne (SIC 6000–6799) werden nicht per DCF bewertet.
+Das WordPress-Plugin übernimmt Werte erst nach Freigabe im Admin („DCF-Vorschläge“).
+
+Optional: Repository-Variable `SEC_UA` = „Name E-Mail“ als Kontakt für die SEC setzen.

@@ -1,0 +1,43 @@
+name: DCF-Bewertung
+
+on:
+  workflow_run:
+    workflows: ["IEX-Schlusskurse"]
+    types: [completed]
+  schedule:
+    - cron: "0 14 * * 1-5"        # Mo–Fr 14:00 UTC, falls der Kurslauf ausfällt
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dcf
+
+jobs:
+  dcf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SEC_UA: ${{ vars.SEC_UA || 'USAktienHub Research kontakt@usaktienhub.de' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install openpyxl
+      - run: git pull --ff-only origin main
+      - run: python dcf.py --cache /tmp/cache
+      - name: Speichern
+        run: |
+          git config user.name  "kurse-bot"
+          git config user.email "kurse-bot@users.noreply.github.com"
+          cp data/dcf.json /tmp/dcf.json
+          for i in 1 2 3 4 5; do
+            git fetch origin main && git reset --hard origin/main
+            cp /tmp/dcf.json data/dcf.json
+            git add data/dcf.json
+            git diff --cached --quiet && exit 0
+            git commit -m "DCF $(date -u +%F)" && git push && exit 0
+            sleep 10
+          done
+          exit 1
