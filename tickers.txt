@@ -8,6 +8,15 @@ BRK.B
 COST
 ADBE
 AAPL
+NVDA
+AMZN
+META
+TSLA
+PLTR
+AMD
+SPCX
+KO
+O
 # Marktleiste (ETFs als Index-Näherung)
 SPY
 QQQ
