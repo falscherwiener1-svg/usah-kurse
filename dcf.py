@@ -327,8 +327,16 @@ def latest_guidance(cik, sub, cache):
 # ---------------------------------------------------------------- Beta
 def beta_from_prices(prices, ticker, bench="SPY"):
     try:
-        a = {m[0]: m[1] for m in prices["tickers"][ticker]["monthly"]}
-        b = {m[0]: m[1] for m in prices["tickers"][bench]["monthly"]}
+        sp = prices.get("splits") or {}
+        def adj(t):   # Splitbereinigung: Kurse vor dem Split durch den Faktor teilen
+            out = {}
+            for m in prices["tickers"][t]["monthly"]:
+                day, px = (m[2] if len(m) > 2 else m[0] + "-28"), m[1]
+                for s_day, f in sp.get(t, []):
+                    if day < s_day and f: px /= f
+                out[m[0]] = px
+            return out
+        a, b = adj(ticker), adj(bench)
     except KeyError:
         return None
     months = sorted(set(a) & set(b))

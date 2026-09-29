@@ -27,6 +27,16 @@ def iex_syms(t):            # Aktiengattungen: beide Schreibweisen prüfen ("BRK
     return sorted({t, t.replace(".", " ").replace("-", " ")})
 
 
+def load_listings():
+    """Erstnotiz je Ticker: ältere Kurse stammen von einem anderen Wertpapier mit gleichem Kürzel."""
+    fn, out = os.path.join(HERE, "listings.txt"), {}
+    if os.path.exists(fn):
+        for line in open(fn):
+            p = line.split("#")[0].split()
+            if len(p) >= 2: out[p[0].upper()] = p[1]
+    return out
+
+
 SPLIT_FACTORS = (2, 3, 4, 5, 10, 15, 20, 25, 50)
 
 
@@ -83,9 +93,11 @@ def save(db, path=None):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     db["updated"] = date.today().isoformat()
     db["splits"] = merge_splits(db.get("splits"), load_splits())
+    lst = load_listings()
     for t, v in db["tickers"].items():
-        v["daily"] = sorted({d[0]: d for d in v.get("daily", [])}.values())[-400:]
-        v["monthly"] = sorted({m[0]: m for m in v.get("monthly", [])}.values())[-72:]
+        st = lst.get(t, "0000")
+        v["daily"] = sorted({d[0]: d for d in v.get("daily", []) if d[0] >= st}.values())[-400:]
+        v["monthly"] = sorted({m[0]: m for m in v.get("monthly", []) if (m[2] if len(m) > 2 else m[0] + "-31") >= st}.values())[-72:]
     out = {k: v for k, v in db.items() if k != "_path"}
     tmp = path + ".tmp"
     with open(tmp, "w") as f:

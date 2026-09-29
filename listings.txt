@@ -1,0 +1,4 @@
+# Erstnotiz unter dem heutigen Kürzel: TICKER DATUM
+# Ältere Kurse unter demselben Kürzel gehören zu einem anderen Wertpapier und werden verworfen.
+META 2022-06-09   # bis 08.06.22 Roundhill Metaverse ETF, Meta handelte als FB
+SPCX 2026-06-12   # vorher AXS SPAC ETF, SpaceX Erstnotiz 12.06.26
