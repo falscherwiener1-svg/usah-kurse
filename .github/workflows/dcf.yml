@@ -41,3 +41,17 @@ jobs:
             sleep 10
           done
           exit 1
+      - name: WordPress benachrichtigen
+        if: always()
+        env:
+          KEY: ${{ secrets.USAH_SYNC_KEY }}
+        run: |
+          [ -z "$KEY" ] && { echo "Kein USAH_SYNC_KEY hinterlegt"; exit 0; }
+          sleep 330   # raw.githubusercontent.com hält Dateien bis zu 5 Minuten im Cache
+          for i in 1 2 3; do
+            code=$(curl -s -o /tmp/sync.json -w "%{http_code}" -X POST -H "X-USAH-Key: $KEY" --max-time 280 https://usaktienhub.de/wp-json/usah/v1/sync)
+            echo "HTTP $code: $(cat /tmp/sync.json)"
+            [ "$code" = "200" ] && exit 0
+            sleep 60
+          done
+          echo "::warning::WordPress-Abgleich fehlgeschlagen (HTTP $code). Plugin-Cron übernimmt um 16:15/23:15."
