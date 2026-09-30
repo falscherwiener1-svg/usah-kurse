@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T21:39:00Z",
+ "generated": "2026-09-30T12:24:14Z",
  "model": "1.0",
  "rf": {
   "rate": 0.0526,
@@ -5757,6 +5757,312 @@
    "model": "1.0",
    "status": "ungeeignet",
    "reason": "Finanz-/Versicherungskonzern (SIC 6798): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+  },
+  {
+   "ticker": "MU",
+   "name": "MICRON TECHNOLOGY INC",
+   "cik": 723125,
+   "sic": 3674,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MU in prices.json."
+  },
+  {
+   "ticker": "AVGO",
+   "name": "Broadcom Inc.",
+   "cik": 1730168,
+   "sic": 3674,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für AVGO in prices.json."
+  },
+  {
+   "ticker": "INTC",
+   "name": "INTEL CORP",
+   "cik": 50863,
+   "sic": 3674,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für INTC in prices.json."
+  },
+  {
+   "ticker": "MRVL",
+   "name": "Marvell Technology, Inc.",
+   "cik": 1835632,
+   "sic": 3674,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MRVL in prices.json."
+  },
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk Corp",
+   "cik": 2023554,
+   "sic": 3572,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für SNDK in prices.json."
+  },
+  {
+   "ticker": "ORCL",
+   "name": "ORACLE CORP",
+   "cik": 1341439,
+   "sic": 7372,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für ORCL in prices.json."
+  },
+  {
+   "ticker": "NFLX",
+   "name": "NETFLIX INC",
+   "cik": 1065280,
+   "sic": 7841,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für NFLX in prices.json."
+  },
+  {
+   "ticker": "CRM",
+   "name": "Salesforce, Inc.",
+   "cik": 1108524,
+   "sic": 7372,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für CRM in prices.json."
+  },
+  {
+   "ticker": "QCOM",
+   "name": "QUALCOMM INC/DE",
+   "cik": 804328,
+   "sic": 3663,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für QCOM in prices.json."
+  },
+  {
+   "ticker": "SMCI",
+   "name": "Super Micro Computer, Inc.",
+   "cik": 1375365,
+   "sic": 3571,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für SMCI in prices.json."
+  },
+  {
+   "ticker": "CRWV",
+   "name": "CoreWeave, Inc.",
+   "cik": 1769628,
+   "sic": 7372,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für CRWV in prices.json."
+  },
+  {
+   "ticker": "UBER",
+   "name": "Uber Technologies, Inc",
+   "cik": 1543151,
+   "sic": 7389,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für UBER in prices.json."
+  },
+  {
+   "ticker": "COIN",
+   "name": "Coinbase Global, Inc.",
+   "cik": 1679788,
+   "sic": 6199,
+   "model": "1.0",
+   "status": "ungeeignet",
+   "reason": "Finanz-/Versicherungskonzern (SIC 6199): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+  },
+  {
+   "ticker": "MSTR",
+   "name": "Strategy Inc",
+   "cik": 1050446,
+   "sic": 6199,
+   "model": "1.0",
+   "status": "ungeeignet",
+   "reason": "Finanz-/Versicherungskonzern (SIC 6199): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+  },
+  {
+   "ticker": "RKLB",
+   "name": "Rocket Lab Corp",
+   "cik": 1819994,
+   "sic": 3760,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für RKLB in prices.json."
+  },
+  {
+   "ticker": "IONQ",
+   "name": "IonQ, Inc.",
+   "cik": 1824920,
+   "sic": 7373,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für IONQ in prices.json."
+  },
+  {
+   "ticker": "LLY",
+   "name": "ELI LILLY & Co",
+   "cik": 59478,
+   "sic": 2834,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "TTM-Werte unvollständig (Quartalsreihe lückenhaft)."
+  },
+  {
+   "ticker": "UNH",
+   "name": "UNITEDHEALTH GROUP INC",
+   "cik": 731766,
+   "sic": 6324,
+   "model": "1.0",
+   "status": "ungeeignet",
+   "reason": "Finanz-/Versicherungskonzern (SIC 6324): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+  },
+  {
+   "ticker": "PFE",
+   "name": "PFIZER INC",
+   "cik": 78003,
+   "sic": 2834,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für PFE in prices.json."
+  },
+  {
+   "ticker": "MRK",
+   "name": "Merck & Co., Inc.",
+   "cik": 310158,
+   "sic": 2834,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MRK in prices.json."
+  },
+  {
+   "ticker": "ABBV",
+   "name": "AbbVie Inc.",
+   "cik": 1551152,
+   "sic": 2834,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für ABBV in prices.json."
+  },
+  {
+   "ticker": "MRNA",
+   "name": "Moderna, Inc.",
+   "cik": 1682852,
+   "sic": 2836,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MRNA in prices.json."
+  },
+  {
+   "ticker": "MCD",
+   "name": "MCDONALDS CORP",
+   "cik": 63908,
+   "sic": 5812,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MCD in prices.json."
+  },
+  {
+   "ticker": "PEP",
+   "name": "PEPSICO INC",
+   "cik": 77476,
+   "sic": 2080,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für PEP in prices.json."
+  },
+  {
+   "ticker": "PG",
+   "name": "PROCTER & GAMBLE Co",
+   "cik": 80424,
+   "sic": 2840,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für PG in prices.json."
+  },
+  {
+   "ticker": "NKE",
+   "name": "NIKE, Inc.",
+   "cik": 320187,
+   "sic": 3021,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für NKE in prices.json."
+  },
+  {
+   "ticker": "DIS",
+   "name": "Walt Disney Co",
+   "cik": 1744489,
+   "sic": 7990,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für DIS in prices.json."
+  },
+  {
+   "ticker": "SBUX",
+   "name": "STARBUCKS CORP",
+   "cik": 829224,
+   "sic": 5810,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für SBUX in prices.json."
+  },
+  {
+   "ticker": "XOM",
+   "name": "ExxonMobil Holdings Corp",
+   "cik": 2115436,
+   "sic": 2911,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Umsatz oder operativer Cashflow in SEC-Daten nicht auffindbar."
+  },
+  {
+   "ticker": "PYPL",
+   "name": "PayPal Holdings, Inc.",
+   "cik": 1633917,
+   "sic": 7389,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für PYPL in prices.json."
+  },
+  {
+   "ticker": "MA",
+   "name": "Mastercard Inc",
+   "cik": 1141391,
+   "sic": 7389,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MA in prices.json."
+  },
+  {
+   "ticker": "PLUG",
+   "name": "PLUG POWER INC",
+   "cik": 1093691,
+   "sic": 3620,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für PLUG in prices.json."
+  },
+  {
+   "ticker": "MO",
+   "name": "ALTRIA GROUP, INC.",
+   "cik": 764180,
+   "sic": 2111,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für MO in prices.json."
+  },
+  {
+   "ticker": "VZ",
+   "name": "VERIZON COMMUNICATIONS INC",
+   "cik": 732712,
+   "sic": 4813,
+   "model": "1.0",
+   "status": "daten_fehlen",
+   "reason": "Kein Kurs für VZ in prices.json."
   }
  ]
 }
