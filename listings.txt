@@ -2,3 +2,7 @@
 # Ältere Kurse unter demselben Kürzel gehören zu einem anderen Wertpapier und werden verworfen.
 META 2022-06-09   # bis 08.06.22 Roundhill Metaverse ETF, Meta handelte als FB
 SPCX 2026-06-12   # vorher AXS SPAC ETF, SpaceX Erstnotiz 12.06.26
+SNDK 2025-02-24   # Sandisk Abspaltung von Western Digital; altes SanDisk bis 2016
+CRWV 2025-03-28   # CoreWeave IPO
+RKLB 2021-08-25   # Rocket Lab nach SPAC
+IONQ 2021-10-01   # IonQ nach SPAC
