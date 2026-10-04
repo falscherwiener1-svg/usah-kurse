@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-30T12:49:41Z",
+ "generated": "2026-10-04T17:40:31Z",
  "model": "1.0",
  "rf": {
-  "rate": 0.0526,
-  "date": "2026-09-29"
+  "rate": 0.0528,
+  "date": "2026-10-02"
  },
  "erp": {
   "rate": 0.0414,
@@ -5756,7 +5756,7 @@
    "sic": 6798,
    "model": "1.0",
    "status": "ungeeignet",
-   "reason": "Finanz-/Versicherungskonzern (SIC 6798): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+   "reason": "Real Estate Investment Trust (REIT, SIC 6798): Ein klassischer FCFF-DCF ist ungeeignet, da Immobilienabschreibungen den Cashflow verzerren. Bewertung erfolgt sachgerecht über FFO / AFFO (Funds From Operations) und NAV."
   },
   {
    "ticker": "MU",
@@ -5764,13 +5764,13 @@
    "cik": 723125,
    "sic": 3674,
    "model": "1.0",
-   "status": "ok",
+   "status": "ungeeignet",
    "kurs": 1064.975,
    "kurs_datum": "2026-09-29",
-   "fair_value": -95.71,
-   "bear": -2.24,
-   "base": -93.9,
-   "bull": -192.81,
+   "fair_value": null,
+   "bear": null,
+   "base": null,
+   "bull": null,
    "abschlag_pct": -109.0,
    "kgv_ttm": 24.2,
    "fcf_rendite_pct": 2.15,
@@ -6158,7 +6158,8 @@
     "Quartal 2026-05-28: Nettomarge 68 % statt üblich ~28 % – vermutlich Sondereffekte (z. B. Beteiligungsgewinne). KGV/EPS verzerrt; der DCF rechnet mit Cashflows und ist davon nicht betroffen.",
     "Endwert > 85 % des Unternehmenswerts – Ergebnis sehr sensitiv."
    ],
-   "hinweise": []
+   "hinweise": [],
+   "reason": "Extremwert (Fair Value -95.71 $ außerhalb des plausiblen Bereichs von 5 $ bis 3.000 $). Modellannahmen oder Datenqualität unzureichend."
   },
   {
    "ticker": "AVGO",
@@ -6573,13 +6574,13 @@
    "cik": 50863,
    "sic": 3674,
    "model": "1.0",
-   "status": "ok",
+   "status": "ungeeignet",
    "kurs": 115.965,
    "kurs_datum": "2026-09-29",
-   "fair_value": -39.92,
-   "bear": -24.17,
-   "base": -39.25,
-   "bull": -57.01,
+   "fair_value": null,
+   "bear": null,
+   "base": null,
+   "bull": null,
    "abschlag_pct": -134.4,
    "kgv_ttm": null,
    "fcf_rendite_pct": 0.48,
@@ -6966,7 +6967,8 @@
    "warnungen": [
     "Quartal 2025-09-27: Nettomarge 30 % statt üblich ~-6 % – vermutlich Sondereffekte (z. B. Beteiligungsgewinne). KGV/EPS verzerrt; der DCF rechnet mit Cashflows und ist davon nicht betroffen."
    ],
-   "hinweise": []
+   "hinweise": [],
+   "reason": "Extremwert (Fair Value -39.92 $ außerhalb des plausiblen Bereichs von 5 $ bis 3.000 $). Modellannahmen oder Datenqualität unzureichend."
   },
   {
    "ticker": "MRVL",
@@ -7780,407 +7782,8 @@
    "cik": 1341439,
    "sic": 7372,
    "model": "1.0",
-   "status": "ok",
-   "kurs": 137.83,
-   "kurs_datum": "2026-09-29",
-   "fair_value": -3.78,
-   "bear": -1.51,
-   "base": -4.47,
-   "bull": -4.68,
-   "abschlag_pct": -102.7,
-   "kgv_ttm": 22.0,
-   "fcf_rendite_pct": -6.95,
-   "implizites_wachstum_pct": null,
-   "szenarien": {
-    "bear": {
-     "wert": -1.51,
-     "g1": 10.9,
-     "g_ewig": 2.0,
-     "marge_norm": 0.9,
-     "wacc": 10.15,
-     "anteil_endwert": -14.8,
-     "pfad": null
-    },
-    "base": {
-     "wert": -4.47,
-     "g1": 21.8,
-     "g_ewig": 2.5,
-     "marge_norm": 1.1,
-     "wacc": 9.4,
-     "anteil_endwert": -30.3,
-     "pfad": [
-      {
-       "j": 1,
-       "g": 21.8,
-       "marge": -32.7,
-       "umsatz": 87.41,
-       "fcff": -28.55
-      },
-      {
-       "j": 2,
-       "g": 19.6,
-       "marge": -24.2,
-       "umsatz": 104.58,
-       "fcff": -25.34
-      },
-      {
-       "j": 3,
-       "g": 17.5,
-       "marge": -15.8,
-       "umsatz": 122.88,
-       "fcff": -19.4
-      },
-      {
-       "j": 4,
-       "g": 15.4,
-       "marge": -7.4,
-       "umsatz": 141.76,
-       "fcff": -10.42
-      },
-      {
-       "j": 5,
-       "g": 13.2,
-       "marge": 1.1,
-       "umsatz": 160.49,
-       "fcff": 1.74
-      },
-      {
-       "j": 6,
-       "g": 11.1,
-       "marge": 1.1,
-       "umsatz": 178.25,
-       "fcff": 1.94
-      },
-      {
-       "j": 7,
-       "g": 8.9,
-       "marge": 1.1,
-       "umsatz": 194.17,
-       "fcff": 2.11
-      },
-      {
-       "j": 8,
-       "g": 6.8,
-       "marge": 1.1,
-       "umsatz": 207.34,
-       "fcff": 2.25
-      },
-      {
-       "j": 9,
-       "g": 4.6,
-       "marge": 1.1,
-       "umsatz": 216.97,
-       "fcff": 2.36
-      },
-      {
-       "j": 10,
-       "g": 2.5,
-       "marge": 1.1,
-       "umsatz": 222.39,
-       "fcff": 2.42
-      }
-     ]
-    },
-    "bull": {
-     "wert": -4.68,
-     "g1": 27.8,
-     "g_ewig": 3.0,
-     "marge_norm": 1.2,
-     "wacc": 8.9,
-     "anteil_endwert": -53.3,
-     "pfad": null
-    }
-   },
-   "sensitivitaet": {
-    "g_ewig": [
-     2.0,
-     2.5,
-     3.0
-    ],
-    "zeilen": [
-     {
-      "wacc": 8.4,
-      "werte": [
-       -4.0,
-       -3.0,
-       -2.0
-      ]
-     },
-     {
-      "wacc": 8.9,
-      "werte": [
-       -4.0,
-       -4.0,
-       -3.0
-      ]
-     },
-     {
-      "wacc": 9.4,
-      "werte": [
-       -5.0,
-       -4.0,
-       -4.0
-      ]
-     },
-     {
-      "wacc": 9.9,
-      "werte": [
-       -5.0,
-       -5.0,
-       -4.0
-      ]
-     },
-     {
-      "wacc": 10.4,
-      "werte": [
-       -6.0,
-       -5.0,
-       -5.0
-      ]
-     }
-    ]
-   },
-   "annahmen": {
-    "umsatz_ttm": 71777000000,
-    "fcff_ttm": -29501840000,
-    "fcff_marge_ttm": -41.1,
-    "fcff_marge_norm": 1.1,
-    "fcff_margen_hist": [
-     10.8,
-     15.4,
-     20.0,
-     -3.9,
-     -36.9
-    ],
-    "wachstum_j1": 21.8,
-    "wachstum_quelle": "Keine Zahlen-Guidance im Quartalsbericht – Trend: 50 % TTM, 30 % letztes Quartal (YoY), 20 % 3-J.-CAGR",
-    "wachstum_ttm": 21.6,
-    "cagr_3j": 10.5,
-    "steuer": 21.0,
-    "beta": null,
-    "beta_genutzt": 1.0,
-    "rf": {
-     "rate": 0.0526,
-     "date": "2026-09-29"
-    },
-    "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
-    },
-    "ke": 9.4,
-    "kd": 6.66,
-    "rating_synth": "A",
-    "zinsdeckung": 4.5,
-    "wacc": 9.4,
-    "cash": 37077000000,
-    "schulden": 0,
-    "bilanz_datum": "2026-08-31",
-    "aktien_verw": 3000000000,
-    "aktien_quelle": "SEC WeightedAverageNumberOfDilutedSharesOutstanding (2026-08-31)",
-    "sbc_abgezogen": true,
-    "tags": {
-     "rev": "RevenueFromContractWithCustomerExcludingAssessedTax",
-     "ebit": "OperatingIncomeLoss",
-     "pretax": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic",
-     "ni": "NetIncomeLoss",
-     "tax": "IncomeTaxExpenseBenefit",
-     "cfo": "NetCashProvidedByUsedInOperatingActivities",
-     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
-     "sbc": "ShareBasedCompensation",
-     "int": "InterestExpense",
-     "dil": "WeightedAverageNumberOfDilutedSharesOutstanding",
-     "cash": "CashAndCashEquivalentsAtCarryingValue",
-     "ms_c": "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
-     "debt": "LongTermDebt",
-     "debt_c": "DebtCurrent",
-     "cp": "CommercialPaper"
-    }
-   },
-   "quartale": [
-    {
-     "ende": "2024-11-30",
-     "umsatz": 14059000000,
-     "ni": 3151000000,
-     "cfo": 1304000000,
-     "capex": 3970000000,
-     "sbc": 1170000000,
-     "ebit": 4220000000,
-     "fcf": -2666000000,
-     "eps": 1.1,
-     "umsatz_yoy": 8.6,
-     "umsatz_qoq": 5.7,
-     "ebit_yoy": 16.5,
-     "ebit_qoq": 5.7,
-     "ni_yoy": 25.9,
-     "ni_qoq": 7.6,
-     "fcf_yoy": null,
-     "fcf_qoq": -152.0,
-     "eps_yoy": 23.8
-    },
-    {
-     "ende": "2025-02-28",
-     "umsatz": 14130000000,
-     "ni": 2936000000,
-     "cfo": 5933000000,
-     "capex": 5862000000,
-     "sbc": 1198000000,
-     "ebit": 4358000000,
-     "fcf": 71000000,
-     "eps": 1.02,
-     "umsatz_yoy": 6.4,
-     "umsatz_qoq": 0.5,
-     "ebit_yoy": 16.2,
-     "ebit_qoq": 3.3,
-     "ni_yoy": 22.3,
-     "ni_qoq": -6.8,
-     "fcf_yoy": -98.1,
-     "fcf_qoq": null,
-     "eps_yoy": 19.8
-    },
-    {
-     "ende": "2025-05-31",
-     "umsatz": 15903000000,
-     "ni": 3427000000,
-     "cfo": 6157000000,
-     "capex": 9080000000,
-     "sbc": 1300000000,
-     "ebit": 5109000000,
-     "fcf": -2923000000,
-     "eps": 1.19,
-     "umsatz_yoy": 11.3,
-     "umsatz_qoq": 12.5,
-     "ebit_yoy": 9.0,
-     "ebit_qoq": 17.2,
-     "ni_yoy": 9.0,
-     "ni_qoq": 16.7,
-     "fcf_yoy": -189.0,
-     "fcf_qoq": -4216.9,
-     "eps_yoy": 6.7
-    },
-    {
-     "ende": "2025-08-31",
-     "umsatz": 14926000000,
-     "ni": 2927000000,
-     "cfo": 8140000000,
-     "capex": 8502000000,
-     "sbc": 1124000000,
-     "ebit": 4277000000,
-     "fcf": -362000000,
-     "eps": 1.01,
-     "umsatz_yoy": 12.2,
-     "umsatz_qoq": -6.1,
-     "ebit_yoy": 7.2,
-     "ebit_qoq": -16.3,
-     "ni_yoy": -0.1,
-     "ni_qoq": -14.6,
-     "fcf_yoy": -107.1,
-     "fcf_qoq": null,
-     "eps_yoy": -1.7
-    },
-    {
-     "ende": "2025-11-30",
-     "umsatz": 16058000000,
-     "ni": 6135000000,
-     "cfo": 2066000000,
-     "capex": 12033000000,
-     "sbc": 1156000000,
-     "ebit": 4731000000,
-     "fcf": -9967000000,
-     "eps": 2.1,
-     "umsatz_yoy": 14.2,
-     "umsatz_qoq": 7.6,
-     "ebit_yoy": 12.1,
-     "ebit_qoq": 10.6,
-     "ni_yoy": 94.7,
-     "ni_qoq": 109.6,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
-     "eps_yoy": 91.2
-    },
-    {
-     "ende": "2026-02-28",
-     "umsatz": 17190000000,
-     "ni": 3721000000,
-     "cfo": 7151000000,
-     "capex": 18635000000,
-     "sbc": 1328000000,
-     "ebit": 5464000000,
-     "fcf": -11484000000,
-     "eps": 1.28,
-     "umsatz_yoy": 21.7,
-     "umsatz_qoq": 7.0,
-     "ebit_yoy": 25.4,
-     "ebit_qoq": 15.5,
-     "ni_yoy": 26.7,
-     "ni_qoq": -39.3,
-     "fcf_yoy": -16274.6,
-     "fcf_qoq": null,
-     "eps_yoy": 25.3
-    },
-    {
-     "ende": "2026-05-31",
-     "umsatz": 19184000000,
-     "ni": 4201000000,
-     "cfo": 14620000000,
-     "capex": 16493000000,
-     "sbc": 1203000000,
-     "ebit": 6133000000,
-     "fcf": -1873000000,
-     "eps": 1.44,
-     "umsatz_yoy": 20.6,
-     "umsatz_qoq": 11.6,
-     "ebit_yoy": 20.0,
-     "ebit_qoq": 12.2,
-     "ni_yoy": 22.6,
-     "ni_qoq": 12.9,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
-     "eps_yoy": 20.8
-    },
-    {
-     "ende": "2026-08-31",
-     "umsatz": 19345000000,
-     "ni": 4760000000,
-     "cfo": 23103000000,
-     "capex": 28499000000,
-     "sbc": 1127000000,
-     "ebit": 6728000000,
-     "fcf": -5396000000,
-     "eps": 1.59,
-     "umsatz_yoy": 29.6,
-     "umsatz_qoq": 0.8,
-     "ebit_yoy": 57.3,
-     "ebit_qoq": 9.7,
-     "ni_yoy": 62.6,
-     "ni_qoq": 13.3,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
-     "eps_yoy": 58.0
-    }
-   ],
-   "guidance": {
-    "filed": "2026-09-10",
-    "report": "2026-09-10",
-    "urls": [
-     "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
-     "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/0001193125-26-387905-index-headers.html",
-     "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/0001193125-26-387905-index.html"
-    ],
-    "items": [
-     {
-      "metric": "EPS (bereinigt)",
-      "period": "Q",
-      "low": 1.83,
-      "high": 1.91,
-      "text": "70% in constant currency and between 65% and 71% in USD. • Non-GAAP earnings per share is expected to be between $1.83 and $1.91 in constant currenc"
-     }
-    ]
-   },
-   "stand_zahlen": "2026-08-31",
-   "warnungen": [
-    "Quartal 2025-11-30: Nettomarge 38 % statt üblich ~22 % – vermutlich Sondereffekte (z. B. Beteiligungsgewinne). KGV/EPS verzerrt; der DCF rechnet mit Cashflows und ist davon nicht betroffen."
-   ],
-   "hinweise": []
+   "status": "ungeeignet",
+   "reason": "Invertierte Szenarien (Bull -48.89 $ < Bear -44.83 $) durch negativen TTM-Cashflow. Ein Standard-DCF ist in dieser Phase (z.B. starker CapEx-Zyklus) methodisch nicht belastbar."
   },
   {
    "ticker": "NFLX",
@@ -9869,7 +9472,7 @@
    "sic": 6199,
    "model": "1.0",
    "status": "ungeeignet",
-   "reason": "Finanz-/Versicherungskonzern (SIC 6199): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+   "reason": "Holding-/Treasury-Firma (COIN): Das Unternehmensvermögen besteht überwiegend aus Kryptowährungs-Beständen (Bitcoin Treasury). Ein operativer Cashflow-DCF spiegelt die Vermögenssubstanz nicht wider."
   },
   {
    "ticker": "MSTR",
@@ -9878,7 +9481,7 @@
    "sic": 6199,
    "model": "1.0",
    "status": "ungeeignet",
-   "reason": "Finanz-/Versicherungskonzern (SIC 6199): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/Sum-of-the-Parts – bitte manuell."
+   "reason": "Holding-/Treasury-Firma (MSTR): Das Unternehmensvermögen besteht überwiegend aus Kryptowährungs-Beständen (Bitcoin Treasury). Ein operativer Cashflow-DCF spiegelt die Vermögenssubstanz nicht wider."
   },
   {
    "ticker": "RKLB",
@@ -11171,13 +10774,13 @@
    "cik": 63908,
    "sic": 5812,
    "model": "1.0",
-   "status": "ok",
+   "status": "ungeeignet",
    "kurs": 234.03,
    "kurs_datum": "2026-09-29",
-   "fair_value": 599909259.68,
-   "bear": 241181453.91,
-   "base": 527279284.44,
-   "bull": 1103897015.93,
+   "fair_value": null,
+   "bear": null,
+   "base": null,
+   "bull": null,
    "abschlag_pct": 256338514.6,
    "kgv_ttm": 0.0,
    "fcf_rendite_pct": 4663537.49,
@@ -11561,7 +11164,8 @@
    },
    "stand_zahlen": "2026-06-30",
    "warnungen": [],
-   "hinweise": []
+   "hinweise": [],
+   "reason": "Extremwert (Fair Value 599909259.68 $ außerhalb des plausiblen Bereichs von 5 $ bis 3.000 $). Modellannahmen oder Datenqualität unzureichend."
   },
   {
    "ticker": "PEP",
@@ -12775,111 +12379,111 @@
    "status": "ok",
    "kurs": 105.485,
    "kurs_datum": "2026-09-29",
-   "fair_value": 31.36,
-   "bear": 12.45,
-   "base": 31.04,
-   "bull": 50.9,
-   "abschlag_pct": -70.3,
+   "fair_value": 63.18,
+   "bear": 33.0,
+   "base": 62.61,
+   "bull": 94.51,
+   "abschlag_pct": -40.1,
    "kgv_ttm": 21.4,
    "fcf_rendite_pct": 4.51,
-   "implizites_wachstum_pct": 27.1,
+   "implizites_wachstum_pct": 15.2,
    "szenarien": {
     "bear": {
-     "wert": 12.45,
+     "wert": 33.0,
      "g1": 2.6,
      "g_ewig": 2.0,
-     "marge_norm": 4.7,
-     "wacc": 10.19,
-     "anteil_endwert": 46.5,
+     "marge_norm": 7.4,
+     "wacc": 10.05,
+     "anteil_endwert": 47.4,
      "pfad": null
     },
     "base": {
-     "wert": 31.04,
+     "wert": 62.61,
      "g1": 5.2,
      "g_ewig": 2.5,
-     "marge_norm": 5.6,
-     "wacc": 9.44,
-     "anteil_endwert": 53.0,
+     "marge_norm": 8.7,
+     "wacc": 9.3,
+     "anteil_endwert": 53.9,
      "pfad": [
       {
        "j": 1,
        "g": 5.2,
-       "marge": 5.5,
+       "marge": 8.3,
        "umsatz": 104.03,
-       "fcff": 5.74
+       "fcff": 8.62
       },
       {
        "j": 2,
        "g": 4.9,
-       "marge": 5.5,
+       "marge": 8.4,
        "umsatz": 109.16,
-       "fcff": 6.04
+       "fcff": 9.14
       },
       {
        "j": 3,
        "g": 4.6,
-       "marge": 5.5,
+       "marge": 8.5,
        "umsatz": 114.2,
-       "fcff": 6.33
+       "fcff": 9.67
       },
       {
        "j": 4,
        "g": 4.3,
-       "marge": 5.6,
+       "marge": 8.6,
        "umsatz": 119.14,
-       "fcff": 6.61
+       "fcff": 10.2
       },
       {
        "j": 5,
        "g": 4.0,
-       "marge": 5.6,
+       "marge": 8.7,
        "umsatz": 123.92,
-       "fcff": 6.89
+       "fcff": 10.72
       },
       {
        "j": 6,
        "g": 3.7,
-       "marge": 5.6,
+       "marge": 8.7,
        "umsatz": 128.52,
-       "fcff": 7.15
+       "fcff": 11.12
       },
       {
        "j": 7,
        "g": 3.4,
-       "marge": 5.6,
+       "marge": 8.7,
        "umsatz": 132.91,
-       "fcff": 7.39
+       "fcff": 11.5
       },
       {
        "j": 8,
        "g": 3.1,
-       "marge": 5.6,
+       "marge": 8.7,
        "umsatz": 137.04,
-       "fcff": 7.62
+       "fcff": 11.86
       },
       {
        "j": 9,
        "g": 2.8,
-       "marge": 5.6,
+       "marge": 8.7,
        "umsatz": 140.88,
-       "fcff": 7.84
+       "fcff": 12.19
       },
       {
        "j": 10,
        "g": 2.5,
-       "marge": 5.6,
+       "marge": 8.7,
        "umsatz": 144.4,
-       "fcff": 8.03
+       "fcff": 12.5
       }
      ]
     },
     "bull": {
-     "wert": 50.9,
+     "wert": 94.51,
      "g1": 7.1,
      "g_ewig": 3.0,
-     "marge_norm": 6.1,
-     "wacc": 8.94,
-     "anteil_endwert": 58.6,
+     "marge_norm": 9.5,
+     "wacc": 8.8,
+     "anteil_endwert": 59.5,
      "pfad": null
     }
    },
@@ -12891,77 +12495,81 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.44,
+      "wacc": 8.3,
       "werte": [
-       36.0,
-       40.0,
-       45.0
+       71.0,
+       77.0,
+       85.0
       ]
      },
      {
-      "wacc": 8.94,
+      "wacc": 8.8,
       "werte": [
-       32.0,
-       35.0,
-       39.0
+       64.0,
+       69.0,
+       76.0
       ]
      },
      {
-      "wacc": 9.44,
+      "wacc": 9.3,
       "werte": [
-       28.0,
-       31.0,
-       34.0
+       58.0,
+       63.0,
+       68.0
       ]
      },
      {
-      "wacc": 9.94,
+      "wacc": 9.8,
       "werte": [
-       25.0,
-       27.0,
-       30.0
+       53.0,
+       57.0,
+       61.0
       ]
      },
      {
-      "wacc": 10.44,
+      "wacc": 10.3,
       "werte": [
-       22.0,
-       24.0,
-       27.0
+       48.0,
+       52.0,
+       56.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 98861000000,
-    "fcff_ttm": 5449086745,
-    "fcff_marge_ttm": 5.5,
-    "fcff_marge_norm": 5.6,
+    "fcff_ttm": 8098913255,
+    "fcff_marge_ttm": 8.2,
+    "fcff_marge_norm": 8.7,
     "fcff_margen_hist": [
-     2.6,
-     6.2,
-     7.8
+     5.8,
+     9.5,
+     10.6
     ],
     "wachstum_j1": 5.2,
     "wachstum_quelle": "Keine Zahlen-Guidance im Quartalsbericht – Trend: 50 % TTM, 30 % letztes Quartal (YoY), 20 % 3-J.-CAGR",
     "wachstum_ttm": 4.6,
     "cagr_3j": 4.5,
     "steuer": 27.6,
-    "beta": null,
-    "beta_genutzt": 1.0,
+    "beta": {
+     "raw": 1.4,
+     "adjusted": 1.27,
+     "months": 61
+    },
+    "beta_genutzt": 1.27,
     "rf": {
-     "rate": 0.0526,
-     "date": "2026-09-29"
+     "rate": 0.0528,
+     "date": "2026-10-02"
     },
     "erp": {
      "rate": 0.0414,
      "month": "2026-09"
     },
-    "ke": 9.4,
-    "kd": 13.26,
-    "rating_synth": "CCC",
-    "zinsdeckung": -10.0,
-    "wacc": 9.44,
+    "ke": 10.54,
+    "kd": 6.03,
+    "rating_synth": "AAA",
+    "zinsdeckung": 10.0,
+    "wacc": 9.3,
     "cash": 5185000000,
     "schulden": 46041000000,
     "bilanz_datum": "2026-06-27",
@@ -14796,111 +14404,111 @@
    "status": "ok",
    "kurs": 45.99,
    "kurs_datum": "2026-09-29",
-   "fair_value": 94.2,
-   "bear": 59.06,
-   "base": 93.49,
-   "bull": 130.76,
-   "abschlag_pct": 104.8,
+   "fair_value": 98.98,
+   "bear": 52.85,
+   "base": 96.34,
+   "bull": 150.38,
+   "abschlag_pct": 115.2,
    "kgv_ttm": 11.6,
-   "fcf_rendite_pct": 11.38,
-   "implizites_wachstum_pct": -11.5,
+   "fcf_rendite_pct": 11.22,
+   "implizites_wachstum_pct": -10.3,
    "szenarien": {
     "bear": {
-     "wert": 59.06,
+     "wert": 52.85,
      "g1": 0.3,
      "g_ewig": 2.0,
-     "marge_norm": 16.8,
-     "wacc": 8.84,
-     "anteil_endwert": 51.6,
+     "marge_norm": 14.4,
+     "wacc": 7.51,
+     "anteil_endwert": 57.5,
      "pfad": null
     },
     "base": {
-     "wert": 93.49,
+     "wert": 96.34,
      "g1": 0.5,
      "g_ewig": 2.5,
-     "marge_norm": 19.8,
-     "wacc": 8.09,
-     "anteil_endwert": 58.1,
+     "marge_norm": 17.0,
+     "wacc": 6.76,
+     "anteil_endwert": 65.1,
      "pfad": [
       {
        "j": 1,
        "g": 0.5,
-       "marge": 19.8,
+       "marge": 19.0,
        "umsatz": 139.66,
-       "fcff": 27.62
+       "fcff": 26.59
       },
       {
        "j": 2,
        "g": 0.8,
-       "marge": 19.8,
+       "marge": 18.5,
        "umsatz": 140.72,
-       "fcff": 27.83
+       "fcff": 26.06
       },
       {
        "j": 3,
        "g": 1.0,
-       "marge": 19.8,
+       "marge": 18.0,
        "umsatz": 142.1,
-       "fcff": 28.1
+       "fcff": 25.58
       },
       {
        "j": 4,
        "g": 1.2,
-       "marge": 19.8,
+       "marge": 17.5,
        "umsatz": 143.81,
-       "fcff": 28.44
+       "fcff": 25.14
       },
       {
        "j": 5,
        "g": 1.4,
-       "marge": 19.8,
+       "marge": 17.0,
        "umsatz": 145.84,
-       "fcff": 28.84
+       "fcff": 24.74
       },
       {
        "j": 6,
        "g": 1.6,
-       "marge": 19.8,
+       "marge": 17.0,
        "umsatz": 148.22,
-       "fcff": 29.31
+       "fcff": 25.14
       },
       {
        "j": 7,
        "g": 1.8,
-       "marge": 19.8,
+       "marge": 17.0,
        "umsatz": 150.96,
-       "fcff": 29.86
+       "fcff": 25.61
       },
       {
        "j": 8,
        "g": 2.1,
-       "marge": 19.8,
+       "marge": 17.0,
        "umsatz": 154.08,
-       "fcff": 30.47
+       "fcff": 26.14
       },
       {
        "j": 9,
        "g": 2.3,
-       "marge": 19.8,
+       "marge": 17.0,
        "umsatz": 157.6,
-       "fcff": 31.17
+       "fcff": 26.73
       },
       {
        "j": 10,
        "g": 2.5,
-       "marge": 19.8,
+       "marge": 17.0,
        "umsatz": 161.54,
-       "fcff": 31.95
+       "fcff": 27.4
       }
      ]
     },
     "bull": {
-     "wert": 130.76,
+     "wert": 150.38,
      "g1": 0.7,
      "g_ewig": 3.0,
-     "marge_norm": 21.8,
-     "wacc": 7.59,
-     "anteil_endwert": 63.9,
+     "marge_norm": 18.7,
+     "wacc": 6.26,
+     "anteil_endwert": 71.9,
      "pfad": null
     }
    },
@@ -14912,75 +14520,85 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.09,
+      "wacc": 5.76,
       "werte": [
-       106.0,
-       118.0,
+       115.0,
+       135.0,
+       161.0
+      ]
+     },
+     {
+      "wacc": 6.26,
+      "werte": [
+       98.0,
+       113.0,
        132.0
       ]
      },
      {
-      "wacc": 7.59,
+      "wacc": 6.76,
       "werte": [
-       95.0,
-       104.0,
-       116.0
+       85.0,
+       96.0,
+       111.0
       ]
      },
      {
-      "wacc": 8.09,
+      "wacc": 7.26,
       "werte": [
-       86.0,
-       93.0,
-       103.0
+       74.0,
+       83.0,
+       94.0
       ]
      },
      {
-      "wacc": 8.59,
+      "wacc": 7.76,
       "werte": [
-       78.0,
-       84.0,
-       92.0
-      ]
-     },
-     {
-      "wacc": 9.09,
-      "werte": [
-       71.0,
-       77.0,
-       83.0
+       65.0,
+       73.0,
+       82.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 138895000000,
-    "fcff_ttm": 27469213415,
-    "fcff_marge_ttm": 19.8,
-    "fcff_marge_norm": 19.8,
-    "fcff_margen_hist": [],
+    "fcff_ttm": 27165213415,
+    "fcff_marge_ttm": 19.6,
+    "fcff_marge_norm": 17.0,
+    "fcff_margen_hist": [
+     18.6,
+     12.3,
+     17.1,
+     18.5,
+     18.3
+    ],
     "wachstum_j1": 0.5,
     "wachstum_quelle": "Keine Zahlen-Guidance im Quartalsbericht – Trend: 50 % TTM, 30 % letztes Quartal (YoY), 20 % 3-J.-CAGR",
     "wachstum_ttm": 1.4,
     "cagr_3j": 0.3,
     "steuer": 23.3,
-    "beta": null,
-    "beta_genutzt": 1.0,
+    "beta": {
+     "raw": 0.25,
+     "adjusted": 0.5,
+     "months": 61
+    },
+    "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0526,
-     "date": "2026-09-29"
+     "rate": 0.0528,
+     "date": "2026-10-02"
     },
     "erp": {
      "rate": 0.0414,
      "month": "2026-09"
     },
-    "ke": 9.4,
-    "kd": 7.06,
+    "ke": 7.76,
+    "kd": 7.08,
     "rating_synth": "A-/BBB",
     "zinsdeckung": 3.9,
-    "wacc": 8.09,
+    "wacc": 6.76,
     "cash": 2102000000,
-    "schulden": 93585000000,
+    "schulden": 143889000000,
     "bilanz_datum": "2026-06-30",
     "aktien_verw": 4171000000,
     "aktien_quelle": "SEC WeightedAverageNumberOfDilutedSharesOutstanding (2026-06-30)",
@@ -14992,14 +14610,14 @@
      "ni": "NetIncomeLoss",
      "tax": "IncomeTaxExpenseBenefit",
      "cfo": "NetCashProvidedByUsedInOperatingActivities",
-     "capex": "PaymentsToAcquireProductiveAssets",
+     "capex": "PaymentsToAcquireOtherProductiveAssets",
      "sbc": "ShareBasedCompensation",
      "int": "InterestExpenseNonoperating",
      "dil": "WeightedAverageNumberOfDilutedSharesOutstanding",
      "cash": "CashAndCashEquivalentsAtCarryingValue",
      "ms_c": "ShortTermInvestments",
      "ms_nc": "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent",
-     "debt": "LongTermDebt",
+     "debt": "LongTermDebtAndCapitalLeaseObligations",
      "debt_c": "LongTermDebtCurrent",
      "cp": "ShortTermBorrowings"
     }
@@ -15010,10 +14628,10 @@
      "umsatz": 33330000000,
      "ni": 3306000000,
      "cfo": 9911000000,
-     "capex": null,
+     "capex": 3948000000,
      "sbc": null,
      "ebit": 5926000000,
-     "fcf": null,
+     "fcf": 5963000000,
      "eps": 0.78,
      "umsatz_yoy": -0.0,
      "umsatz_qoq": 1.6,
@@ -15021,8 +14639,8 @@
      "ebit_qoq": -24.2,
      "ni_yoy": -30.6,
      "ni_qoq": -28.0,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": -10.8,
+     "fcf_qoq": 3.0,
      "eps_yoy": -30.9
     },
     {
@@ -15030,10 +14648,10 @@
      "umsatz": 35681000000,
      "ni": 5448000000,
      "cfo": 10432000000,
-     "capex": null,
+     "capex": 5071000000,
      "sbc": null,
      "ebit": 7421000000,
-     "fcf": null,
+     "fcf": 5361000000,
      "eps": 1.29,
      "umsatz_yoy": 1.6,
      "umsatz_qoq": 7.1,
@@ -15041,8 +14659,8 @@
      "ebit_qoq": 25.2,
      "ni_yoy": null,
      "ni_qoq": 64.8,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": 31.6,
+     "fcf_qoq": -10.1,
      "eps_yoy": null
     },
     {
@@ -15050,10 +14668,10 @@
      "umsatz": 33485000000,
      "ni": 4879000000,
      "cfo": 7782000000,
-     "capex": null,
+     "capex": 4145000000,
      "sbc": null,
      "ebit": 7978000000,
-     "fcf": null,
+     "fcf": 3637000000,
      "eps": 1.15,
      "umsatz_yoy": 1.5,
      "umsatz_qoq": -6.2,
@@ -15061,8 +14679,8 @@
      "ebit_qoq": 7.5,
      "ni_yoy": 6.0,
      "ni_qoq": -10.4,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": 34.3,
+     "fcf_qoq": -32.2,
      "eps_yoy": 5.4
     },
     {
@@ -15070,10 +14688,10 @@
      "umsatz": 34504000000,
      "ni": 5003000000,
      "cfo": 8975000000,
-     "capex": null,
+     "capex": 3808000000,
      "sbc": null,
      "ebit": 8172000000,
-     "fcf": null,
+     "fcf": 5167000000,
      "eps": 1.18,
      "umsatz_yoy": 5.2,
      "umsatz_qoq": 3.0,
@@ -15081,8 +14699,8 @@
      "ebit_qoq": 2.4,
      "ni_yoy": 8.9,
      "ni_qoq": 2.5,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": -10.8,
+     "fcf_qoq": 42.1,
      "eps_yoy": 8.4
     },
     {
@@ -15090,10 +14708,10 @@
      "umsatz": 33821000000,
      "ni": 4950000000,
      "cfo": 11266000000,
-     "capex": null,
+     "capex": 4310000000,
      "sbc": null,
      "ebit": 8105000000,
-     "fcf": null,
+     "fcf": 6956000000,
      "eps": 1.17,
      "umsatz_yoy": 1.5,
      "umsatz_qoq": -2.0,
@@ -15101,8 +14719,8 @@
      "ebit_qoq": -0.8,
      "ni_yoy": 49.7,
      "ni_qoq": -1.1,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": 16.7,
+     "fcf_qoq": 34.6,
      "eps_yoy": 49.5
     },
     {
@@ -15110,10 +14728,10 @@
      "umsatz": 36381000000,
      "ni": 2776000000,
      "cfo": 9114000000,
-     "capex": null,
+     "capex": 4748000000,
      "sbc": null,
      "ebit": 5004000000,
-     "fcf": null,
+     "fcf": 4366000000,
      "eps": 0.66,
      "umsatz_yoy": 2.0,
      "umsatz_qoq": 7.6,
@@ -15121,8 +14739,8 @@
      "ebit_qoq": -38.3,
      "ni_yoy": -49.0,
      "ni_qoq": -43.9,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": -18.6,
+     "fcf_qoq": -37.2,
      "eps_yoy": -48.8
     },
     {
@@ -15130,10 +14748,10 @@
      "umsatz": 34440000000,
      "ni": 5045000000,
      "cfo": 7984000000,
-     "capex": null,
+     "capex": 4201000000,
      "sbc": null,
      "ebit": 8242000000,
-     "fcf": null,
+     "fcf": 3783000000,
      "eps": 1.2,
      "umsatz_yoy": 2.9,
      "umsatz_qoq": -5.3,
@@ -15141,8 +14759,8 @@
      "ebit_qoq": 64.7,
      "ni_yoy": 3.4,
      "ni_qoq": 81.7,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": 4.0,
+     "fcf_qoq": -13.4,
      "eps_yoy": 3.9
     },
     {
@@ -15150,10 +14768,10 @@
      "umsatz": 34253000000,
      "ni": 3835000000,
      "cfo": 10435000000,
-     "capex": null,
+     "capex": 4009000000,
      "sbc": null,
      "ebit": 7179000000,
-     "fcf": null,
+     "fcf": 6426000000,
      "eps": 0.92,
      "umsatz_yoy": -0.7,
      "umsatz_qoq": -0.5,
@@ -15161,8 +14779,8 @@
      "ebit_qoq": -12.9,
      "ni_yoy": -23.3,
      "ni_qoq": -24.0,
-     "fcf_yoy": null,
-     "fcf_qoq": null,
+     "fcf_yoy": 24.4,
+     "fcf_qoq": 69.9,
      "eps_yoy": -22.3
     }
    ],

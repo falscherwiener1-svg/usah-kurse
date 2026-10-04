@@ -99,15 +99,15 @@ TAGS = {
     "ni":     ["NetIncomeLoss", "ProfitLoss"],
     "tax":    ["IncomeTaxExpenseBenefit"],
     "cfo":    ["NetCashProvidedByUsedInOperatingActivities", "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
-    "capex":  ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"],
+    "capex":  ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets", "PaymentsToAcquireOtherProductiveAssets"],
     "sbc":    ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"],
     "int":    ["InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt", "InterestPaidNet"],
     "dil":    ["WeightedAverageNumberOfDilutedSharesOutstanding"],
     "cash":   ["CashAndCashEquivalentsAtCarryingValue"],
     "ms_c":   ["MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
     "ms_nc":  ["MarketableSecuritiesNoncurrent", "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent"],
-    "debt":   ["LongTermDebt", "LongTermDebtNoncurrent"],
-    "debt_c": ["LongTermDebtCurrent", "DebtCurrent"],
+    "debt":   ["DebtLongtermAndShorttermCombinedAmount", "LongTermDebtAndCapitalLeaseObligations", "LongTermDebtNoncurrent", "LongTermDebt", "DebtInstrumentCarryingAmount"],
+    "debt_c": ["LongTermDebtCurrent", "DebtCurrent", "LongTermDebtAndCapitalLeaseObligationsCurrent"],
     "cp":     ["CommercialPaper", "ShortTermBorrowings"],
 }
 INSTANT = {"cash", "ms_c", "ms_nc", "debt", "debt_c", "cp"}
@@ -126,6 +126,13 @@ def pick_series(facts, key):
     for tag in TAGS[key]:
         e = _entries(facts, tag)
         if not e: continue
+        # Wenn wir Schulden suchen, bevorzuge Tags mit Werten > 0 vor verwaisten Null-Einträgen
+        if key in ("debt", "debt_c"):
+            non_zero = [x for x in e if x.get("val", 0) > 0]
+            if non_zero:
+                last = max(x["end"] for x in non_zero)
+                if last > best_end: best, best_end = (tag, non_zero), last
+                continue
         last = max(x["end"] for x in e)
         if last > best_end: best, best_end = (tag, e), last
     if not best: return None, {}
@@ -375,13 +382,28 @@ def per_share(ev, cash, debt, shares):
 def value_company(t, facts, sub, cik, prices, rf, erp, cache, sic):
     warn, notes = [], []
     res = {"ticker": t, "name": sub.get("name"), "cik": cik, "sic": sic, "model": MODEL_VERSION}
-    # Methodische Eignung
-    if sic and (6000 <= sic <= 6799):
-        res["status"] = "ungeeignet"
-        res["reason"] = ("Finanz-/Versicherungskonzern (SIC %d): Ein Cashflow-DCF ist hier methodisch nicht aussagekräftig, "
-                         "weil Versicherungsfloat und Kapitalanlagen den operativen Cashflow dominieren. Bewertung über Buchwert/"
-                         "Sum-of-the-Parts – bitte manuell." % sic)
-        return res
+    # Methodische Eignung nach Branche und Geschäftsmodell
+    if sic:
+        if sic == 6798:
+            res["status"] = "ungeeignet"
+            res["reason"] = f"Real Estate Investment Trust (REIT, SIC {sic}): Ein klassischer FCFF-DCF ist ungeeignet, da Immobilienabschreibungen den Cashflow verzerren. Bewertung erfolgt sachgerecht über FFO / AFFO (Funds From Operations) und NAV."
+            return res
+        if t in ("MSTR", "COIN") or (sic in (6199, 7372) and t == "MSTR"):
+            res["status"] = "ungeeignet"
+            res["reason"] = f"Holding-/Treasury-Firma ({t}): Das Unternehmensvermögen besteht überwiegend aus Kryptowährungs-Beständen (Bitcoin Treasury). Ein operativer Cashflow-DCF spiegelt die Vermögenssubstanz nicht wider."
+            return res
+        if 6000 <= sic <= 6199:
+            res["status"] = "ungeeignet"
+            res["reason"] = f"Bank-/Kreditinstitut (SIC {sic}): Ein Cashflow-DCF ist methodisch ungeeignet, da Fremdkapital und Kredite das operative Betriebsvermögen darstellen. Bewertung erfolgt über Buchwert oder Dividenden-Diskontierungs-Modell (DDM)."
+            return res
+        if 6300 <= sic <= 6499:
+            res["status"] = "ungeeignet"
+            res["reason"] = f"Versicherungskonzern (SIC {sic}): Ein klassischer DCF ist nicht aussagekräftig, da Versicherungsfloat, versicherungstechnische Rückstellungen und Kapitalanlagen den Cashflow dominieren."
+            return res
+        if 6200 <= sic <= 6799:
+            res["status"] = "ungeeignet"
+            res["reason"] = f"Finanz- und Beteiligungsgesellschaft (SIC {sic}): Bewertung erfolgt sachgerecht über Buchwert, NAV oder Sum-of-the-Parts statt operativen FCFF-DCF."
+            return res
 
     sup = supplement_from_instance(facts, cik, sub, cache)
     if sup: notes.append(f"SEC-Datenbank noch ohne Bericht zum {sup['report']} – {sup['facts']} Werte direkt aus der Einreichung {sup['accession']} ergänzt.")
@@ -473,8 +495,11 @@ def value_company(t, facts, sub, cik, prices, rf, erp, cache, sic):
 
     # Zinsen / Fremdkapitalkosten
     interest = T.get("int")
-    if not interest:
-        interest = None; notes.append("Zinsaufwand nicht separat in XBRL – über synthetisches Rating geschätzt.")
+    if interest is not None:
+        interest = abs(interest)
+    else:
+        interest = None
+        notes.append("Zinsaufwand nicht separat in XBRL – über synthetisches Rating geschätzt.")
     coverage = (T["ebit"] / interest) if interest and T.get("ebit") else (20 if debt < 0.5 * (T["ebit"] or 1) else 6)
     spread, rating = next((s, r) for lim, s, r in SPREADS if coverage > lim)
     kd = rf["rate"] + spread
@@ -494,7 +519,7 @@ def value_company(t, facts, sub, cik, prices, rf, erp, cache, sic):
     wacc = (E * ke + Dv * kd * (1 - tax_rate)) / (E + Dv)
 
     # FCFF und Margen
-    def fcff(cfo, capex, sbc, intr): return cfo - capex - (sbc or 0) + (intr or 0) * (1 - tax_rate)
+    def fcff(cfo, capex, sbc, intr): return cfo - capex - (sbc or 0) + abs(intr or 0) * (1 - tax_rate)
     f_ttm = fcff(T["cfo"], T["capex"], T["sbc"], interest)
     m_ttm = f_ttm / T["rev"]
     hist = []
@@ -547,6 +572,39 @@ def value_company(t, facts, sub, cik, prices, rf, erp, cache, sic):
                        "marge_norm": round(m_norm * p["m"] * 100, 1), "wacc": round(p["w"] * 100, 2),
                        "anteil_endwert": round(pv_tv / ev * 100, 1), "pfad": path if name == "base" else None}
     fv = sum(out_s[n]["wert"] * scen[n]["weight"] for n in scen)
+
+    # Guardrails & Plausibilitätsprüfungen (Stufe 2)
+    # 1. Szenarien-Monotonie (Bull muss >= Bear sein; negativer Cashflow kehrt das um)
+    if out_s["bull"]["wert"] < out_s["bear"]["wert"]:
+        res["status"] = "ungeeignet"
+        res["reason"] = f"Invertierte Szenarien (Bull {out_s['bull']['wert']} $ < Bear {out_s['bear']['wert']} $) durch negativen TTM-Cashflow. Ein Standard-DCF ist in dieser Phase (z.B. starker CapEx-Zyklus) methodisch nicht belastbar."
+        return res
+
+    # 2. Plausibilitätsgrenzen
+    if fv < 5.0 or fv > 3000.0:
+        res["status"] = "ungeeignet"
+        res["reason"] = f"Extremwert (Fair Value {fv:.2f} $ außerhalb des plausiblen Bereichs von 5 $ bis 3.000 $). Modellannahmen oder Datenqualität unzureichend."
+        return res
+
+    # 3. Bilanzdaten-Aktualität (maximal 15 Monate / 450 Tage)
+    if bal_date:
+        try:
+            days_old = (dt.date.today() - dt.date.fromisoformat(bal_date)).days
+            if days_old > 450:
+                res["status"] = "ungeeignet"
+                res["reason"] = f"Veraltete SEC-Bilanzdaten ({bal_date}, vor {days_old} Tagen). DCF nicht belastbar."
+                return res
+        except Exception:
+            pass
+
+    # 4. Warnung bei Null-Schulden für Großkonzerne
+    if debt == 0 and T["rev"] > 10e9 and t not in ("GOOGL", "GOOG", "META"):
+        warn.append("Schulden mit 0 $ ausgewiesen bei >10 Mrd. $ Umsatz – Bilanz-Tags bitte manuell gegen 10-K prüfen.")
+
+    # 5. Warnung bei extrem niedrigem CapEx in Infrastruktur/Halbleiter/Telekom
+    if T["capex"] < 0.01 * T["rev"] and sic and (4800 <= sic <= 4999 or 3600 <= sic <= 3699):
+        warn.append("Investitionen unter 1 % vom Umsatz bei kapitalintensiver Branche – CapEx-Tagging prüfen.")
+
     if out_s["base"]["anteil_endwert"] > 85: warn.append("Endwert > 85 % des Unternehmenswerts – Ergebnis sehr sensitiv.")
 
     # Reverse-DCF
@@ -619,7 +677,7 @@ def main():
     if os.path.exists(a.out):
         try: old = {c["ticker"]: c for c in json.load(open(a.out)).get("companies", [])}
         except Exception: pass
-    out = []
+    out_map = dict(old)
     for t in tick:
         sec_t = t.replace(".", "-")
         cik = cikmap.get(sec_t)
@@ -634,13 +692,14 @@ def main():
             import traceback; traceback.print_exc()
             r = old.get(t) or {"ticker": t, "status": "fehler", "reason": str(e)[:200]}
             r.setdefault("warnungen", []).append(f"Neuberechnung fehlgeschlagen ({str(e)[:80]}) – vorheriger Stand.")
-        out.append(r)
+        out_map[t] = r
         if r.get("status") == "ok":
             print(f"{t:6} Kurs {r['kurs']:>8.2f}  FV {r['fair_value']:>8.2f} (Bear {r['bear']:.0f} / Base {r['base']:.0f} / Bull {r['bull']:.0f})"
                   f"  Abschlag {r['abschlag_pct']:+.1f} %  WACC {r['annahmen']['wacc']} %  g1 {r['annahmen']['wachstum_j1']} %"
                   f"  implizit {r['implizites_wachstum_pct']} %  TV {r['szenarien']['base']['anteil_endwert']} %")
         else:
             print(f"{t:6} {r.get('status')}: {r.get('reason')}")
+    out = list(out_map.values())
     doc = {"generated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ"), "model": MODEL_VERSION,
            "rf": rf, "erp": erp,
            "methodik": ("FCFF-DCF, 10 Jahre, Halbjahreskonvention; FCFF = operativer Cashflow − Investitionen − aktienbasierte "
