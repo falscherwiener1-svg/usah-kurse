@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-03T15:37:45Z",
+ "generated": "2026-10-05T21:22:05Z",
  "model": "1.0",
  "rf": {
-  "rate": 0.0528,
-  "date": "2026-10-02"
+  "rate": 0.0531,
+  "date": "2026-10-05"
  },
  "erp": {
-  "rate": 0.0414,
-  "month": "2026-09"
+  "rate": 0.042,
+  "month": "2026-10"
  },
  "methodik": "FCFF-DCF, 10 Jahre, Halbjahreskonvention; FCFF = operativer Cashflow − Investitionen − aktienbasierte Vergütung + Zinsen × (1 − Steuer); WACC über CAPM (Beta 5 J. monatlich vs. SPY, Blume-bereinigt), Marktrisikoprämie Damodaran, Fremdkapital über synthetisches Rating; Szenarien 25/50/25.",
  "quellen": "SEC EDGAR (XBRL, 8-K), U.S. Treasury, Damodaran/NYU Stern, IEX HIST",
@@ -21,31 +21,31 @@
    "status": "ok",
    "kurs": 343.47,
    "kurs_datum": "2026-10-02",
-   "fair_value": 178.8,
-   "bear": 90.11,
-   "base": 174.98,
-   "bull": 275.14,
-   "abschlag_pct": -47.9,
+   "fair_value": 176.29,
+   "bear": 89.17,
+   "base": 172.62,
+   "bull": 270.74,
+   "abschlag_pct": -48.7,
    "kgv_ttm": 17.3,
    "fcf_rendite_pct": 1.26,
-   "implizites_wachstum_pct": 39.2,
+   "implizites_wachstum_pct": 39.6,
    "szenarien": {
     "bear": {
-     "wert": 90.11,
+     "wert": 89.17,
      "g1": 10.2,
      "g_ewig": 2.0,
      "marge_norm": 13.6,
-     "wacc": 10.63,
-     "anteil_endwert": 51.3,
+     "wacc": 10.73,
+     "anteil_endwert": 50.9,
      "pfad": null
     },
     "base": {
-     "wert": 174.98,
+     "wert": 172.62,
      "g1": 20.5,
      "g_ewig": 2.5,
      "marge_norm": 16.0,
-     "wacc": 9.88,
-     "anteil_endwert": 58.9,
+     "wacc": 9.98,
+     "anteil_endwert": 58.5,
      "pfad": [
       {
        "j": 1,
@@ -120,12 +120,12 @@
      ]
     },
     "bull": {
-     "wert": 275.14,
+     "wert": 270.74,
      "g1": 26.5,
      "g_ewig": 3.0,
      "marge_norm": 17.6,
-     "wacc": 9.38,
-     "anteil_endwert": 64.5,
+     "wacc": 9.48,
+     "anteil_endwert": 64.1,
      "pfad": null
     }
    },
@@ -137,43 +137,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.88,
+      "wacc": 8.98,
       "werte": [
-       191.0,
-       204.0,
-       218.0
-      ]
-     },
-     {
-      "wacc": 9.38,
-      "werte": [
-       178.0,
        188.0,
-       201.0
+       200.0,
+       215.0
       ]
      },
      {
-      "wacc": 9.88,
+      "wacc": 9.48,
       "werte": [
-       166.0,
        175.0,
-       186.0
+       186.0,
+       198.0
       ]
      },
      {
-      "wacc": 10.38,
+      "wacc": 9.98,
       "werte": [
-       155.0,
-       163.0,
-       172.0
+       164.0,
+       173.0,
+       183.0
       ]
      },
      {
-      "wacc": 10.88,
+      "wacc": 10.48,
       "werte": [
-       146.0,
-       153.0,
-       161.0
+       154.0,
+       161.0,
+       170.0
+      ]
+     },
+     {
+      "wacc": 10.98,
+      "werte": [
+       145.0,
+       151.0,
+       159.0
       ]
      }
     ]
@@ -202,18 +202,18 @@
     },
     "beta_genutzt": 1.14,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.0,
-    "kd": 6.03,
+    "ke": 10.1,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 65.6,
-    "wacc": 9.88,
+    "wacc": 9.98,
     "cash": 242850000000,
     "schulden": 100164000000,
     "bilanz_datum": "2026-06-30",
@@ -427,31 +427,31 @@
    "status": "ok",
    "kurs": 293.74,
    "kurs_datum": "2026-10-02",
-   "fair_value": 137.19,
-   "bear": 62.55,
-   "base": 134.72,
-   "bull": 216.75,
-   "abschlag_pct": -53.3,
+   "fair_value": 135.29,
+   "bear": 61.85,
+   "base": 132.94,
+   "bull": 213.42,
+   "abschlag_pct": -53.9,
    "kgv_ttm": 44.7,
    "fcf_rendite_pct": 1.98,
-   "implizites_wachstum_pct": 42.0,
+   "implizites_wachstum_pct": 42.4,
    "szenarien": {
     "bear": {
-     "wert": 62.55,
+     "wert": 61.85,
      "g1": 10.7,
      "g_ewig": 2.0,
      "marge_norm": 18.5,
-     "wacc": 10.77,
-     "anteil_endwert": 45.1,
+     "wacc": 10.87,
+     "anteil_endwert": 44.7,
      "pfad": null
     },
     "base": {
-     "wert": 134.72,
+     "wert": 132.94,
      "g1": 21.3,
      "g_ewig": 2.5,
      "marge_norm": 21.8,
-     "wacc": 10.02,
-     "anteil_endwert": 53.9,
+     "wacc": 10.12,
+     "anteil_endwert": 53.5,
      "pfad": [
       {
        "j": 1,
@@ -465,73 +465,73 @@
        "g": 19.2,
        "marge": 26.4,
        "umsatz": 28.14,
-       "fcff": 7.43
+       "fcff": 7.44
       },
       {
        "j": 3,
        "g": 17.1,
        "marge": 24.9,
        "umsatz": 32.96,
-       "fcff": 8.19
+       "fcff": 8.2
       },
       {
        "j": 4,
        "g": 15.0,
        "marge": 23.3,
        "umsatz": 37.92,
-       "fcff": 8.84
+       "fcff": 8.85
       },
       {
        "j": 5,
        "g": 13.0,
        "marge": 21.8,
        "umsatz": 42.83,
-       "fcff": 9.32
+       "fcff": 9.33
       },
       {
        "j": 6,
        "g": 10.9,
        "marge": 21.8,
        "umsatz": 47.48,
-       "fcff": 10.33
+       "fcff": 10.34
       },
       {
        "j": 7,
        "g": 8.8,
        "marge": 21.8,
        "umsatz": 51.64,
-       "fcff": 11.24
+       "fcff": 11.25
       },
       {
        "j": 8,
        "g": 6.7,
        "marge": 21.8,
        "umsatz": 55.09,
-       "fcff": 11.99
+       "fcff": 12.0
       },
       {
        "j": 9,
        "g": 4.6,
        "marge": 21.8,
        "umsatz": 57.62,
-       "fcff": 12.54
+       "fcff": 12.55
       },
       {
        "j": 10,
        "g": 2.5,
        "marge": 21.8,
        "umsatz": 59.06,
-       "fcff": 12.85
+       "fcff": 12.86
       }
      ]
     },
     "bull": {
-     "wert": 216.75,
+     "wert": 213.42,
      "g1": 27.3,
      "g_ewig": 3.0,
-     "marge_norm": 23.9,
-     "wacc": 9.52,
-     "anteil_endwert": 60.2,
+     "marge_norm": 24.0,
+     "wacc": 9.62,
+     "anteil_endwert": 59.7,
      "pfad": null
     }
    },
@@ -543,50 +543,50 @@
     ],
     "zeilen": [
      {
-      "wacc": 9.02,
+      "wacc": 9.12,
       "werte": [
-       148.0,
-       158.0,
-       169.0
+       146.0,
+       155.0,
+       166.0
       ]
      },
      {
-      "wacc": 9.52,
+      "wacc": 9.62,
       "werte": [
-       137.0,
-       145.0,
-       155.0
-      ]
-     },
-     {
-      "wacc": 10.02,
-      "werte": [
-       127.0,
        135.0,
-       143.0
+       143.0,
+       153.0
       ]
      },
      {
-      "wacc": 10.52,
+      "wacc": 10.12,
       "werte": [
-       119.0,
-       125.0,
-       133.0
+       126.0,
+       133.0,
+       141.0
       ]
      },
      {
-      "wacc": 11.02,
+      "wacc": 10.62,
       "werte": [
-       112.0,
-       117.0,
-       124.0
+       118.0,
+       124.0,
+       131.0
+      ]
+     },
+     {
+      "wacc": 11.12,
+      "werte": [
+       111.0,
+       116.0,
+       122.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 19453000000,
-    "fcff_ttm": 5742737003,
+    "fcff_ttm": 5746430230,
     "fcff_marge_ttm": 29.5,
     "fcff_marge_norm": 21.8,
     "fcff_margen_hist": [
@@ -608,18 +608,18 @@
     },
     "beta_genutzt": 1.2,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.25,
-    "kd": 6.48,
+    "ke": 10.35,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 10.02,
+    "wacc": 10.12,
     "cash": 7001000000,
     "schulden": 14052000000,
     "bilanz_datum": "2026-06-30",
@@ -845,31 +845,31 @@
    "status": "ok",
    "kurs": 360.615,
    "kurs_datum": "2026-10-02",
-   "fair_value": 370.78,
-   "bear": 191.8,
-   "base": 359.51,
-   "bull": 572.29,
-   "abschlag_pct": 2.8,
+   "fair_value": 365.57,
+   "bear": 189.71,
+   "base": 354.71,
+   "bull": 563.14,
+   "abschlag_pct": 1.4,
    "kgv_ttm": 30.3,
    "fcf_rendite_pct": 3.07,
-   "implizites_wachstum_pct": 13.8,
+   "implizites_wachstum_pct": 14.1,
    "szenarien": {
     "bear": {
-     "wert": 191.8,
+     "wert": 189.71,
      "g1": 6.8,
      "g_ewig": 2.0,
      "marge_norm": 48.4,
-     "wacc": 9.38,
-     "anteil_endwert": 52.6,
+     "wacc": 9.46,
+     "anteil_endwert": 52.3,
      "pfad": null
     },
     "base": {
-     "wert": 359.51,
+     "wert": 354.71,
      "g1": 13.7,
      "g_ewig": 2.5,
      "marge_norm": 57.0,
-     "wacc": 8.63,
-     "anteil_endwert": 60.6,
+     "wacc": 8.71,
+     "anteil_endwert": 60.2,
      "pfad": [
       {
        "j": 1,
@@ -944,12 +944,12 @@
      ]
     },
     "bull": {
-     "wert": 572.29,
+     "wert": 563.14,
      "g1": 18.5,
      "g_ewig": 3.0,
      "marge_norm": 62.7,
-     "wacc": 8.13,
-     "anteil_endwert": 66.9,
+     "wacc": 8.21,
+     "anteil_endwert": 66.5,
      "pfad": null
     }
    },
@@ -961,43 +961,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.63,
+      "wacc": 7.71,
       "werte": [
-       399.0,
-       433.0,
-       475.0
+       394.0,
+       427.0,
+       467.0
       ]
      },
      {
-      "wacc": 8.13,
+      "wacc": 8.21,
       "werte": [
-       365.0,
-       393.0,
-       427.0
-      ]
-     },
-     {
-      "wacc": 8.63,
-      "werte": [
-       336.0,
        360.0,
-       387.0
+       388.0,
+       420.0
       ]
      },
      {
-      "wacc": 9.13,
+      "wacc": 8.71,
       "werte": [
-       311.0,
-       331.0,
-       354.0
+       332.0,
+       355.0,
+       382.0
       ]
      },
      {
-      "wacc": 9.63,
+      "wacc": 9.21,
       "werte": [
-       289.0,
-       306.0,
-       326.0
+       307.0,
+       327.0,
+       349.0
+      ]
+     },
+     {
+      "wacc": 9.71,
+      "werte": [
+       286.0,
+       303.0,
+       322.0
       ]
      }
     ]
@@ -1026,18 +1026,18 @@
     },
     "beta_genutzt": 0.84,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 8.76,
-    "kd": 6.03,
+    "ke": 8.84,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 34.8,
-    "wacc": 8.63,
+    "wacc": 8.71,
     "cash": 16194000000.0,
     "schulden": 23858000000.0,
     "bilanz_datum": "2026-06-30",
@@ -1241,31 +1241,31 @@
    "status": "ok",
    "kurs": 256.025,
    "kurs_datum": "2026-10-02",
-   "fair_value": 217.53,
-   "bear": 120.88,
-   "base": 211.89,
-   "bull": 325.46,
-   "abschlag_pct": -15.0,
+   "fair_value": 214.53,
+   "bear": 119.59,
+   "base": 209.14,
+   "bull": 320.27,
+   "abschlag_pct": -16.2,
    "kgv_ttm": 29.7,
    "fcf_rendite_pct": 3.56,
-   "implizites_wachstum_pct": 11.6,
+   "implizites_wachstum_pct": 11.9,
    "szenarien": {
     "bear": {
-     "wert": 120.88,
+     "wert": 119.59,
      "g1": 3.7,
      "g_ewig": 2.0,
      "marge_norm": 18.4,
-     "wacc": 8.31,
-     "anteil_endwert": 55.4,
+     "wacc": 8.37,
+     "anteil_endwert": 55.0,
      "pfad": null
     },
     "base": {
-     "wert": 211.89,
+     "wert": 209.14,
      "g1": 7.3,
      "g_ewig": 2.5,
      "marge_norm": 21.6,
-     "wacc": 7.56,
-     "anteil_endwert": 63.3,
+     "wacc": 7.62,
+     "anteil_endwert": 62.9,
      "pfad": [
       {
        "j": 1,
@@ -1340,12 +1340,12 @@
      ]
     },
     "bull": {
-     "wert": 325.46,
+     "wert": 320.27,
      "g1": 9.9,
      "g_ewig": 3.0,
      "marge_norm": 23.8,
-     "wacc": 7.06,
-     "anteil_endwert": 69.8,
+     "wacc": 7.12,
+     "anteil_endwert": 69.5,
      "pfad": null
     }
    },
@@ -1357,43 +1357,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.56,
+      "wacc": 6.62,
       "werte": [
-       240.0,
-       267.0,
-       301.0
+       237.0,
+       263.0,
+       296.0
       ]
      },
      {
-      "wacc": 7.06,
+      "wacc": 7.12,
       "werte": [
-       215.0,
-       236.0,
-       263.0
-      ]
-     },
-     {
-      "wacc": 7.56,
-      "werte": [
-       195.0,
        212.0,
-       233.0
+       233.0,
+       259.0
       ]
      },
      {
-      "wacc": 8.06,
+      "wacc": 7.62,
       "werte": [
-       178.0,
        192.0,
-       209.0
+       209.0,
+       229.0
       ]
      },
      {
-      "wacc": 8.56,
+      "wacc": 8.12,
       "werte": [
-       163.0,
-       175.0,
-       189.0
+       176.0,
+       189.0,
+       206.0
+      ]
+     },
+     {
+      "wacc": 8.62,
+      "werte": [
+       162.0,
+       173.0,
+       187.0
       ]
      }
     ]
@@ -1422,18 +1422,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 6.03,
+    "ke": 7.83,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 24.9,
-    "wacc": 7.56,
+    "wacc": 7.62,
     "cash": 20758000000,
     "schulden": 51036000000,
     "bilanz_datum": "2026-06-28",
@@ -1667,31 +1667,31 @@
    "status": "ok",
    "kurs": 517.32,
    "kurs_datum": "2026-10-02",
-   "fair_value": 301.44,
-   "bear": 152.36,
-   "base": 292.23,
-   "bull": 468.96,
-   "abschlag_pct": -41.7,
+   "fair_value": 297.16,
+   "bear": 150.68,
+   "base": 288.26,
+   "bull": 461.43,
+   "abschlag_pct": -42.6,
    "kgv_ttm": 28.8,
    "fcf_rendite_pct": 1.74,
-   "implizites_wachstum_pct": 32.5,
+   "implizites_wachstum_pct": 32.9,
    "szenarien": {
     "bear": {
-     "wert": 152.36,
+     "wert": 150.68,
      "g1": 8.7,
      "g_ewig": 2.0,
      "marge_norm": 20.5,
-     "wacc": 10.37,
-     "anteil_endwert": 49.7,
+     "wacc": 10.46,
+     "anteil_endwert": 49.3,
      "pfad": null
     },
     "base": {
-     "wert": 292.23,
+     "wert": 288.26,
      "g1": 17.4,
      "g_ewig": 2.5,
      "marge_norm": 24.1,
-     "wacc": 9.62,
-     "anteil_endwert": 57.6,
+     "wacc": 9.71,
+     "anteil_endwert": 57.2,
      "pfad": [
       {
        "j": 1,
@@ -1766,12 +1766,12 @@
      ]
     },
     "bull": {
-     "wert": 468.96,
+     "wert": 461.43,
      "g1": 23.4,
      "g_ewig": 3.0,
      "marge_norm": 26.5,
-     "wacc": 9.12,
-     "anteil_endwert": 63.6,
+     "wacc": 9.21,
+     "anteil_endwert": 63.2,
      "pfad": null
     }
    },
@@ -1783,43 +1783,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.62,
+      "wacc": 8.71,
       "werte": [
-       320.0,
-       343.0,
-       369.0
-      ]
-     },
-     {
-      "wacc": 9.12,
-      "werte": [
-       297.0,
        316.0,
-       338.0
+       337.0,
+       363.0
       ]
      },
      {
-      "wacc": 9.62,
+      "wacc": 9.21,
       "werte": [
-       276.0,
-       292.0,
-       311.0
+       293.0,
+       311.0,
+       332.0
       ]
      },
      {
-      "wacc": 10.12,
+      "wacc": 9.71,
       "werte": [
-       258.0,
        272.0,
-       288.0
+       288.0,
+       306.0
       ]
      },
      {
-      "wacc": 10.62,
+      "wacc": 10.21,
       "werte": [
-       242.0,
-       254.0,
-       268.0
+       255.0,
+       269.0,
+       284.0
+      ]
+     },
+     {
+      "wacc": 10.71,
+      "werte": [
+       239.0,
+       251.0,
+       265.0
       ]
      }
     ]
@@ -1848,18 +1848,18 @@
     },
     "beta_genutzt": 1.06,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.67,
-    "kd": 6.03,
+    "ke": 9.76,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 50.9,
-    "wacc": 9.62,
+    "wacc": 9.71,
     "cash": 76843000000,
     "schulden": 40294000000,
     "bilanz_datum": "2026-06-30",
@@ -2078,31 +2078,31 @@
    "status": "ok",
    "kurs": 920.83,
    "kurs_datum": "2026-10-02",
-   "fair_value": 370.2,
-   "bear": 231.74,
-   "base": 364.73,
-   "bull": 519.58,
-   "abschlag_pct": -59.8,
+   "fair_value": 365.75,
+   "bear": 229.7,
+   "base": 360.54,
+   "bull": 512.2,
+   "abschlag_pct": -60.3,
    "kgv_ttm": 46.3,
    "fcf_rendite_pct": 2.15,
-   "implizites_wachstum_pct": 35.1,
+   "implizites_wachstum_pct": 35.4,
    "szenarien": {
     "bear": {
-     "wert": 231.74,
+     "wert": 229.7,
      "g1": 4.7,
      "g_ewig": 2.0,
      "marge_norm": 1.9,
-     "wacc": 9.69,
-     "anteil_endwert": 48.1,
+     "wacc": 9.78,
+     "anteil_endwert": 47.7,
      "pfad": null
     },
     "base": {
-     "wert": 364.73,
+     "wert": 360.54,
      "g1": 9.4,
      "g_ewig": 2.5,
      "marge_norm": 2.2,
-     "wacc": 8.94,
-     "anteil_endwert": 55.7,
+     "wacc": 9.03,
+     "anteil_endwert": 55.2,
      "pfad": [
       {
        "j": 1,
@@ -2177,12 +2177,12 @@
      ]
     },
     "bull": {
-     "wert": 519.58,
+     "wert": 512.2,
      "g1": 12.7,
      "g_ewig": 3.0,
      "marge_norm": 2.5,
-     "wacc": 8.44,
-     "anteil_endwert": 61.9,
+     "wacc": 8.53,
+     "anteil_endwert": 61.4,
      "pfad": null
     }
    },
@@ -2194,43 +2194,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.94,
+      "wacc": 8.03,
       "werte": [
-       398.0,
-       425.0,
-       458.0
+       393.0,
+       419.0,
+       451.0
       ]
      },
      {
-      "wacc": 8.44,
+      "wacc": 8.53,
       "werte": [
-       370.0,
-       392.0,
-       420.0
-      ]
-     },
-     {
-      "wacc": 8.94,
-      "werte": [
-       345.0,
        365.0,
-       387.0
+       388.0,
+       414.0
       ]
      },
      {
-      "wacc": 9.44,
+      "wacc": 9.03,
       "werte": [
-       325.0,
-       341.0,
-       360.0
+       342.0,
+       361.0,
+       382.0
       ]
      },
      {
-      "wacc": 9.94,
+      "wacc": 9.53,
       "werte": [
-       306.0,
        321.0,
-       337.0
+       337.0,
+       356.0
+      ]
+     },
+     {
+      "wacc": 10.03,
+      "werte": [
+       303.0,
+       317.0,
+       333.0
       ]
      }
     ]
@@ -2259,18 +2259,18 @@
     },
     "beta_genutzt": 0.9,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.01,
-    "kd": 6.03,
+    "ke": 9.09,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 76.9,
-    "wacc": 8.94,
+    "wacc": 9.03,
     "cash": 19996000000,
     "schulden": 5706000000,
     "bilanz_datum": "2026-05-10",
@@ -2480,31 +2480,31 @@
    "status": "ok",
    "kurs": 237.64,
    "kurs_datum": "2026-10-02",
-   "fair_value": 437.42,
-   "bear": 254.51,
-   "base": 431.22,
-   "bull": 632.71,
-   "abschlag_pct": 84.1,
+   "fair_value": 431.44,
+   "bear": 251.72,
+   "base": 425.53,
+   "bull": 622.98,
+   "abschlag_pct": 81.6,
    "kgv_ttm": 12.9,
    "fcf_rendite_pct": 11.27,
-   "implizites_wachstum_pct": -3.0,
+   "implizites_wachstum_pct": -2.7,
    "szenarien": {
     "bear": {
-     "wert": 254.51,
+     "wert": 251.72,
      "g1": 6.0,
      "g_ewig": 2.0,
      "marge_norm": 27.7,
-     "wacc": 11.09,
-     "anteil_endwert": 43.9,
+     "wacc": 11.19,
+     "anteil_endwert": 43.5,
      "pfad": null
     },
     "base": {
-     "wert": 431.22,
+     "wert": 425.53,
      "g1": 11.9,
      "g_ewig": 2.5,
      "marge_norm": 32.5,
-     "wacc": 10.34,
-     "anteil_endwert": 51.1,
+     "wacc": 10.44,
+     "anteil_endwert": 50.7,
      "pfad": [
       {
        "j": 1,
@@ -2579,12 +2579,12 @@
      ]
     },
     "bull": {
-     "wert": 632.71,
+     "wert": 622.98,
      "g1": 16.1,
      "g_ewig": 3.0,
      "marge_norm": 35.8,
-     "wacc": 9.84,
-     "anteil_endwert": 56.9,
+     "wacc": 9.94,
+     "anteil_endwert": 56.4,
      "pfad": null
     }
    },
@@ -2596,43 +2596,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 9.34,
+      "wacc": 9.44,
       "werte": [
-       468.0,
-       495.0,
-       527.0
-      ]
-     },
-     {
-      "wacc": 9.84,
-      "werte": [
-       437.0,
        461.0,
-       488.0
+       488.0,
+       519.0
       ]
      },
      {
-      "wacc": 10.34,
+      "wacc": 9.94,
       "werte": [
-       411.0,
-       431.0,
-       455.0
+       432.0,
+       455.0,
+       481.0
       ]
      },
      {
-      "wacc": 10.84,
+      "wacc": 10.44,
       "werte": [
-       387.0,
-       405.0,
-       425.0
+       406.0,
+       426.0,
+       448.0
       ]
      },
      {
-      "wacc": 11.34,
+      "wacc": 10.94,
       "werte": [
-       366.0,
        382.0,
-       400.0
+       400.0,
+       420.0
+      ]
+     },
+     {
+      "wacc": 11.44,
+      "werte": [
+       362.0,
+       377.0,
+       395.0
       ]
      }
     ]
@@ -2661,18 +2661,18 @@
     },
     "beta_genutzt": 1.29,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.62,
-    "kd": 6.03,
+    "ke": 10.73,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 35.7,
-    "wacc": 10.34,
+    "wacc": 10.44,
     "cash": 5639000000,
     "schulden": 4766000000,
     "bilanz_datum": "2026-08-28",
@@ -2910,31 +2910,31 @@
    "status": "ok",
    "kurs": 333.75,
    "kurs_datum": "2026-10-02",
-   "fair_value": 184.93,
-   "bear": 105.79,
-   "base": 181.46,
-   "bull": 271.02,
-   "abschlag_pct": -44.6,
+   "fair_value": 182.47,
+   "bear": 104.7,
+   "base": 179.15,
+   "bull": 266.9,
+   "abschlag_pct": -45.3,
    "kgv_ttm": 38.1,
    "fcf_rendite_pct": 2.78,
-   "implizites_wachstum_pct": 28.6,
+   "implizites_wachstum_pct": 28.9,
    "szenarien": {
     "bear": {
-     "wert": 105.79,
+     "wert": 104.7,
      "g1": 6.2,
      "g_ewig": 2.0,
      "marge_norm": 20.7,
-     "wacc": 10.3,
-     "anteil_endwert": 46.7,
+     "wacc": 10.39,
+     "anteil_endwert": 46.3,
      "pfad": null
     },
     "base": {
-     "wert": 181.46,
+     "wert": 179.15,
      "g1": 12.4,
      "g_ewig": 2.5,
      "marge_norm": 24.3,
-     "wacc": 9.55,
-     "anteil_endwert": 54.3,
+     "wacc": 9.64,
+     "anteil_endwert": 53.9,
      "pfad": [
       {
        "j": 1,
@@ -3009,12 +3009,12 @@
      ]
     },
     "bull": {
-     "wert": 271.02,
+     "wert": 266.9,
      "g1": 16.7,
      "g_ewig": 3.0,
      "marge_norm": 26.7,
-     "wacc": 9.05,
-     "anteil_endwert": 60.5,
+     "wacc": 9.14,
+     "anteil_endwert": 60.0,
      "pfad": null
     }
    },
@@ -3026,43 +3026,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.55,
+      "wacc": 8.64,
       "werte": [
-       198.0,
-       211.0,
-       227.0
-      ]
-     },
-     {
-      "wacc": 9.05,
-      "werte": [
-       184.0,
        195.0,
-       208.0
+       208.0,
+       223.0
       ]
      },
      {
-      "wacc": 9.55,
+      "wacc": 9.14,
       "werte": [
-       172.0,
-       181.0,
-       192.0
+       182.0,
+       193.0,
+       205.0
       ]
      },
      {
-      "wacc": 10.05,
+      "wacc": 9.64,
       "werte": [
-       161.0,
        170.0,
-       179.0
+       179.0,
+       190.0
       ]
      },
      {
-      "wacc": 10.55,
+      "wacc": 10.14,
       "werte": [
-       152.0,
-       159.0,
-       167.0
+       160.0,
+       168.0,
+       177.0
+      ]
+     },
+     {
+      "wacc": 10.64,
+      "werte": [
+       150.0,
+       157.0,
+       165.0
       ]
      }
     ]
@@ -3091,18 +3091,18 @@
     },
     "beta_genutzt": 1.05,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.63,
-    "kd": 6.03,
+    "ke": 9.72,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 39.4,
-    "wacc": 9.55,
+    "wacc": 9.64,
     "cash": 146517000000,
     "schulden": 84297000000,
     "bilanz_datum": "2026-06-27",
@@ -3313,31 +3313,31 @@
    "status": "ok",
    "kurs": 234.0,
    "kurs_datum": "2026-10-02",
-   "fair_value": 136.28,
-   "bear": 58.35,
-   "base": 139.43,
-   "bull": 207.93,
-   "abschlag_pct": -41.8,
+   "fair_value": 134.21,
+   "bear": 57.65,
+   "base": 137.36,
+   "bull": 204.45,
+   "abschlag_pct": -42.6,
    "kgv_ttm": 29.5,
    "fcf_rendite_pct": 2.23,
-   "implizites_wachstum_pct": 50.5,
+   "implizites_wachstum_pct": 51.0,
    "szenarien": {
     "bear": {
-     "wert": 58.35,
+     "wert": 57.65,
      "g1": 17.5,
      "g_ewig": 2.0,
      "marge_norm": 26.0,
-     "wacc": 13.48,
-     "anteil_endwert": 38.4,
+     "wacc": 13.62,
+     "anteil_endwert": 37.9,
      "pfad": null
     },
     "base": {
-     "wert": 139.43,
+     "wert": 137.36,
      "g1": 35.0,
      "g_ewig": 2.5,
      "marge_norm": 30.6,
-     "wacc": 12.73,
-     "anteil_endwert": 47.7,
+     "wacc": 12.87,
+     "anteil_endwert": 47.3,
      "pfad": [
       {
        "j": 1,
@@ -3412,12 +3412,12 @@
      ]
     },
     "bull": {
-     "wert": 207.93,
+     "wert": 204.45,
      "g1": 41.0,
      "g_ewig": 3.0,
      "marge_norm": 33.7,
-     "wacc": 12.23,
-     "anteil_endwert": 52.8,
+     "wacc": 12.37,
+     "anteil_endwert": 52.3,
      "pfad": null
     }
    },
@@ -3429,43 +3429,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 11.73,
+      "wacc": 11.87,
       "werte": [
-       150.0,
-       156.0,
-       164.0
-      ]
-     },
-     {
-      "wacc": 12.23,
-      "werte": [
-       141.0,
        147.0,
-       154.0
+       154.0,
+       161.0
       ]
      },
      {
-      "wacc": 12.73,
+      "wacc": 12.37,
       "werte": [
-       134.0,
        139.0,
-       145.0
+       145.0,
+       152.0
       ]
      },
      {
-      "wacc": 13.23,
+      "wacc": 12.87,
       "werte": [
-       127.0,
        132.0,
-       137.0
+       137.0,
+       143.0
       ]
      },
      {
-      "wacc": 13.73,
+      "wacc": 13.37,
       "werte": [
-       121.0,
        126.0,
-       130.0
+       130.0,
+       135.0
+      ]
+     },
+     {
+      "wacc": 13.87,
+      "werte": [
+       120.0,
+       124.0,
+       128.0
       ]
      }
     ]
@@ -3494,18 +3494,18 @@
     },
     "beta_genutzt": 1.81,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 12.77,
-    "kd": 6.03,
+    "ke": 12.91,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 426.7,
-    "wacc": 12.73,
+    "wacc": 12.87,
     "cash": 71565000000,
     "schulden": 33366000000,
     "bilanz_datum": "2026-07-26",
@@ -3724,111 +3724,111 @@
    "status": "ok",
    "kurs": 728.09,
    "kurs_datum": "2026-10-02",
-   "fair_value": 670.18,
-   "bear": 282.62,
-   "base": 660.75,
-   "bull": 1076.61,
-   "abschlag_pct": -8.0,
+   "fair_value": 660.27,
+   "bear": 279.39,
+   "base": 651.45,
+   "bull": 1058.81,
+   "abschlag_pct": -9.3,
    "kgv_ttm": 27.4,
    "fcf_rendite_pct": 2.19,
-   "implizites_wachstum_pct": 28.7,
+   "implizites_wachstum_pct": 29.1,
    "szenarien": {
     "bear": {
-     "wert": 282.62,
+     "wert": 279.39,
      "g1": 13.1,
      "g_ewig": 2.0,
      "marge_norm": 16.0,
-     "wacc": 9.98,
-     "anteil_endwert": 54.1,
+     "wacc": 10.07,
+     "anteil_endwert": 53.7,
      "pfad": null
     },
     "base": {
-     "wert": 660.75,
+     "wert": 651.45,
      "g1": 26.2,
      "g_ewig": 2.5,
      "marge_norm": 18.8,
-     "wacc": 9.23,
-     "anteil_endwert": 62.5,
+     "wacc": 9.32,
+     "anteil_endwert": 62.2,
      "pfad": [
       {
        "j": 1,
        "g": 26.2,
        "marge": 10.8,
        "umsatz": 288.06,
-       "fcff": 31.08
+       "fcff": 31.1
       },
       {
        "j": 2,
        "g": 23.6,
        "marge": 12.8,
        "umsatz": 355.96,
-       "fcff": 45.54
+       "fcff": 45.56
       },
       {
        "j": 3,
        "g": 20.9,
        "marge": 14.8,
        "umsatz": 430.48,
-       "fcff": 63.69
+       "fcff": 63.71
       },
       {
        "j": 4,
        "g": 18.3,
        "marge": 16.8,
        "umsatz": 509.28,
-       "fcff": 85.54
+       "fcff": 85.56
       },
       {
        "j": 5,
        "g": 15.7,
        "marge": 18.8,
        "umsatz": 589.08,
-       "fcff": 110.74
+       "fcff": 110.76
       },
       {
        "j": 6,
        "g": 13.0,
        "marge": 18.8,
        "umsatz": 665.86,
-       "fcff": 125.18
+       "fcff": 125.2
       },
       {
        "j": 7,
        "g": 10.4,
        "marge": 18.8,
        "umsatz": 735.13,
-       "fcff": 138.2
+       "fcff": 138.22
       },
       {
        "j": 8,
        "g": 7.8,
        "marge": 18.8,
        "umsatz": 792.23,
-       "fcff": 148.93
+       "fcff": 148.96
       },
       {
        "j": 9,
        "g": 5.1,
        "marge": 18.8,
        "umsatz": 832.9,
-       "fcff": 156.58
+       "fcff": 156.6
       },
       {
        "j": 10,
        "g": 2.5,
        "marge": 18.8,
        "umsatz": 853.72,
-       "fcff": 160.49
+       "fcff": 160.52
       }
      ]
     },
     "bull": {
-     "wert": 1076.61,
+     "wert": 1058.81,
      "g1": 32.2,
      "g_ewig": 3.0,
      "marge_norm": 20.7,
-     "wacc": 8.73,
-     "anteil_endwert": 68.1,
+     "wacc": 8.82,
+     "anteil_endwert": 67.7,
      "pfad": null
     }
    },
@@ -3840,50 +3840,50 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.23,
+      "wacc": 8.32,
       "werte": [
-       732.0,
-       790.0,
-       859.0
+       721.0,
+       777.0,
+       844.0
       ]
      },
      {
-      "wacc": 8.73,
+      "wacc": 8.82,
       "werte": [
-       671.0,
-       720.0,
-       777.0
+       662.0,
+       709.0,
+       764.0
       ]
      },
      {
-      "wacc": 9.23,
+      "wacc": 9.32,
       "werte": [
-       619.0,
-       661.0,
-       709.0
+       611.0,
+       651.0,
+       698.0
       ]
      },
      {
-      "wacc": 9.73,
+      "wacc": 9.82,
       "werte": [
-       574.0,
-       610.0,
-       650.0
+       567.0,
+       602.0,
+       641.0
       ]
      },
      {
-      "wacc": 10.23,
+      "wacc": 10.32,
       "werte": [
-       535.0,
-       566.0,
-       600.0
+       529.0,
+       559.0,
+       592.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 228247000000,
-    "fcff_ttm": 20058090254,
+    "fcff_ttm": 20077618449,
     "fcff_marge_ttm": 8.8,
     "fcff_marge_norm": 18.8,
     "fcff_margen_hist": [
@@ -3905,18 +3905,18 @@
     },
     "beta_genutzt": 1.0,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.42,
-    "kd": 6.48,
+    "ke": 9.51,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 9.23,
+    "wacc": 9.32,
     "cash": 90260000000,
     "schulden": 83664000000,
     "bilanz_datum": "2026-06-30",
@@ -4126,31 +4126,31 @@
    "status": "ok",
    "kurs": 370.64,
    "kurs_datum": "2026-10-02",
-   "fair_value": 33.35,
-   "bear": 22.95,
-   "base": 32.97,
-   "bull": 44.52,
-   "abschlag_pct": -91.0,
+   "fair_value": 33.01,
+   "bear": 22.79,
+   "base": 32.64,
+   "bull": 43.96,
+   "abschlag_pct": -91.1,
    "kgv_ttm": 344.9,
    "fcf_rendite_pct": 0.44,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 22.95,
+     "wert": 22.79,
      "g1": 7.3,
      "g_ewig": 2.0,
      "marge_norm": 3.7,
-     "wacc": 12.36,
-     "anteil_endwert": 43.3,
+     "wacc": 12.49,
+     "anteil_endwert": 42.9,
      "pfad": null
     },
     "base": {
-     "wert": 32.97,
+     "wert": 32.64,
      "g1": 14.6,
      "g_ewig": 2.5,
      "marge_norm": 4.4,
-     "wacc": 11.61,
-     "anteil_endwert": 50.0,
+     "wacc": 11.74,
+     "anteil_endwert": 49.5,
      "pfad": [
       {
        "j": 1,
@@ -4225,12 +4225,12 @@
      ]
     },
     "bull": {
-     "wert": 44.52,
+     "wert": 43.96,
      "g1": 19.7,
      "g_ewig": 3.0,
      "marge_norm": 4.8,
-     "wacc": 11.11,
-     "anteil_endwert": 55.2,
+     "wacc": 11.24,
+     "anteil_endwert": 54.7,
      "pfad": null
     }
    },
@@ -4242,23 +4242,23 @@
     ],
     "zeilen": [
      {
-      "wacc": 10.61,
+      "wacc": 10.74,
       "werte": [
-       35.0,
+       34.0,
        36.0,
-       38.0
+       37.0
       ]
      },
      {
-      "wacc": 11.11,
+      "wacc": 11.24,
       "werte": [
        33.0,
        34.0,
-       36.0
+       35.0
       ]
      },
      {
-      "wacc": 11.61,
+      "wacc": 11.74,
       "werte": [
        32.0,
        33.0,
@@ -4266,17 +4266,17 @@
       ]
      },
      {
-      "wacc": 12.11,
+      "wacc": 12.24,
       "werte": [
        31.0,
-       32.0,
-       33.0
+       31.0,
+       32.0
       ]
      },
      {
-      "wacc": 12.61,
+      "wacc": 12.74,
       "werte": [
-       30.0,
+       29.0,
        30.0,
        31.0
       ]
@@ -4307,18 +4307,18 @@
     },
     "beta_genutzt": 1.54,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 11.66,
-    "kd": 6.03,
+    "ke": 11.78,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 13.1,
-    "wacc": 11.61,
+    "wacc": 11.74,
     "cash": 43524000000,
     "schulden": 7721000000,
     "bilanz_datum": "2026-06-30",
@@ -4527,31 +4527,31 @@
    "status": "ok",
    "kurs": 188.8,
    "kurs_datum": "2026-10-02",
-   "fair_value": 8.1,
-   "bear": 6.17,
-   "base": 8.23,
-   "bull": 9.76,
+   "fair_value": 8.07,
+   "bear": 6.16,
+   "base": 8.2,
+   "bull": 9.71,
    "abschlag_pct": -95.7,
    "kgv_ttm": 160.8,
    "fcf_rendite_pct": 0.69,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 6.17,
+     "wert": 6.16,
      "g1": 17.5,
      "g_ewig": 2.0,
      "marge_norm": 1.4,
-     "wacc": 11.87,
-     "anteil_endwert": 12.2,
+     "wacc": 11.98,
+     "anteil_endwert": 12.0,
      "pfad": null
     },
     "base": {
-     "wert": 8.23,
+     "wert": 8.2,
      "g1": 35.0,
      "g_ewig": 2.5,
      "marge_norm": 1.7,
-     "wacc": 11.12,
-     "anteil_endwert": 20.6,
+     "wacc": 11.23,
+     "anteil_endwert": 20.2,
      "pfad": [
       {
        "j": 1,
@@ -4626,12 +4626,12 @@
      ]
     },
     "bull": {
-     "wert": 9.76,
+     "wert": 9.71,
      "g1": 41.0,
      "g_ewig": 3.0,
      "marge_norm": 1.8,
-     "wacc": 10.62,
-     "anteil_endwert": 26.0,
+     "wacc": 10.73,
+     "anteil_endwert": 25.6,
      "pfad": null
     }
    },
@@ -4643,15 +4643,15 @@
     ],
     "zeilen": [
      {
-      "wacc": 10.12,
+      "wacc": 10.23,
       "werte": [
        8.0,
-       9.0,
+       8.0,
        9.0
       ]
      },
      {
-      "wacc": 10.62,
+      "wacc": 10.73,
       "werte": [
        8.0,
        8.0,
@@ -4659,7 +4659,7 @@
       ]
      },
      {
-      "wacc": 11.12,
+      "wacc": 11.23,
       "werte": [
        8.0,
        8.0,
@@ -4667,7 +4667,7 @@
       ]
      },
      {
-      "wacc": 11.62,
+      "wacc": 11.73,
       "werte": [
        8.0,
        8.0,
@@ -4675,7 +4675,7 @@
       ]
      },
      {
-      "wacc": 12.12,
+      "wacc": 12.23,
       "werte": [
        8.0,
        8.0,
@@ -4708,18 +4708,18 @@
     },
     "beta_genutzt": 1.41,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 11.12,
-    "kd": 6.03,
+    "ke": 11.23,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 759.3,
-    "wacc": 11.12,
+    "wacc": 11.23,
     "cash": 9409099000,
     "schulden": 0,
     "bilanz_datum": "2026-06-30",
@@ -4942,31 +4942,31 @@
    "status": "ok",
    "kurs": 633.745,
    "kurs_datum": "2026-10-02",
-   "fair_value": 82.01,
-   "bear": 38.93,
-   "base": 83.98,
-   "bull": 121.15,
-   "abschlag_pct": -87.1,
+   "fair_value": 80.86,
+   "bear": 38.53,
+   "base": 82.83,
+   "bull": 119.25,
+   "abschlag_pct": -87.2,
    "kgv_ttm": 163.4,
    "fcf_rendite_pct": 0.8,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 38.93,
+     "wert": 38.53,
      "g1": 17.5,
      "g_ewig": 2.0,
      "marge_norm": 7.6,
-     "wacc": 14.11,
-     "anteil_endwert": 34.2,
+     "wacc": 14.26,
+     "anteil_endwert": 33.8,
      "pfad": null
     },
     "base": {
-     "wert": 83.98,
+     "wert": 82.83,
      "g1": 35.0,
      "g_ewig": 2.5,
      "marge_norm": 9.0,
-     "wacc": 13.36,
-     "anteil_endwert": 43.7,
+     "wacc": 13.51,
+     "anteil_endwert": 43.3,
      "pfad": [
       {
        "j": 1,
@@ -5041,12 +5041,12 @@
      ]
     },
     "bull": {
-     "wert": 121.15,
+     "wert": 119.25,
      "g1": 41.0,
      "g_ewig": 3.0,
      "marge_norm": 9.9,
-     "wacc": 12.86,
-     "anteil_endwert": 48.8,
+     "wacc": 13.01,
+     "anteil_endwert": 48.3,
      "pfad": null
     }
    },
@@ -5058,43 +5058,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 12.36,
+      "wacc": 12.51,
       "werte": [
-       89.0,
-       93.0,
-       96.0
-      ]
-     },
-     {
-      "wacc": 12.86,
-      "werte": [
-       85.0,
        88.0,
-       91.0
+       91.0,
+       95.0
       ]
      },
      {
-      "wacc": 13.36,
+      "wacc": 13.01,
       "werte": [
-       81.0,
        84.0,
-       87.0
+       87.0,
+       90.0
       ]
      },
      {
-      "wacc": 13.86,
+      "wacc": 13.51,
       "werte": [
-       78.0,
        80.0,
-       83.0
+       83.0,
+       86.0
       ]
      },
      {
-      "wacc": 14.36,
+      "wacc": 14.01,
       "werte": [
-       75.0,
        77.0,
-       79.0
+       79.0,
+       82.0
+      ]
+     },
+     {
+      "wacc": 14.51,
+      "werte": [
+       74.0,
+       76.0,
+       78.0
       ]
      }
     ]
@@ -5123,18 +5123,18 @@
     },
     "beta_genutzt": 1.96,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 13.39,
-    "kd": 6.03,
+    "ke": 13.54,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 44.1,
-    "wacc": 13.36,
+    "wacc": 13.51,
     "cash": 13111000000,
     "schulden": 4100000000,
     "bilanz_datum": "2026-06-27",
@@ -5354,31 +5354,31 @@
    "status": "ok",
    "kurs": 85.66,
    "kurs_datum": "2026-10-02",
-   "fair_value": 58.15,
-   "bear": 33.16,
-   "base": 56.84,
-   "bull": 85.75,
-   "abschlag_pct": -32.1,
+   "fair_value": 57.36,
+   "bear": 32.8,
+   "base": 56.11,
+   "bull": 84.4,
+   "abschlag_pct": -33.0,
    "kgv_ttm": 25.8,
    "fcf_rendite_pct": 3.87,
-   "implizites_wachstum_pct": 15.4,
+   "implizites_wachstum_pct": 15.7,
    "szenarien": {
     "bear": {
-     "wert": 33.16,
+     "wert": 32.8,
      "g1": 3.0,
      "g_ewig": 2.0,
      "marge_norm": 17.7,
-     "wacc": 8.27,
-     "anteil_endwert": 52.8,
+     "wacc": 8.33,
+     "anteil_endwert": 52.5,
      "pfad": null
     },
     "base": {
-     "wert": 56.84,
+     "wert": 56.11,
      "g1": 6.0,
      "g_ewig": 2.5,
      "marge_norm": 20.8,
-     "wacc": 7.52,
-     "anteil_endwert": 60.9,
+     "wacc": 7.58,
+     "anteil_endwert": 60.5,
      "pfad": [
       {
        "j": 1,
@@ -5453,12 +5453,12 @@
      ]
     },
     "bull": {
-     "wert": 85.75,
+     "wert": 84.4,
      "g1": 8.1,
      "g_ewig": 3.0,
      "marge_norm": 22.9,
-     "wacc": 7.02,
-     "anteil_endwert": 67.7,
+     "wacc": 7.08,
+     "anteil_endwert": 67.3,
      "pfad": null
     }
    },
@@ -5470,43 +5470,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.52,
+      "wacc": 6.58,
       "werte": [
        64.0,
-       72.0,
-       81.0
+       70.0,
+       79.0
       ]
      },
      {
-      "wacc": 7.02,
+      "wacc": 7.08,
       "werte": [
-       58.0,
+       57.0,
        63.0,
-       70.0
+       69.0
       ]
      },
      {
-      "wacc": 7.52,
+      "wacc": 7.58,
       "werte": [
        52.0,
-       57.0,
+       56.0,
        62.0
       ]
      },
      {
-      "wacc": 8.02,
+      "wacc": 8.08,
       "werte": [
-       48.0,
+       47.0,
        51.0,
-       56.0
+       55.0
       ]
      },
      {
-      "wacc": 8.52,
+      "wacc": 8.58,
       "werte": [
-       44.0,
-       47.0,
-       51.0
+       43.0,
+       46.0,
+       50.0
       ]
      }
     ]
@@ -5535,18 +5535,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 6.03,
+    "ke": 7.83,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 9.5,
-    "wacc": 7.52,
+    "wacc": 7.58,
     "cash": 15255000000.0,
     "schulden": 36746000000,
     "bilanz_datum": "2026-07-03",
@@ -5767,31 +5767,31 @@
    "status": "ok",
    "kurs": 1074.71,
    "kurs_datum": "2026-10-02",
-   "fair_value": -28.8,
-   "bear": 17.25,
-   "base": -28.79,
-   "bull": -74.87,
-   "abschlag_pct": -102.7,
+   "fair_value": -27.06,
+   "bear": 17.79,
+   "base": -27.06,
+   "bull": -71.9,
+   "abschlag_pct": -102.5,
    "kgv_ttm": 24.4,
    "fcf_rendite_pct": 2.13,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 17.25,
+     "wert": 17.79,
      "g1": 17.5,
      "g_ewig": 2.0,
      "marge_norm": -3.7,
-     "wacc": 13.43,
-     "anteil_endwert": 1486.6,
+     "wacc": 13.57,
+     "anteil_endwert": 2435.5,
      "pfad": null
     },
     "base": {
-     "wert": -28.79,
+     "wert": -27.06,
      "g1": 35.0,
      "g_ewig": 2.5,
      "marge_norm": -4.4,
-     "wacc": 12.68,
-     "anteil_endwert": 126.8,
+     "wacc": 12.82,
+     "anteil_endwert": 128.4,
      "pfad": [
       {
        "j": 1,
@@ -5866,12 +5866,12 @@
      ]
     },
     "bull": {
-     "wert": -74.87,
+     "wert": -71.9,
      "g1": 41.0,
      "g_ewig": 3.0,
      "marge_norm": -4.8,
-     "wacc": 12.18,
-     "anteil_endwert": 106.5,
+     "wacc": 12.32,
+     "anteil_endwert": 107.1,
      "pfad": null
     }
    },
@@ -5883,43 +5883,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 11.68,
+      "wacc": 11.82,
       "werte": [
-       -37.0,
-       -43.0,
-       -50.0
+       -35.0,
+       -41.0,
+       -48.0
       ]
      },
      {
-      "wacc": 12.18,
+      "wacc": 12.32,
       "werte": [
-       -30.0,
-       -36.0,
-       -42.0
+       -28.0,
+       -34.0,
+       -39.0
       ]
      },
      {
-      "wacc": 12.68,
+      "wacc": 12.82,
       "werte": [
-       -24.0,
-       -29.0,
-       -34.0
+       -22.0,
+       -27.0,
+       -32.0
       ]
      },
      {
-      "wacc": 13.18,
+      "wacc": 13.32,
       "werte": [
-       -18.0,
-       -23.0,
-       -27.0
-      ]
-     },
-     {
-      "wacc": 13.68,
-      "werte": [
-       -13.0,
        -17.0,
-       -22.0
+       -21.0,
+       -26.0
+      ]
+     },
+     {
+      "wacc": 13.82,
+      "werte": [
+       -12.0,
+       -16.0,
+       -20.0
       ]
      }
     ]
@@ -5948,18 +5948,18 @@
     },
     "beta_genutzt": 1.8,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 12.73,
-    "kd": 6.03,
+    "ke": 12.87,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 257.6,
-    "wacc": 12.68,
+    "wacc": 12.82,
     "cash": 30128000000,
     "schulden": 8844000000,
     "bilanz_datum": "2026-05-28",
@@ -6173,111 +6173,111 @@
    "status": "ok",
    "kurs": 355.125,
    "kurs_datum": "2026-10-02",
-   "fair_value": 351.1,
-   "bear": 131.98,
-   "base": 355.78,
-   "bull": 560.85,
-   "abschlag_pct": -1.1,
+   "fair_value": 345.64,
+   "bear": 130.32,
+   "base": 350.46,
+   "bull": 551.31,
+   "abschlag_pct": -2.7,
    "kgv_ttm": 45.4,
    "fcf_rendite_pct": 2.27,
-   "implizites_wachstum_pct": 35.0,
+   "implizites_wachstum_pct": 35.4,
    "szenarien": {
     "bear": {
-     "wert": 131.98,
+     "wert": 130.32,
      "g1": 17.5,
      "g_ewig": 2.0,
      "marge_norm": 36.3,
-     "wacc": 11.21,
-     "anteil_endwert": 48.1,
+     "wacc": 11.31,
+     "anteil_endwert": 47.8,
      "pfad": null
     },
     "base": {
-     "wert": 355.78,
+     "wert": 350.46,
      "g1": 35.0,
      "g_ewig": 2.5,
      "marge_norm": 42.7,
-     "wacc": 10.46,
-     "anteil_endwert": 57.6,
+     "wacc": 10.56,
+     "anteil_endwert": 57.2,
      "pfad": [
       {
        "j": 1,
        "g": 35.0,
        "marge": 39.4,
        "umsatz": 120.29,
-       "fcff": 47.36
+       "fcff": 47.38
       },
       {
        "j": 2,
        "g": 31.4,
        "marge": 40.2,
        "umsatz": 158.05,
-       "fcff": 63.54
+       "fcff": 63.56
       },
       {
        "j": 3,
        "g": 27.8,
        "marge": 41.0,
        "umsatz": 201.95,
-       "fcff": 82.87
+       "fcff": 82.89
       },
       {
        "j": 4,
        "g": 24.2,
        "marge": 41.9,
        "umsatz": 250.76,
-       "fcff": 104.99
+       "fcff": 105.01
       },
       {
        "j": 5,
        "g": 20.6,
        "marge": 42.7,
        "umsatz": 302.3,
-       "fcff": 129.09
+       "fcff": 129.11
       },
       {
        "j": 6,
        "g": 16.9,
        "marge": 42.7,
        "umsatz": 353.52,
-       "fcff": 150.97
+       "fcff": 150.98
       },
       {
        "j": 7,
        "g": 13.3,
        "marge": 42.7,
        "umsatz": 400.66,
-       "fcff": 171.09
+       "fcff": 171.11
       },
       {
        "j": 8,
        "g": 9.7,
        "marge": 42.7,
        "umsatz": 439.61,
-       "fcff": 187.73
+       "fcff": 187.75
       },
       {
        "j": 9,
        "g": 6.1,
        "marge": 42.7,
        "umsatz": 466.48,
-       "fcff": 199.2
+       "fcff": 199.22
       },
       {
        "j": 10,
        "g": 2.5,
        "marge": 42.7,
        "umsatz": 478.14,
-       "fcff": 204.18
+       "fcff": 204.2
       }
      ]
     },
     "bull": {
-     "wert": 560.85,
+     "wert": 551.31,
      "g1": 41.0,
      "g_ewig": 3.0,
      "marge_norm": 47.0,
-     "wacc": 9.96,
-     "anteil_endwert": 63.0,
+     "wacc": 10.06,
+     "anteil_endwert": 62.5,
      "pfad": null
     }
    },
@@ -6289,58 +6289,58 @@
     ],
     "zeilen": [
      {
-      "wacc": 9.46,
+      "wacc": 9.56,
       "werte": [
-       390.0,
-       415.0,
-       445.0
-      ]
-     },
-     {
-      "wacc": 9.96,
-      "werte": [
-       362.0,
        384.0,
-       409.0
+       408.0,
+       437.0
       ]
      },
      {
-      "wacc": 10.46,
+      "wacc": 10.06,
       "werte": [
-       337.0,
        356.0,
-       377.0
+       377.0,
+       402.0
       ]
      },
      {
-      "wacc": 10.96,
+      "wacc": 10.56,
       "werte": [
-       315.0,
-       331.0,
-       350.0
+       332.0,
+       350.0,
+       371.0
       ]
      },
      {
-      "wacc": 11.46,
+      "wacc": 11.06,
       "werte": [
-       295.0,
-       310.0,
-       326.0
+       311.0,
+       327.0,
+       345.0
+      ]
+     },
+     {
+      "wacc": 11.56,
+      "werte": [
+       291.0,
+       306.0,
+       322.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 89104000000,
-    "fcff_ttm": 34337592960,
-    "fcff_marge_ttm": 38.5,
+    "fcff_ttm": 34353410520,
+    "fcff_marge_ttm": 38.6,
     "fcff_marge_norm": 42.7,
     "fcff_margen_hist": [
      48.4,
      49.1,
      47.2,
      33.3,
-     35.6
+     35.7
     ],
     "wachstum_j1": 35.0,
     "wachstum_quelle": "Guidance nächstes Quartal: Umsatz 34.80–34.80 Mrd. $ (+93.2 % ggü. Vorjahresquartal), 60/40 mit TTM-Wachstum gewichtet",
@@ -6354,18 +6354,18 @@
     },
     "beta_genutzt": 1.29,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.62,
-    "kd": 6.48,
+    "ke": 10.73,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 10.46,
+    "wacc": 10.56,
     "cash": 23975000000,
     "schulden": 59915000000,
     "bilanz_datum": "2026-08-02",
@@ -6584,31 +6584,31 @@
    "status": "ok",
    "kurs": 119.32,
    "kurs_datum": "2026-10-02",
-   "fair_value": -27.6,
-   "bear": -18.12,
-   "base": -27.43,
-   "bull": -37.43,
-   "abschlag_pct": -123.1,
+   "fair_value": -27.25,
+   "bear": -17.94,
+   "base": -27.08,
+   "bull": -36.88,
+   "abschlag_pct": -122.8,
    "kgv_ttm": null,
    "fcf_rendite_pct": 0.46,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": -18.12,
+     "wert": -17.94,
      "g1": 5.1,
      "g_ewig": 2.0,
      "marge_norm": -14.4,
-     "wacc": 13.2,
-     "anteil_endwert": 45.1,
+     "wacc": 13.32,
+     "anteil_endwert": 44.7,
      "pfad": null
     },
     "base": {
-     "wert": -27.43,
+     "wert": -27.08,
      "g1": 10.2,
      "g_ewig": 2.5,
      "marge_norm": -17.0,
-     "wacc": 12.45,
-     "anteil_endwert": 50.3,
+     "wacc": 12.57,
+     "anteil_endwert": 49.9,
      "pfad": [
       {
        "j": 1,
@@ -6683,12 +6683,12 @@
      ]
     },
     "bull": {
-     "wert": -37.43,
+     "wert": -36.88,
      "g1": 13.8,
      "g_ewig": 3.0,
      "marge_norm": -18.7,
-     "wacc": 11.95,
-     "anteil_endwert": 54.6,
+     "wacc": 12.07,
+     "anteil_endwert": 54.2,
      "pfad": null
     }
    },
@@ -6700,31 +6700,31 @@
     ],
     "zeilen": [
      {
-      "wacc": 11.45,
+      "wacc": 11.57,
       "werte": [
        -29.0,
-       -31.0,
-       -32.0
+       -30.0,
+       -31.0
       ]
      },
      {
-      "wacc": 11.95,
+      "wacc": 12.07,
       "werte": [
-       -28.0,
+       -27.0,
        -29.0,
        -30.0
       ]
      },
      {
-      "wacc": 12.45,
+      "wacc": 12.57,
       "werte": [
        -26.0,
        -27.0,
-       -29.0
+       -28.0
       ]
      },
      {
-      "wacc": 12.95,
+      "wacc": 13.07,
       "werte": [
        -25.0,
        -26.0,
@@ -6732,11 +6732,11 @@
       ]
      },
      {
-      "wacc": 13.45,
+      "wacc": 13.57,
       "werte": [
        -24.0,
        -25.0,
-       -26.0
+       -25.0
       ]
      }
     ]
@@ -6765,18 +6765,18 @@
     },
     "beta_genutzt": 1.77,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 12.61,
-    "kd": 13.28,
+    "ke": 12.74,
+    "kd": 13.31,
     "rating_synth": "CCC",
     "zinsdeckung": -0.1,
-    "wacc": 12.45,
+    "wacc": 12.57,
     "cash": 30567000000,
     "schulden": 50537000000,
     "bilanz_datum": "2026-06-27",
@@ -6989,31 +6989,31 @@
    "status": "ok",
    "kurs": 272.33,
    "kurs_datum": "2026-10-02",
-   "fair_value": 32.73,
-   "bear": 14.3,
-   "base": 33.04,
-   "bull": 50.53,
-   "abschlag_pct": -88.0,
+   "fair_value": 32.21,
+   "bear": 14.1,
+   "base": 32.53,
+   "bull": 49.67,
+   "abschlag_pct": -88.2,
    "kgv_ttm": 95.0,
    "fcf_rendite_pct": 0.69,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 14.3,
+     "wert": 14.1,
      "g1": 14.3,
      "g_ewig": 2.0,
      "marge_norm": 9.9,
-     "wacc": 13.29,
-     "anteil_endwert": 39.6,
+     "wacc": 13.43,
+     "anteil_endwert": 39.1,
      "pfad": null
     },
     "base": {
-     "wert": 33.04,
+     "wert": 32.53,
      "g1": 28.6,
      "g_ewig": 2.5,
      "marge_norm": 11.7,
-     "wacc": 12.54,
-     "anteil_endwert": 48.0,
+     "wacc": 12.68,
+     "anteil_endwert": 47.5,
      "pfad": [
       {
        "j": 1,
@@ -7088,12 +7088,12 @@
      ]
     },
     "bull": {
-     "wert": 50.53,
+     "wert": 49.67,
      "g1": 34.6,
      "g_ewig": 3.0,
      "marge_norm": 12.8,
-     "wacc": 12.04,
-     "anteil_endwert": 53.1,
+     "wacc": 12.18,
+     "anteil_endwert": 52.6,
      "pfad": null
     }
    },
@@ -7105,43 +7105,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 11.54,
+      "wacc": 11.68,
       "werte": [
-       36.0,
+       35.0,
        37.0,
        39.0
       ]
      },
      {
-      "wacc": 12.04,
+      "wacc": 12.18,
       "werte": [
-       34.0,
-       35.0,
-       37.0
-      ]
-     },
-     {
-      "wacc": 12.54,
-      "werte": [
-       32.0,
        33.0,
-       35.0
+       34.0,
+       36.0
       ]
      },
      {
-      "wacc": 13.04,
+      "wacc": 12.68,
+      "werte": [
+       31.0,
+       33.0,
+       34.0
+      ]
+     },
+     {
+      "wacc": 13.18,
       "werte": [
        30.0,
        31.0,
-       33.0
+       32.0
       ]
      },
      {
-      "wacc": 13.54,
+      "wacc": 13.68,
       "werte": [
        28.0,
-       30.0,
-       31.0
+       29.0,
+       30.0
       ]
      }
     ]
@@ -7170,18 +7170,18 @@
     },
     "beta_genutzt": 1.79,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 12.69,
-    "kd": 6.28,
+    "ke": 12.83,
+    "kd": 6.31,
     "rating_synth": "AA",
     "zinsdeckung": 7.2,
-    "wacc": 12.54,
+    "wacc": 12.68,
     "cash": 3932800000,
     "schulden": 4962900000,
     "bilanz_datum": "2026-08-01",
@@ -7392,31 +7392,31 @@
    "status": "ok",
    "kurs": 1719.36,
    "kurs_datum": "2026-10-02",
-   "fair_value": 680.86,
-   "bear": 330.04,
-   "base": 690.92,
-   "bull": 1011.55,
-   "abschlag_pct": -60.4,
+   "fair_value": 673.66,
+   "bear": 327.89,
+   "base": 684.0,
+   "bull": 998.77,
+   "abschlag_pct": -60.8,
    "kgv_ttm": 23.6,
    "fcf_rendite_pct": 4.26,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 330.04,
+     "wert": 327.89,
      "g1": 17.5,
      "g_ewig": 2.0,
      "marge_norm": 5.6,
-     "wacc": 10.17,
-     "anteil_endwert": 29.9,
+     "wacc": 10.26,
+     "anteil_endwert": 29.5,
      "pfad": null
     },
     "base": {
-     "wert": 690.92,
+     "wert": 684.0,
      "g1": 35.0,
      "g_ewig": 2.5,
      "marge_norm": 6.5,
-     "wacc": 9.42,
-     "anteil_endwert": 43.2,
+     "wacc": 9.51,
+     "anteil_endwert": 42.7,
      "pfad": [
       {
        "j": 1,
@@ -7491,12 +7491,12 @@
      ]
     },
     "bull": {
-     "wert": 1011.55,
+     "wert": 998.77,
      "g1": 41.0,
      "g_ewig": 3.0,
      "marge_norm": 7.2,
-     "wacc": 8.92,
-     "anteil_endwert": 50.8,
+     "wacc": 9.01,
+     "anteil_endwert": 50.3,
      "pfad": null
     }
    },
@@ -7508,43 +7508,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.42,
+      "wacc": 8.51,
       "werte": [
-       743.0,
-       782.0,
-       828.0
+       734.0,
+       772.0,
+       817.0
       ]
      },
      {
-      "wacc": 8.92,
+      "wacc": 9.01,
       "werte": [
-       700.0,
-       733.0,
-       771.0
+       693.0,
+       725.0,
+       762.0
       ]
      },
      {
-      "wacc": 9.42,
+      "wacc": 9.51,
       "werte": [
-       663.0,
-       691.0,
-       723.0
+       657.0,
+       684.0,
+       715.0
       ]
      },
      {
-      "wacc": 9.92,
+      "wacc": 10.01,
       "werte": [
-       630.0,
-       655.0,
-       682.0
+       625.0,
+       649.0,
+       675.0
       ]
      },
      {
-      "wacc": 10.42,
+      "wacc": 10.51,
       "werte": [
-       602.0,
-       623.0,
-       646.0
+       597.0,
+       617.0,
+       641.0
       ]
      }
     ]
@@ -7568,18 +7568,18 @@
     "beta": null,
     "beta_genutzt": 1.0,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.42,
-    "kd": 6.03,
+    "ke": 9.51,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 169.7,
-    "wacc": 9.42,
+    "wacc": 9.51,
     "cash": 4762000000,
     "schulden": 0,
     "bilanz_datum": "2026-07-03",
@@ -7799,31 +7799,31 @@
    "status": "ok",
    "kurs": 142.41,
    "kurs_datum": "2026-10-02",
-   "fair_value": -5.29,
-   "bear": -1.87,
-   "base": -5.84,
-   "bull": -7.62,
-   "abschlag_pct": -103.7,
+   "fair_value": -5.35,
+   "bear": -1.88,
+   "base": -5.89,
+   "bull": -7.73,
+   "abschlag_pct": -103.8,
    "kgv_ttm": 22.7,
    "fcf_rendite_pct": -6.72,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": -1.87,
+     "wert": -1.88,
      "g1": 10.9,
      "g_ewig": 2.0,
      "marge_norm": 0.9,
-     "wacc": 12.16,
-     "anteil_endwert": -9.8,
+     "wacc": 12.28,
+     "anteil_endwert": -9.5,
      "pfad": null
     },
     "base": {
-     "wert": -5.84,
+     "wert": -5.89,
      "g1": 21.8,
      "g_ewig": 2.5,
      "marge_norm": 1.1,
-     "wacc": 11.41,
-     "anteil_endwert": -18.2,
+     "wacc": 11.53,
+     "anteil_endwert": -17.8,
      "pfad": [
       {
        "j": 1,
@@ -7898,12 +7898,12 @@
      ]
     },
     "bull": {
-     "wert": -7.62,
+     "wert": -7.73,
      "g1": 27.8,
      "g_ewig": 3.0,
      "marge_norm": 1.2,
-     "wacc": 10.91,
-     "anteil_endwert": -28.5,
+     "wacc": 11.03,
+     "anteil_endwert": -27.6,
      "pfad": null
     }
    },
@@ -7915,7 +7915,7 @@
     ],
     "zeilen": [
      {
-      "wacc": 10.41,
+      "wacc": 10.53,
       "werte": [
        -6.0,
        -5.0,
@@ -7923,7 +7923,7 @@
       ]
      },
      {
-      "wacc": 10.91,
+      "wacc": 11.03,
       "werte": [
        -6.0,
        -6.0,
@@ -7931,7 +7931,7 @@
       ]
      },
      {
-      "wacc": 11.41,
+      "wacc": 11.53,
       "werte": [
        -6.0,
        -6.0,
@@ -7939,7 +7939,7 @@
       ]
      },
      {
-      "wacc": 11.91,
+      "wacc": 12.03,
       "werte": [
        -6.0,
        -6.0,
@@ -7947,7 +7947,7 @@
       ]
      },
      {
-      "wacc": 12.41,
+      "wacc": 12.53,
       "werte": [
        -6.0,
        -6.0,
@@ -7980,18 +7980,18 @@
     },
     "beta_genutzt": 1.48,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 11.41,
-    "kd": 6.68,
+    "ke": 11.53,
+    "kd": 6.71,
     "rating_synth": "A",
     "zinsdeckung": 4.5,
-    "wacc": 11.41,
+    "wacc": 11.53,
     "cash": 37077000000,
     "schulden": 0,
     "bilanz_datum": "2026-08-31",
@@ -8211,31 +8211,31 @@
    "status": "ok",
    "kurs": 67.07,
    "kurs_datum": "2026-10-02",
-   "fair_value": 34.62,
-   "bear": 19.02,
-   "base": 34.02,
-   "bull": 51.41,
-   "abschlag_pct": -48.4,
+   "fair_value": 34.15,
+   "bear": 18.81,
+   "base": 33.57,
+   "bull": 50.63,
+   "abschlag_pct": -49.1,
    "kgv_ttm": 20.9,
    "fcf_rendite_pct": 3.9,
-   "implizites_wachstum_pct": 32.8,
+   "implizites_wachstum_pct": 33.3,
    "szenarien": {
     "bear": {
-     "wert": 19.02,
+     "wert": 18.81,
      "g1": 7.3,
      "g_ewig": 2.0,
      "marge_norm": 11.4,
-     "wacc": 11.34,
-     "anteil_endwert": 39.6,
+     "wacc": 11.45,
+     "anteil_endwert": 39.2,
      "pfad": null
     },
     "base": {
-     "wert": 34.02,
+     "wert": 33.57,
      "g1": 14.6,
      "g_ewig": 2.5,
      "marge_norm": 13.4,
-     "wacc": 10.59,
-     "anteil_endwert": 47.4,
+     "wacc": 10.7,
+     "anteil_endwert": 47.0,
      "pfad": [
       {
        "j": 1,
@@ -8310,12 +8310,12 @@
      ]
     },
     "bull": {
-     "wert": 51.41,
+     "wert": 50.63,
      "g1": 19.7,
      "g_ewig": 3.0,
      "marge_norm": 14.8,
-     "wacc": 10.09,
-     "anteil_endwert": 53.6,
+     "wacc": 10.2,
+     "anteil_endwert": 53.2,
      "pfad": null
     }
    },
@@ -8327,43 +8327,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 9.59,
+      "wacc": 9.7,
       "werte": [
-       37.0,
-       39.0,
+       36.0,
+       38.0,
        41.0
       ]
      },
      {
-      "wacc": 10.09,
+      "wacc": 10.2,
       "werte": [
-       35.0,
+       34.0,
        36.0,
        38.0
       ]
      },
      {
-      "wacc": 10.59,
+      "wacc": 10.7,
       "werte": [
        32.0,
        34.0,
-       36.0
+       35.0
       ]
      },
      {
-      "wacc": 11.09,
+      "wacc": 11.2,
       "werte": [
-       31.0,
+       30.0,
        32.0,
-       34.0
+       33.0
       ]
      },
      {
-      "wacc": 11.59,
+      "wacc": 11.7,
       "werte": [
        29.0,
        30.0,
-       32.0
+       31.0
       ]
      }
     ]
@@ -8392,18 +8392,18 @@
     },
     "beta_genutzt": 1.35,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.87,
-    "kd": 6.03,
+    "ke": 10.98,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 16.9,
-    "wacc": 10.59,
+    "wacc": 10.7,
     "cash": 9127910000,
     "schulden": 14309306000,
     "bilanz_datum": "2026-06-30",
@@ -8614,111 +8614,111 @@
    "status": "ok",
    "kurs": 234.61,
    "kurs_datum": "2026-10-02",
-   "fair_value": 273.87,
-   "bear": 142.04,
-   "base": 268.08,
-   "bull": 417.26,
-   "abschlag_pct": 16.7,
+   "fair_value": 270.14,
+   "bear": 140.42,
+   "base": 264.6,
+   "bull": 410.95,
+   "abschlag_pct": 15.1,
    "kgv_ttm": 19.9,
    "fcf_rendite_pct": 7.87,
-   "implizites_wachstum_pct": 8.4,
+   "implizites_wachstum_pct": 8.7,
    "szenarien": {
     "bear": {
-     "wert": 142.04,
+     "wert": 140.42,
      "g1": 5.7,
      "g_ewig": 2.0,
-     "marge_norm": 20.1,
-     "wacc": 9.91,
-     "anteil_endwert": 47.1,
+     "marge_norm": 20.2,
+     "wacc": 10.0,
+     "anteil_endwert": 46.7,
      "pfad": null
     },
     "base": {
-     "wert": 268.08,
+     "wert": 264.6,
      "g1": 11.4,
      "g_ewig": 2.5,
      "marge_norm": 23.7,
-     "wacc": 9.16,
-     "anteil_endwert": 54.9,
+     "wacc": 9.25,
+     "anteil_endwert": 54.5,
      "pfad": [
       {
        "j": 1,
        "g": 11.4,
        "marge": 29.3,
        "umsatz": 48.94,
-       "fcff": 14.32
+       "fcff": 14.33
       },
       {
        "j": 2,
        "g": 10.4,
        "marge": 27.9,
        "umsatz": 54.02,
-       "fcff": 15.06
+       "fcff": 15.07
       },
       {
        "j": 3,
        "g": 9.4,
        "marge": 26.5,
        "umsatz": 59.1,
-       "fcff": 15.65
+       "fcff": 15.67
       },
       {
        "j": 4,
        "g": 8.4,
        "marge": 25.1,
        "umsatz": 64.08,
-       "fcff": 16.08
+       "fcff": 16.1
       },
       {
        "j": 5,
        "g": 7.4,
        "marge": 23.7,
        "umsatz": 68.84,
-       "fcff": 16.32
+       "fcff": 16.34
       },
       {
        "j": 6,
        "g": 6.4,
        "marge": 23.7,
        "umsatz": 73.28,
-       "fcff": 17.37
+       "fcff": 17.39
       },
       {
        "j": 7,
        "g": 5.5,
        "marge": 23.7,
        "umsatz": 77.28,
-       "fcff": 18.32
+       "fcff": 18.34
       },
       {
        "j": 8,
        "g": 4.5,
        "marge": 23.7,
        "umsatz": 80.74,
-       "fcff": 19.14
+       "fcff": 19.16
       },
       {
        "j": 9,
        "g": 3.5,
        "marge": 23.7,
        "umsatz": 83.55,
-       "fcff": 19.8
+       "fcff": 19.83
       },
       {
        "j": 10,
        "g": 2.5,
        "marge": 23.7,
        "umsatz": 85.64,
-       "fcff": 20.3
+       "fcff": 20.32
       }
      ]
     },
     "bull": {
-     "wert": 417.26,
+     "wert": 410.95,
      "g1": 15.4,
      "g_ewig": 3.0,
      "marge_norm": 26.1,
-     "wacc": 8.66,
-     "anteil_endwert": 61.2,
+     "wacc": 8.75,
+     "anteil_endwert": 60.8,
      "pfad": null
     }
    },
@@ -8730,57 +8730,57 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.16,
+      "wacc": 8.25,
       "werte": [
-       297.0,
-       321.0,
-       350.0
+       293.0,
+       316.0,
+       344.0
       ]
      },
      {
-      "wacc": 8.66,
+      "wacc": 8.75,
       "werte": [
-       272.0,
-       292.0,
-       316.0
+       269.0,
+       288.0,
+       311.0
       ]
      },
      {
-      "wacc": 9.16,
+      "wacc": 9.25,
       "werte": [
-       251.0,
-       268.0,
-       288.0
+       248.0,
+       265.0,
+       284.0
       ]
      },
      {
-      "wacc": 9.66,
+      "wacc": 9.75,
       "werte": [
-       233.0,
-       247.0,
-       264.0
+       230.0,
+       244.0,
+       260.0
       ]
      },
      {
-      "wacc": 10.16,
+      "wacc": 10.25,
       "werte": [
-       216.0,
-       229.0,
-       243.0
+       214.0,
+       226.0,
+       240.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 43938000000,
-    "fcff_ttm": 13470642029,
+    "fcff_ttm": 13479816298,
     "fcff_marge_ttm": 30.7,
     "fcff_marge_norm": 23.7,
     "fcff_margen_hist": [
-     16.9,
+     17.0,
      16.0,
-     24.9,
-     29.6,
+     25.0,
+     29.7,
      31.0
     ],
     "wachstum_j1": 11.4,
@@ -8795,18 +8795,18 @@
     },
     "beta_genutzt": 1.14,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.0,
-    "kd": 6.48,
+    "ke": 10.1,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 9.16,
+    "wacc": 9.25,
     "cash": 11953323000,
     "schulden": 39288000000,
     "bilanz_datum": "2026-07-31",
@@ -9035,31 +9035,31 @@
    "status": "ok",
    "kurs": 184.85,
    "kurs_datum": "2026-10-02",
-   "fair_value": 74.08,
-   "bear": 47.29,
-   "base": 72.97,
-   "bull": 103.11,
-   "abschlag_pct": -59.9,
+   "fair_value": 73.1,
+   "bear": 46.76,
+   "base": 72.03,
+   "bull": 101.59,
+   "abschlag_pct": -60.5,
    "kgv_ttm": 21.3,
    "fcf_rendite_pct": 5.27,
-   "implizites_wachstum_pct": 16.7,
+   "implizites_wachstum_pct": 17.1,
    "szenarien": {
     "bear": {
-     "wert": 47.29,
+     "wert": 46.76,
      "g1": -8.5,
      "g_ewig": 2.0,
      "marge_norm": 17.6,
-     "wacc": 11.6,
-     "anteil_endwert": 37.4,
+     "wacc": 11.71,
+     "anteil_endwert": 37.0,
      "pfad": null
     },
     "base": {
-     "wert": 72.97,
+     "wert": 72.03,
      "g1": -5.5,
      "g_ewig": 2.5,
      "marge_norm": 20.7,
-     "wacc": 10.85,
-     "anteil_endwert": 43.5,
+     "wacc": 10.96,
+     "anteil_endwert": 43.0,
      "pfad": [
       {
        "j": 1,
@@ -9134,12 +9134,12 @@
      ]
     },
     "bull": {
-     "wert": 103.11,
+     "wert": 101.59,
      "g1": -2.5,
      "g_ewig": 3.0,
      "marge_norm": 22.7,
-     "wacc": 10.35,
-     "anteil_endwert": 49.0,
+     "wacc": 10.46,
+     "anteil_endwert": 48.5,
      "pfad": null
     }
    },
@@ -9151,43 +9151,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 9.85,
+      "wacc": 9.96,
       "werte": [
-       79.0,
-       83.0,
-       87.0
+       77.0,
+       82.0,
+       86.0
       ]
      },
      {
-      "wacc": 10.35,
+      "wacc": 10.46,
       "werte": [
-       74.0,
-       78.0,
-       82.0
-      ]
-     },
-     {
-      "wacc": 10.85,
-      "werte": [
-       70.0,
        73.0,
-       77.0
+       76.0,
+       80.0
       ]
      },
      {
-      "wacc": 11.35,
+      "wacc": 10.96,
       "werte": [
-       66.0,
        69.0,
-       72.0
+       72.0,
+       75.0
       ]
      },
      {
-      "wacc": 11.85,
+      "wacc": 11.46,
       "werte": [
-       63.0,
        65.0,
-       68.0
+       68.0,
+       71.0
+      ]
+     },
+     {
+      "wacc": 11.96,
+      "werte": [
+       62.0,
+       65.0,
+       67.0
       ]
      }
     ]
@@ -9216,18 +9216,18 @@
     },
     "beta_genutzt": 1.44,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 11.24,
-    "kd": 6.03,
+    "ke": 11.36,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 14.8,
-    "wacc": 10.85,
+    "wacc": 10.96,
     "cash": 8304000000,
     "schulden": 13279000000,
     "bilanz_datum": "2026-06-28",
@@ -9494,31 +9494,31 @@
    "status": "ok",
    "kurs": 68.1,
    "kurs_datum": "2026-10-02",
-   "fair_value": 40.78,
-   "bear": 23.48,
-   "base": 39.97,
-   "bull": 59.72,
-   "abschlag_pct": -40.1,
+   "fair_value": 40.32,
+   "bear": 23.29,
+   "base": 39.54,
+   "bull": 58.92,
+   "abschlag_pct": -40.8,
    "kgv_ttm": 14.6,
    "fcf_rendite_pct": 7.25,
-   "implizites_wachstum_pct": 31.3,
+   "implizites_wachstum_pct": 31.7,
    "szenarien": {
     "bear": {
-     "wert": 23.48,
+     "wert": 23.29,
      "g1": 7.8,
      "g_ewig": 2.0,
      "marge_norm": 3.8,
-     "wacc": 10.21,
-     "anteil_endwert": 37.2,
+     "wacc": 10.3,
+     "anteil_endwert": 36.9,
      "pfad": null
     },
     "base": {
-     "wert": 39.97,
+     "wert": 39.54,
      "g1": 15.5,
      "g_ewig": 2.5,
      "marge_norm": 4.5,
-     "wacc": 9.46,
-     "anteil_endwert": 46.4,
+     "wacc": 9.55,
+     "anteil_endwert": 45.9,
      "pfad": [
       {
        "j": 1,
@@ -9593,12 +9593,12 @@
      ]
     },
     "bull": {
-     "wert": 59.72,
+     "wert": 58.92,
      "g1": 21.0,
      "g_ewig": 3.0,
      "marge_norm": 5.0,
-     "wacc": 8.96,
-     "anteil_endwert": 53.7,
+     "wacc": 9.05,
+     "anteil_endwert": 53.3,
      "pfad": null
     }
    },
@@ -9610,23 +9610,23 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.46,
+      "wacc": 8.55,
       "werte": [
        43.0,
-       46.0,
-       49.0
+       45.0,
+       48.0
       ]
      },
      {
-      "wacc": 8.96,
+      "wacc": 9.05,
       "werte": [
        40.0,
-       43.0,
-       45.0
+       42.0,
+       44.0
       ]
      },
      {
-      "wacc": 9.46,
+      "wacc": 9.55,
       "werte": [
        38.0,
        40.0,
@@ -9634,18 +9634,18 @@
       ]
      },
      {
-      "wacc": 9.96,
+      "wacc": 10.05,
       "werte": [
        36.0,
-       38.0,
+       37.0,
        39.0
       ]
      },
      {
-      "wacc": 10.46,
+      "wacc": 10.55,
       "werte": [
        34.0,
-       36.0,
+       35.0,
        37.0
       ]
      }
@@ -9675,18 +9675,18 @@
     },
     "beta_genutzt": 1.1,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.83,
-    "kd": 6.03,
+    "ke": 9.93,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 14.5,
-    "wacc": 9.46,
+    "wacc": 9.55,
     "cash": 15803000000,
     "schulden": 12723000000,
     "bilanz_datum": "2026-06-30",
@@ -9961,31 +9961,31 @@
    "status": "ok",
    "kurs": 27.8,
    "kurs_datum": "2026-10-02",
-   "fair_value": 28.41,
-   "bear": 13.48,
-   "base": 27.3,
-   "bull": 45.57,
-   "abschlag_pct": 2.2,
+   "fair_value": 28.04,
+   "bear": 13.31,
+   "base": 26.96,
+   "bull": 44.94,
+   "abschlag_pct": 0.9,
    "kgv_ttm": 36.6,
    "fcf_rendite_pct": 6.93,
-   "implizites_wachstum_pct": -2.0,
+   "implizites_wachstum_pct": -1.8,
    "szenarien": {
     "bear": {
-     "wert": 13.48,
+     "wert": 13.31,
      "g1": -5.3,
      "g_ewig": 2.0,
      "marge_norm": 18.4,
-     "wacc": 8.88,
-     "anteil_endwert": 49.8,
+     "wacc": 8.93,
+     "anteil_endwert": 49.5,
      "pfad": null
     },
     "base": {
-     "wert": 27.3,
+     "wert": 26.96,
      "g1": -2.3,
      "g_ewig": 2.5,
      "marge_norm": 21.7,
-     "wacc": 8.13,
-     "anteil_endwert": 57.4,
+     "wacc": 8.18,
+     "anteil_endwert": 57.1,
      "pfad": [
       {
        "j": 1,
@@ -10060,12 +10060,12 @@
      ]
     },
     "bull": {
-     "wert": 45.57,
+     "wert": 44.94,
      "g1": 0.7,
      "g_ewig": 3.0,
      "marge_norm": 23.8,
-     "wacc": 7.63,
-     "anteil_endwert": 64.2,
+     "wacc": 7.68,
+     "anteil_endwert": 63.9,
      "pfad": null
     }
    },
@@ -10077,23 +10077,23 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.13,
+      "wacc": 7.18,
       "werte": [
        31.0,
-       35.0,
+       34.0,
        39.0
       ]
      },
      {
-      "wacc": 7.63,
+      "wacc": 7.68,
       "werte": [
-       28.0,
-       31.0,
+       27.0,
+       30.0,
        34.0
       ]
      },
      {
-      "wacc": 8.13,
+      "wacc": 8.18,
       "werte": [
        25.0,
        27.0,
@@ -10101,15 +10101,15 @@
       ]
      },
      {
-      "wacc": 8.63,
+      "wacc": 8.68,
       "werte": [
        22.0,
        24.0,
-       27.0
+       26.0
       ]
      },
      {
-      "wacc": 9.13,
+      "wacc": 9.18,
       "werte": [
        20.0,
        22.0,
@@ -10142,18 +10142,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 10.28,
+    "ke": 7.83,
+    "kd": 10.31,
     "rating_synth": "B",
     "zinsdeckung": 1.6,
-    "wacc": 8.13,
+    "wacc": 8.18,
     "cash": 8257000000,
     "schulden": 63100000000,
     "bilanz_datum": "2026-06-28",
@@ -10380,31 +10380,31 @@
    "status": "ok",
    "kurs": 144.31,
    "kurs_datum": "2026-10-02",
-   "fair_value": 114.98,
-   "bear": 67.39,
-   "base": 112.88,
-   "bull": 166.78,
-   "abschlag_pct": -20.3,
+   "fair_value": 113.33,
+   "bear": 66.6,
+   "base": 111.34,
+   "bull": 164.04,
+   "abschlag_pct": -21.5,
    "kgv_ttm": 112.3,
    "fcf_rendite_pct": 4.51,
-   "implizites_wachstum_pct": 7.8,
+   "implizites_wachstum_pct": 8.1,
    "szenarien": {
     "bear": {
-     "wert": 67.39,
+     "wert": 66.6,
      "g1": 1.4,
      "g_ewig": 2.0,
      "marge_norm": 18.8,
-     "wacc": 8.16,
-     "anteil_endwert": 54.7,
+     "wacc": 8.22,
+     "anteil_endwert": 54.4,
      "pfad": null
     },
     "base": {
-     "wert": 112.88,
+     "wert": 111.34,
      "g1": 2.8,
      "g_ewig": 2.5,
      "marge_norm": 22.1,
-     "wacc": 7.41,
-     "anteil_endwert": 62.1,
+     "wacc": 7.47,
+     "anteil_endwert": 61.7,
      "pfad": [
       {
        "j": 1,
@@ -10479,12 +10479,12 @@
      ]
     },
     "bull": {
-     "wert": 166.78,
+     "wert": 164.04,
      "g1": 3.7,
      "g_ewig": 3.0,
      "marge_norm": 24.3,
-     "wacc": 6.91,
-     "anteil_endwert": 68.5,
+     "wacc": 6.97,
+     "anteil_endwert": 68.1,
      "pfad": null
     }
    },
@@ -10496,43 +10496,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.41,
+      "wacc": 6.47,
       "werte": [
-       129.0,
-       145.0,
-       166.0
+       128.0,
+       143.0,
+       163.0
       ]
      },
      {
-      "wacc": 6.91,
+      "wacc": 6.97,
       "werte": [
-       115.0,
-       127.0,
-       143.0
-      ]
-     },
-     {
-      "wacc": 7.41,
-      "werte": [
-       103.0,
        113.0,
-       125.0
+       125.0,
+       141.0
       ]
      },
      {
-      "wacc": 7.91,
+      "wacc": 7.47,
       "werte": [
-       93.0,
-       101.0,
-       111.0
+       102.0,
+       111.0,
+       123.0
       ]
      },
      {
-      "wacc": 8.41,
+      "wacc": 7.97,
       "werte": [
-       85.0,
-       91.0,
-       99.0
+       92.0,
+       100.0,
+       109.0
+      ]
+     },
+     {
+      "wacc": 8.47,
+      "werte": [
+       84.0,
+       90.0,
+       98.0
       ]
      }
     ]
@@ -10560,18 +10560,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 7.08,
+    "ke": 7.83,
+    "kd": 7.11,
     "rating_synth": "A-/BBB",
     "zinsdeckung": 3.4,
-    "wacc": 7.41,
+    "wacc": 7.47,
     "cash": 8363000000,
     "schulden": 53906000000,
     "bilanz_datum": "2026-06-30",
@@ -10804,31 +10804,31 @@
    "status": "ok",
    "kurs": 262.915,
    "kurs_datum": "2026-10-02",
-   "fair_value": 365.27,
-   "bear": 187.38,
-   "base": 353.07,
-   "bull": 567.55,
-   "abschlag_pct": 38.9,
+   "fair_value": 359.96,
+   "bear": 185.22,
+   "base": 348.26,
+   "bull": 558.11,
+   "abschlag_pct": 36.9,
    "kgv_ttm": 73.8,
    "fcf_rendite_pct": 3.91,
-   "implizites_wachstum_pct": 2.4,
+   "implizites_wachstum_pct": 2.7,
    "szenarien": {
     "bear": {
-     "wert": 187.38,
+     "wert": 185.22,
      "g1": 4.3,
      "g_ewig": 2.0,
      "marge_norm": 32.5,
-     "wacc": 8.14,
-     "anteil_endwert": 57.8,
+     "wacc": 8.2,
+     "anteil_endwert": 57.5,
      "pfad": null
     },
     "base": {
-     "wert": 353.07,
+     "wert": 348.26,
      "g1": 8.6,
      "g_ewig": 2.5,
      "marge_norm": 38.3,
-     "wacc": 7.39,
-     "anteil_endwert": 65.8,
+     "wacc": 7.45,
+     "anteil_endwert": 65.4,
      "pfad": [
       {
        "j": 1,
@@ -10903,12 +10903,12 @@
      ]
     },
     "bull": {
-     "wert": 567.55,
+     "wert": 558.11,
      "g1": 11.6,
      "g_ewig": 3.0,
      "marge_norm": 42.1,
-     "wacc": 6.89,
-     "anteil_endwert": 72.3,
+     "wacc": 6.95,
+     "anteil_endwert": 71.9,
      "pfad": null
     }
    },
@@ -10920,43 +10920,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.39,
+      "wacc": 6.45,
       "werte": [
-       405.0,
-       454.0,
-       519.0
-      ]
-     },
-     {
-      "wacc": 6.89,
-      "werte": [
-       359.0,
        398.0,
-       447.0
+       447.0,
+       509.0
       ]
      },
      {
-      "wacc": 7.39,
+      "wacc": 6.95,
       "werte": [
-       322.0,
-       353.0,
-       391.0
+       354.0,
+       392.0,
+       439.0
       ]
      },
      {
-      "wacc": 7.89,
+      "wacc": 7.45,
       "werte": [
-       291.0,
-       317.0,
-       347.0
+       318.0,
+       348.0,
+       385.0
       ]
      },
      {
-      "wacc": 8.39,
+      "wacc": 7.95,
       "werte": [
-       265.0,
-       286.0,
-       311.0
+       288.0,
+       313.0,
+       343.0
+      ]
+     },
+     {
+      "wacc": 8.45,
+      "werte": [
+       262.0,
+       283.0,
+       308.0
       ]
      }
     ]
@@ -10985,18 +10985,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 6.48,
+    "ke": 7.83,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 5.8,
-    "wacc": 7.39,
+    "wacc": 7.45,
     "cash": 6597000000,
     "schulden": 64503000000,
     "bilanz_datum": "2026-06-30",
@@ -11183,22 +11183,14 @@
     }
    ],
    "guidance": {
-    "filed": "2026-07-31",
-    "report": "2026-07-31",
+    "filed": "2026-10-05",
+    "report": "2026-10-05",
     "urls": [
-     "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000023/abbv-20260630xexhibit991.htm",
-     "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000023/0001551152-26-000023-index-headers.html",
-     "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000023/0001551152-26-000023-index.html"
+     "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000030/abbv-20260930nonxgaapxex991.htm",
+     "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000030/0001551152-26-000030-index-headers.html",
+     "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000030/0001551152-26-000030-index.html"
     ],
-    "items": [
-     {
-      "metric": "EPS (bereinigt)",
-      "period": "Q",
-      "low": 13.91,
-      "high": 14.11,
-      "text": ".10 of overperformance. As a result, AbbVie is updating its adjusted diluted EPS guidance range for the full year 2026 from $13.91 - $14.11 to $13.87 - $14.07,"
-     }
-    ]
+    "items": []
    },
    "stand_zahlen": "2026-06-30",
    "warnungen": [],
@@ -11222,31 +11214,31 @@
    "status": "ok",
    "kurs": 231.99,
    "kurs_datum": "2026-10-02",
-   "fair_value": 594605519.6,
-   "bear": 239937139.17,
-   "base": 523556178.83,
-   "bull": 1091372581.55,
-   "abschlag_pct": 256306430.3,
+   "fair_value": 586820873.49,
+   "bear": 238089619.22,
+   "base": 518057974.16,
+   "bull": 1073077926.42,
+   "abschlag_pct": 252950834.7,
    "kgv_ttm": 0.0,
    "fcf_rendite_pct": 4704546.22,
    "implizites_wachstum_pct": null,
    "szenarien": {
     "bear": {
-     "wert": 239937139.17,
+     "wert": 238089619.22,
      "g1": 2.6,
      "g_ewig": 2.0,
      "marge_norm": 26.1,
-     "wacc": 5.71,
-     "anteil_endwert": 69.9,
+     "wacc": 5.73,
+     "anteil_endwert": 69.8,
      "pfad": null
     },
     "base": {
-     "wert": 523556178.83,
+     "wert": 518057974.16,
      "g1": 5.3,
      "g_ewig": 2.5,
      "marge_norm": 30.7,
-     "wacc": 4.96,
-     "anteil_endwert": 79.4,
+     "wacc": 4.98,
+     "anteil_endwert": 79.2,
      "pfad": [
       {
        "j": 1,
@@ -11321,12 +11313,12 @@
      ]
     },
     "bull": {
-     "wert": 1091372581.55,
+     "wert": 1073077926.42,
      "g1": 7.1,
      "g_ewig": 3.0,
      "marge_norm": 33.8,
-     "wacc": 4.46,
-     "anteil_endwert": 87.4,
+     "wacc": 4.48,
+     "anteil_endwert": 87.2,
      "pfad": null
     }
    },
@@ -11338,43 +11330,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 3.96,
+      "wacc": 3.98,
       "werte": [
-       682410399.0,
-       918117715.0,
-       1398883418.0
+       673620998.0,
+       902617342.0,
+       1363961572.0
       ]
      },
      {
-      "wacc": 4.46,
+      "wacc": 4.48,
       "werte": [
-       532873803.0,
-       670533351.0,
-       902298958.0
+       527279942.0,
+       661894486.0,
+       887062580.0
       ]
      },
      {
-      "wacc": 4.96,
+      "wacc": 4.98,
       "werte": [
-       433848887.0,
-       523556179.0,
-       658929214.0
+       429978915.0,
+       518057974.0,
+       650437300.0
       ]
      },
      {
-      "wacc": 5.46,
+      "wacc": 5.48,
       "werte": [
-       363444751.0,
-       426223253.0,
-       514450552.0
+       360609331.0,
+       422419336.0,
+       509045730.0
       ]
      },
      {
-      "wacc": 5.96,
+      "wacc": 5.98,
       "werte": [
-       310823136.0,
-       357019684.0,
-       418769423.0
+       308656874.0,
+       354232557.0,
+       415029993.0
       ]
      }
     ]
@@ -11403,18 +11395,18 @@
     },
     "beta_genutzt": 0.61,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.81,
-    "kd": 6.28,
+    "ke": 7.87,
+    "kd": 6.31,
     "rating_synth": "AA",
     "zinsdeckung": 7.9,
-    "wacc": 4.96,
+    "wacc": 4.98,
     "cash": 1229500000,
     "schulden": 41386000000,
     "bilanz_datum": "2026-06-30",
@@ -11624,31 +11616,31 @@
    "status": "ok",
    "kurs": 125.86,
    "kurs_datum": "2026-10-02",
-   "fair_value": 136.15,
-   "bear": 68.51,
-   "base": 131.87,
-   "bull": 212.34,
-   "abschlag_pct": 8.2,
+   "fair_value": 134.03,
+   "bear": 67.6,
+   "base": 129.94,
+   "bull": 208.63,
+   "abschlag_pct": 6.5,
    "kgv_ttm": 16.5,
    "fcf_rendite_pct": 5.39,
-   "implizites_wachstum_pct": 4.4,
+   "implizites_wachstum_pct": 4.7,
    "szenarien": {
     "bear": {
-     "wert": 68.51,
+     "wert": 67.6,
      "g1": 2.6,
      "g_ewig": 2.0,
      "marge_norm": 7.4,
-     "wacc": 7.83,
-     "anteil_endwert": 56.6,
+     "wacc": 7.88,
+     "anteil_endwert": 56.3,
      "pfad": null
     },
     "base": {
-     "wert": 131.87,
+     "wert": 129.94,
      "g1": 5.3,
      "g_ewig": 2.5,
      "marge_norm": 8.7,
-     "wacc": 7.08,
-     "anteil_endwert": 64.6,
+     "wacc": 7.13,
+     "anteil_endwert": 64.3,
      "pfad": [
       {
        "j": 1,
@@ -11723,12 +11715,12 @@
      ]
     },
     "bull": {
-     "wert": 212.34,
+     "wert": 208.63,
      "g1": 7.1,
      "g_ewig": 3.0,
      "marge_norm": 9.5,
-     "wacc": 6.58,
-     "anteil_endwert": 71.5,
+     "wacc": 6.63,
+     "anteil_endwert": 71.1,
      "pfad": null
     }
    },
@@ -11740,43 +11732,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.08,
+      "wacc": 6.13,
       "werte": [
-       154.0,
-       176.0,
-       206.0
+       152.0,
+       173.0,
+       201.0
       ]
      },
      {
-      "wacc": 6.58,
+      "wacc": 6.63,
       "werte": [
-       134.0,
-       151.0,
-       173.0
-      ]
-     },
-     {
-      "wacc": 7.08,
-      "werte": [
-       118.0,
        132.0,
-       149.0
+       149.0,
+       170.0
       ]
      },
      {
-      "wacc": 7.58,
+      "wacc": 7.13,
       "werte": [
-       105.0,
-       116.0,
-       130.0
+       117.0,
+       130.0,
+       146.0
       ]
      },
      {
-      "wacc": 8.08,
+      "wacc": 7.63,
       "werte": [
-       94.0,
-       103.0,
-       114.0
+       104.0,
+       115.0,
+       128.0
+      ]
+     },
+     {
+      "wacc": 8.13,
+      "werte": [
+       93.0,
+       102.0,
+       113.0
       ]
      }
     ]
@@ -11805,18 +11797,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 6.03,
+    "ke": 7.83,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 12.7,
-    "wacc": 7.08,
+    "wacc": 7.13,
     "cash": 10716000000,
     "schulden": 52451000000,
     "bilanz_datum": "2026-06-13",
@@ -12026,31 +12018,31 @@
    "status": "ok",
    "kurs": 144.89,
    "kurs_datum": "2026-10-02",
-   "fair_value": 126.38,
-   "bear": 78.34,
-   "base": 124.38,
-   "bull": 178.4,
-   "abschlag_pct": -12.8,
+   "fair_value": 124.64,
+   "bear": 77.49,
+   "base": 122.76,
+   "bull": 175.55,
+   "abschlag_pct": -14.0,
    "kgv_ttm": 21.8,
    "fcf_rendite_pct": 4.33,
-   "implizites_wachstum_pct": 5.8,
+   "implizites_wachstum_pct": 6.1,
    "szenarien": {
     "bear": {
-     "wert": 78.34,
+     "wert": 77.49,
      "g1": 1.2,
      "g_ewig": 2.0,
      "marge_norm": 15.0,
-     "wacc": 8.25,
-     "anteil_endwert": 54.9,
+     "wacc": 8.31,
+     "anteil_endwert": 54.6,
      "pfad": null
     },
     "base": {
-     "wert": 124.38,
+     "wert": 122.76,
      "g1": 2.5,
      "g_ewig": 2.5,
      "marge_norm": 17.6,
-     "wacc": 7.5,
-     "anteil_endwert": 62.1,
+     "wacc": 7.56,
+     "anteil_endwert": 61.8,
      "pfad": [
       {
        "j": 1,
@@ -12125,12 +12117,12 @@
      ]
     },
     "bull": {
-     "wert": 178.4,
+     "wert": 175.55,
      "g1": 3.3,
      "g_ewig": 3.0,
      "marge_norm": 19.4,
-     "wacc": 7.0,
-     "anteil_endwert": 68.4,
+     "wacc": 7.06,
+     "anteil_endwert": 68.0,
      "pfad": null
     }
    },
@@ -12142,43 +12134,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.5,
+      "wacc": 6.56,
       "werte": [
-       141.0,
-       157.0,
-       178.0
-      ]
-     },
-     {
-      "wacc": 7.0,
-      "werte": [
-       126.0,
        139.0,
-       155.0
+       155.0,
+       175.0
       ]
      },
      {
-      "wacc": 7.5,
+      "wacc": 7.06,
       "werte": [
-       114.0,
-       124.0,
-       137.0
+       125.0,
+       137.0,
+       152.0
       ]
      },
      {
-      "wacc": 8.0,
+      "wacc": 7.56,
       "werte": [
-       104.0,
-       112.0,
-       122.0
+       113.0,
+       123.0,
+       135.0
       ]
      },
      {
-      "wacc": 8.5,
+      "wacc": 8.06,
       "werte": [
-       95.0,
-       102.0,
-       111.0
+       103.0,
+       111.0,
+       121.0
+      ]
+     },
+     {
+      "wacc": 8.56,
+      "werte": [
+       94.0,
+       101.0,
+       109.0
       ]
      }
     ]
@@ -12207,18 +12199,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 6.03,
+    "ke": 7.83,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 22.5,
-    "wacc": 7.5,
+    "wacc": 7.56,
     "cash": 9304000000,
     "schulden": 34136000000,
     "bilanz_datum": "2019-09-30",
@@ -12435,31 +12427,31 @@
    "status": "ok",
    "kurs": 33.89,
    "kurs_datum": "2026-10-02",
-   "fair_value": 32.8,
-   "bear": 21.35,
-   "base": 32.09,
-   "bull": 45.66,
-   "abschlag_pct": -3.2,
+   "fair_value": 32.4,
+   "bear": 21.16,
+   "base": 31.72,
+   "bull": 45.01,
+   "abschlag_pct": -4.4,
    "kgv_ttm": 16.3,
    "fcf_rendite_pct": 4.18,
-   "implizites_wachstum_pct": -1.2,
+   "implizites_wachstum_pct": -0.9,
    "szenarien": {
     "bear": {
-     "wert": 21.35,
+     "wert": 21.16,
      "g1": -5.5,
      "g_ewig": 2.0,
      "marge_norm": 6.6,
-     "wacc": 9.88,
-     "anteil_endwert": 48.1,
+     "wacc": 9.96,
+     "anteil_endwert": 47.8,
      "pfad": null
     },
     "base": {
-     "wert": 32.09,
+     "wert": 31.72,
      "g1": -2.5,
      "g_ewig": 2.5,
      "marge_norm": 7.8,
-     "wacc": 9.13,
-     "anteil_endwert": 54.9,
+     "wacc": 9.21,
+     "anteil_endwert": 54.5,
      "pfad": [
       {
        "j": 1,
@@ -12534,12 +12526,12 @@
      ]
     },
     "bull": {
-     "wert": 45.66,
+     "wert": 45.01,
      "g1": 0.5,
      "g_ewig": 3.0,
      "marge_norm": 8.6,
-     "wacc": 8.63,
-     "anteil_endwert": 61.0,
+     "wacc": 8.71,
+     "anteil_endwert": 60.5,
      "pfad": null
     }
    },
@@ -12551,23 +12543,23 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.13,
+      "wacc": 8.21,
       "werte": [
-       35.0,
+       34.0,
        37.0,
        40.0
       ]
      },
      {
-      "wacc": 8.63,
+      "wacc": 8.71,
       "werte": [
        32.0,
        34.0,
-       37.0
+       36.0
       ]
      },
      {
-      "wacc": 9.13,
+      "wacc": 9.21,
       "werte": [
        30.0,
        32.0,
@@ -12575,26 +12567,26 @@
       ]
      },
      {
-      "wacc": 9.63,
+      "wacc": 9.71,
       "werte": [
-       29.0,
+       28.0,
        30.0,
-       32.0
+       31.0
       ]
      },
      {
-      "wacc": 10.13,
+      "wacc": 10.21,
       "werte": [
        27.0,
        28.0,
-       30.0
+       29.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 45891000000,
-    "fcff_ttm": 1822736234,
+    "fcff_ttm": 1824614642,
     "fcff_marge_ttm": 4.0,
     "fcff_marge_norm": 7.8,
     "fcff_margen_hist": [
@@ -12616,18 +12608,18 @@
     },
     "beta_genutzt": 1.08,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.75,
-    "kd": 6.48,
+    "ke": 9.85,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 9.13,
+    "wacc": 9.21,
     "cash": 11666000000,
     "schulden": 7893000000,
     "bilanz_datum": "2026-08-31",
@@ -12847,31 +12839,31 @@
    "status": "ok",
    "kurs": 102.16,
    "kurs_datum": "2026-10-02",
-   "fair_value": 24.93,
-   "bear": 8.98,
-   "base": 24.83,
-   "bull": 41.09,
-   "abschlag_pct": -75.6,
+   "fair_value": 24.38,
+   "bear": 8.68,
+   "base": 24.29,
+   "bull": 40.27,
+   "abschlag_pct": -76.1,
    "kgv_ttm": 20.7,
    "fcf_rendite_pct": 4.66,
-   "implizites_wachstum_pct": 30.1,
+   "implizites_wachstum_pct": 30.4,
    "szenarien": {
     "bear": {
-     "wert": 8.98,
+     "wert": 8.68,
      "g1": 2.6,
      "g_ewig": 2.0,
      "marge_norm": 4.7,
-     "wacc": 11.1,
-     "anteil_endwert": 42.8,
+     "wacc": 11.19,
+     "anteil_endwert": 42.5,
      "pfad": null
     },
     "base": {
-     "wert": 24.83,
+     "wert": 24.29,
      "g1": 5.2,
      "g_ewig": 2.5,
      "marge_norm": 5.6,
-     "wacc": 10.35,
-     "anteil_endwert": 48.9,
+     "wacc": 10.44,
+     "anteil_endwert": 48.5,
      "pfad": [
       {
        "j": 1,
@@ -12946,12 +12938,12 @@
      ]
     },
     "bull": {
-     "wert": 41.09,
+     "wert": 40.27,
      "g1": 7.1,
      "g_ewig": 3.0,
      "marge_norm": 6.1,
-     "wacc": 9.85,
-     "anteil_endwert": 54.1,
+     "wacc": 9.94,
+     "anteil_endwert": 53.7,
      "pfad": null
     }
    },
@@ -12963,31 +12955,31 @@
     ],
     "zeilen": [
      {
-      "wacc": 9.35,
+      "wacc": 9.44,
       "werte": [
-       29.0,
-       32.0,
-       35.0
-      ]
-     },
-     {
-      "wacc": 9.85,
-      "werte": [
-       25.0,
        28.0,
-       31.0
+       31.0,
+       34.0
       ]
      },
      {
-      "wacc": 10.35,
+      "wacc": 9.94,
       "werte": [
-       23.0,
        25.0,
+       27.0,
+       30.0
+      ]
+     },
+     {
+      "wacc": 10.44,
+      "werte": [
+       22.0,
+       24.0,
        27.0
       ]
      },
      {
-      "wacc": 10.85,
+      "wacc": 10.94,
       "werte": [
        20.0,
        22.0,
@@ -12995,9 +12987,9 @@
       ]
      },
      {
-      "wacc": 11.35,
+      "wacc": 11.44,
       "werte": [
-       18.0,
+       17.0,
        19.0,
        21.0
       ]
@@ -13026,18 +13018,18 @@
     },
     "beta_genutzt": 1.27,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.54,
-    "kd": 13.28,
+    "ke": 10.64,
+    "kd": 13.31,
     "rating_synth": "CCC",
     "zinsdeckung": -10.0,
-    "wacc": 10.35,
+    "wacc": 10.44,
     "cash": 5185000000,
     "schulden": 46041000000,
     "bilanz_datum": "2026-06-27",
@@ -13245,31 +13237,31 @@
    "status": "ok",
    "kurs": 94.73,
    "kurs_datum": "2026-10-02",
-   "fair_value": 49.3,
-   "bear": 30.78,
-   "base": 49.01,
-   "bull": 68.41,
-   "abschlag_pct": -48.0,
+   "fair_value": 48.56,
+   "bear": 30.37,
+   "base": 48.3,
+   "bull": 67.27,
+   "abschlag_pct": -48.7,
    "kgv_ttm": 54.6,
    "fcf_rendite_pct": 3.36,
-   "implizites_wachstum_pct": 17.1,
+   "implizites_wachstum_pct": 17.5,
    "szenarien": {
     "bear": {
-     "wert": 30.78,
+     "wert": 30.37,
      "g1": 1.4,
      "g_ewig": 2.0,
      "marge_norm": 8.6,
-     "wacc": 9.59,
-     "anteil_endwert": 48.9,
+     "wacc": 9.67,
+     "anteil_endwert": 48.5,
      "pfad": null
     },
     "base": {
-     "wert": 49.01,
+     "wert": 48.3,
      "g1": 2.8,
      "g_ewig": 2.5,
      "marge_norm": 10.1,
-     "wacc": 8.84,
-     "anteil_endwert": 55.3,
+     "wacc": 8.92,
+     "anteil_endwert": 54.9,
      "pfad": [
       {
        "j": 1,
@@ -13344,12 +13336,12 @@
      ]
     },
     "bull": {
-     "wert": 68.41,
+     "wert": 67.27,
      "g1": 3.8,
      "g_ewig": 3.0,
      "marge_norm": 11.1,
-     "wacc": 8.34,
-     "anteil_endwert": 60.9,
+     "wacc": 8.42,
+     "anteil_endwert": 60.4,
      "pfad": null
     }
    },
@@ -13361,41 +13353,41 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.84,
+      "wacc": 7.92,
       "werte": [
-       55.0,
-       60.0,
-       65.0
-      ]
-     },
-     {
-      "wacc": 8.34,
-      "werte": [
-       50.0,
        54.0,
-       59.0
+       59.0,
+       64.0
       ]
      },
      {
-      "wacc": 8.84,
+      "wacc": 8.42,
       "werte": [
-       46.0,
        49.0,
-       53.0
+       53.0,
+       58.0
       ]
      },
      {
-      "wacc": 9.34,
+      "wacc": 8.92,
+      "werte": [
+       45.0,
+       48.0,
+       52.0
+      ]
+     },
+     {
+      "wacc": 9.42,
       "werte": [
        42.0,
-       45.0,
+       44.0,
        48.0
       ]
      },
      {
-      "wacc": 9.84,
+      "wacc": 9.92,
       "werte": [
-       39.0,
+       38.0,
        41.0,
        44.0
       ]
@@ -13426,18 +13418,18 @@
     },
     "beta_genutzt": 0.98,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 9.34,
-    "kd": 6.68,
+    "ke": 9.43,
+    "kd": 6.71,
     "rating_synth": "A",
     "zinsdeckung": 5.4,
-    "wacc": 8.84,
+    "wacc": 8.92,
     "cash": 3651200000,
     "schulden": 13278600000,
     "bilanz_datum": "2022-07-03",
@@ -13665,31 +13657,31 @@
    "status": "ok",
    "kurs": 52.78,
    "kurs_datum": "2026-10-02",
-   "fair_value": 111.35,
-   "bear": 72.3,
-   "base": 110.43,
-   "bull": 152.25,
-   "abschlag_pct": 111.0,
+   "fair_value": 109.94,
+   "bear": 71.58,
+   "base": 109.08,
+   "bull": 150.01,
+   "abschlag_pct": 108.3,
    "kgv_ttm": 9.5,
    "fcf_rendite_pct": 14.15,
-   "implizites_wachstum_pct": -12.3,
+   "implizites_wachstum_pct": -12.1,
    "szenarien": {
     "bear": {
-     "wert": 72.3,
+     "wert": 71.58,
      "g1": 2.8,
      "g_ewig": 2.0,
      "marge_norm": 12.5,
-     "wacc": 9.72,
-     "anteil_endwert": 47.4,
+     "wacc": 9.81,
+     "anteil_endwert": 47.0,
      "pfad": null
     },
     "base": {
-     "wert": 110.43,
+     "wert": 109.08,
      "g1": 5.6,
      "g_ewig": 2.5,
      "marge_norm": 14.7,
-     "wacc": 8.97,
-     "anteil_endwert": 54.3,
+     "wacc": 9.06,
+     "anteil_endwert": 53.9,
      "pfad": [
       {
        "j": 1,
@@ -13764,12 +13756,12 @@
      ]
     },
     "bull": {
-     "wert": 152.25,
+     "wert": 150.01,
      "g1": 7.5,
      "g_ewig": 3.0,
      "marge_norm": 16.2,
-     "wacc": 8.47,
-     "anteil_endwert": 60.2,
+     "wacc": 8.56,
+     "anteil_endwert": 59.7,
      "pfad": null
     }
    },
@@ -13781,43 +13773,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.97,
+      "wacc": 8.06,
       "werte": [
-       121.0,
-       130.0,
-       140.0
-      ]
-     },
-     {
-      "wacc": 8.47,
-      "werte": [
-       112.0,
        119.0,
-       128.0
+       128.0,
+       138.0
       ]
      },
      {
-      "wacc": 8.97,
+      "wacc": 8.56,
       "werte": [
-       104.0,
-       110.0,
-       118.0
+       111.0,
+       118.0,
+       126.0
       ]
      },
      {
-      "wacc": 9.47,
+      "wacc": 9.06,
       "werte": [
-       98.0,
        103.0,
-       109.0
+       109.0,
+       116.0
       ]
      },
      {
-      "wacc": 9.97,
+      "wacc": 9.56,
       "werte": [
-       92.0,
-       96.0,
-       101.0
+       97.0,
+       102.0,
+       108.0
+      ]
+     },
+     {
+      "wacc": 10.06,
+      "werte": [
+       91.0,
+       95.0,
+       100.0
       ]
      }
     ]
@@ -13846,18 +13838,18 @@
     },
     "beta_genutzt": 1.17,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 10.12,
-    "kd": 6.03,
+    "ke": 10.22,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 12.9,
-    "wacc": 8.97,
+    "wacc": 9.06,
     "cash": 14168000000.0,
     "schulden": 12728000000.0,
     "bilanz_datum": "2026-06-30",
@@ -14069,31 +14061,31 @@
    "status": "ok",
    "kurs": 552.44,
    "kurs_datum": "2026-10-02",
-   "fair_value": 591.07,
-   "bear": 292.02,
-   "base": 570.23,
-   "bull": 931.8,
-   "abschlag_pct": 7.0,
+   "fair_value": 582.69,
+   "bear": 288.8,
+   "base": 562.57,
+   "bull": 916.8,
+   "abschlag_pct": 5.5,
    "kgv_ttm": 30.0,
    "fcf_rendite_pct": 3.42,
-   "implizites_wachstum_pct": 14.2,
+   "implizites_wachstum_pct": 14.6,
    "szenarien": {
     "bear": {
-     "wert": 292.02,
+     "wert": 288.8,
      "g1": 7.5,
      "g_ewig": 2.0,
      "marge_norm": 42.1,
-     "wacc": 9.24,
-     "anteil_endwert": 52.6,
+     "wacc": 9.32,
+     "anteil_endwert": 52.3,
      "pfad": null
     },
     "base": {
-     "wert": 570.23,
+     "wert": 562.57,
      "g1": 15.0,
      "g_ewig": 2.5,
      "marge_norm": 49.6,
-     "wacc": 8.49,
-     "anteil_endwert": 61.0,
+     "wacc": 8.57,
+     "anteil_endwert": 60.6,
      "pfad": [
       {
        "j": 1,
@@ -14168,12 +14160,12 @@
      ]
     },
     "bull": {
-     "wert": 931.8,
+     "wert": 916.8,
      "g1": 20.3,
      "g_ewig": 3.0,
      "marge_norm": 54.5,
-     "wacc": 7.99,
-     "anteil_endwert": 67.5,
+     "wacc": 8.07,
+     "anteil_endwert": 67.1,
      "pfad": null
     }
    },
@@ -14185,43 +14177,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 7.49,
+      "wacc": 7.57,
       "werte": [
-       635.0,
-       692.0,
-       761.0
-      ]
-     },
-     {
-      "wacc": 7.99,
-      "werte": [
-       579.0,
        626.0,
-       681.0
+       681.0,
+       748.0
       ]
      },
      {
-      "wacc": 8.49,
+      "wacc": 8.07,
       "werte": [
-       532.0,
-       570.0,
-       616.0
+       571.0,
+       616.0,
+       670.0
       ]
      },
      {
-      "wacc": 8.99,
+      "wacc": 8.57,
       "werte": [
-       491.0,
-       524.0,
-       562.0
+       525.0,
+       563.0,
+       607.0
       ]
      },
      {
-      "wacc": 9.49,
+      "wacc": 9.07,
       "werte": [
-       456.0,
-       484.0,
-       516.0
+       485.0,
+       517.0,
+       554.0
+      ]
+     },
+     {
+      "wacc": 9.57,
+      "werte": [
+       451.0,
+       478.0,
+       509.0
       ]
      }
     ]
@@ -14250,18 +14242,18 @@
     },
     "beta_genutzt": 0.82,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 8.67,
-    "kd": 6.03,
+    "ke": 8.75,
+    "kd": 6.06,
     "rating_synth": "AAA",
     "zinsdeckung": 27.4,
-    "wacc": 8.49,
+    "wacc": 8.57,
     "cash": 11291000000,
     "schulden": 24643000000,
     "bilanz_datum": "2026-06-30",
@@ -14478,38 +14470,38 @@
    "status": "ok",
    "kurs": 67.37,
    "kurs_datum": "2026-10-02",
-   "fair_value": 92.68,
-   "bear": 49.53,
-   "base": 88.95,
-   "bull": 143.29,
-   "abschlag_pct": 37.6,
+   "fair_value": 91.39,
+   "bear": 48.97,
+   "base": 87.79,
+   "bull": 141.01,
+   "abschlag_pct": 35.7,
    "kgv_ttm": 14.1,
    "fcf_rendite_pct": 8.1,
-   "implizites_wachstum_pct": -6.1,
+   "implizites_wachstum_pct": -5.9,
    "szenarien": {
     "bear": {
-     "wert": 49.53,
+     "wert": 48.97,
      "g1": -3.8,
      "g_ewig": 2.0,
      "marge_norm": 33.1,
-     "wacc": 8.25,
-     "anteil_endwert": 52.0,
+     "wacc": 8.31,
+     "anteil_endwert": 51.7,
      "pfad": null
     },
     "base": {
-     "wert": 88.95,
+     "wert": 87.79,
      "g1": -0.8,
      "g_ewig": 2.5,
      "marge_norm": 39.0,
-     "wacc": 7.5,
-     "anteil_endwert": 60.2,
+     "wacc": 7.56,
+     "anteil_endwert": 59.8,
      "pfad": [
       {
        "j": 1,
        "g": -0.8,
-       "marge": 43.0,
+       "marge": 43.1,
        "umsatz": 23.28,
-       "fcff": 10.02
+       "fcff": 10.03
       },
       {
        "j": 2,
@@ -14530,7 +14522,7 @@
        "g": 0.3,
        "marge": 40.0,
        "umsatz": 23.26,
-       "fcff": 9.3
+       "fcff": 9.31
       },
       {
        "j": 5,
@@ -14577,12 +14569,12 @@
      ]
     },
     "bull": {
-     "wert": 143.29,
+     "wert": 141.01,
      "g1": 2.2,
      "g_ewig": 3.0,
      "marge_norm": 42.9,
-     "wacc": 7.0,
-     "anteil_endwert": 67.4,
+     "wacc": 7.06,
+     "anteil_endwert": 67.0,
      "pfad": null
     }
    },
@@ -14594,50 +14586,50 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.5,
+      "wacc": 6.56,
       "werte": [
-       101.0,
-       113.0,
-       128.0
-      ]
-     },
-     {
-      "wacc": 7.0,
-      "werte": [
-       90.0,
        100.0,
-       111.0
+       111.0,
+       126.0
       ]
      },
      {
-      "wacc": 7.5,
+      "wacc": 7.06,
       "werte": [
-       81.0,
        89.0,
-       98.0
+       98.0,
+       110.0
       ]
      },
      {
-      "wacc": 8.0,
+      "wacc": 7.56,
       "werte": [
-       74.0,
        80.0,
-       88.0
+       88.0,
+       97.0
       ]
      },
      {
-      "wacc": 8.5,
+      "wacc": 8.06,
       "werte": [
-       68.0,
        73.0,
-       79.0
+       79.0,
+       86.0
+      ]
+     },
+     {
+      "wacc": 8.56,
+      "werte": [
+       67.0,
+       72.0,
+       78.0
       ]
      }
     ]
    },
    "annahmen": {
     "umsatz_ttm": 23457000000,
-    "fcff_ttm": 10335758373,
+    "fcff_ttm": 10341423921,
     "fcff_marge_ttm": 44.1,
     "fcff_marge_norm": 39.0,
     "fcff_margen_hist": [
@@ -14659,18 +14651,18 @@
     },
     "beta_genutzt": 0.67,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 8.05,
-    "kd": 6.48,
+    "ke": 8.12,
+    "kd": 6.51,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 7.5,
+    "wacc": 7.56,
     "cash": 2367000000,
     "schulden": 24577000000,
     "bilanz_datum": "2026-06-30",
@@ -14888,31 +14880,31 @@
    "status": "ok",
    "kurs": 45.94,
    "kurs_datum": "2026-10-02",
-   "fair_value": 123.0,
-   "bear": 73.84,
-   "base": 120.56,
-   "bull": 177.02,
-   "abschlag_pct": 167.7,
+   "fair_value": 121.3,
+   "bear": 73.01,
+   "base": 118.99,
+   "bull": 174.19,
+   "abschlag_pct": 164.0,
    "kgv_ttm": 11.5,
    "fcf_rendite_pct": 11.4,
-   "implizites_wachstum_pct": -15.7,
+   "implizites_wachstum_pct": -15.5,
    "szenarien": {
     "bear": {
-     "wert": 73.84,
+     "wert": 73.01,
      "g1": 0.3,
      "g_ewig": 2.0,
      "marge_norm": 16.8,
-     "wacc": 7.75,
-     "anteil_endwert": 57.2,
+     "wacc": 7.8,
+     "anteil_endwert": 56.9,
      "pfad": null
     },
     "base": {
-     "wert": 120.56,
+     "wert": 118.99,
      "g1": 0.5,
      "g_ewig": 2.5,
      "marge_norm": 19.8,
-     "wacc": 7.0,
-     "anteil_endwert": 64.4,
+     "wacc": 7.05,
+     "anteil_endwert": 64.1,
      "pfad": [
       {
        "j": 1,
@@ -14987,12 +14979,12 @@
      ]
     },
     "bull": {
-     "wert": 177.02,
+     "wert": 174.19,
      "g1": 0.7,
      "g_ewig": 3.0,
      "marge_norm": 21.8,
-     "wacc": 6.5,
-     "anteil_endwert": 70.9,
+     "wacc": 6.55,
+     "anteil_endwert": 70.6,
      "pfad": null
     }
    },
@@ -15004,43 +14996,43 @@
     ],
     "zeilen": [
      {
-      "wacc": 6.0,
+      "wacc": 6.05,
       "werte": [
-       140.0,
-       160.0,
-       187.0
-      ]
-     },
-     {
-      "wacc": 6.5,
-      "werte": [
-       123.0,
        138.0,
-       157.0
+       157.0,
+       183.0
       ]
      },
      {
-      "wacc": 7.0,
+      "wacc": 6.55,
       "werte": [
-       109.0,
        121.0,
-       136.0
+       136.0,
+       155.0
       ]
      },
      {
-      "wacc": 7.5,
+      "wacc": 7.05,
       "werte": [
-       97.0,
        107.0,
-       119.0
+       119.0,
+       134.0
       ]
      },
      {
-      "wacc": 8.0,
+      "wacc": 7.55,
+      "werte": [
+       96.0,
+       105.0,
+       117.0
+      ]
+     },
+     {
+      "wacc": 8.05,
       "werte": [
        87.0,
-       95.0,
-       105.0
+       94.0,
+       104.0
       ]
      }
     ]
@@ -15063,18 +15055,18 @@
     },
     "beta_genutzt": 0.6,
     "rf": {
-     "rate": 0.0528,
-     "date": "2026-10-02"
+     "rate": 0.0531,
+     "date": "2026-10-05"
     },
     "erp": {
-     "rate": 0.0414,
-     "month": "2026-09"
+     "rate": 0.042,
+     "month": "2026-10"
     },
-    "ke": 7.76,
-    "kd": 7.08,
+    "ke": 7.83,
+    "kd": 7.11,
     "rating_synth": "A-/BBB",
     "zinsdeckung": 3.9,
-    "wacc": 7.0,
+    "wacc": 7.05,
     "cash": 2102000000,
     "schulden": 93585000000,
     "bilanz_datum": "2026-06-30",
