@@ -103,7 +103,7 @@ TAGS = {
     "sbc":    ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"],
     "int":    ["InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt", "InterestPaidNet"],
     "dil":    ["WeightedAverageNumberOfDilutedSharesOutstanding"],
-    "cash":   ["CashAndCashEquivalentsAtCarryingValue"],
+    "cash":   ["CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents", "CashAndCashEquivalentsAtCarryingValue", "CashCashEquivalentsAndShortTermInvestments", "CashAndCashEquivalents", "Cash"],
     "ms_c":   ["MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
     "ms_nc":  ["MarketableSecuritiesNoncurrent", "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent"],
     "debt":   ["DebtLongtermAndShorttermCombinedAmount", "LongTermDebtAndCapitalLeaseObligations", "LongTermDebtNoncurrent", "LongTermDebt", "DebtInstrumentCarryingAmount"],
