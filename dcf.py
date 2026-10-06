@@ -99,7 +99,7 @@ TAGS = {
     "ni":     ["NetIncomeLoss", "ProfitLoss"],
     "tax":    ["IncomeTaxExpenseBenefit"],
     "cfo":    ["NetCashProvidedByUsedInOperatingActivities", "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
-    "capex":  ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets", "PaymentsToAcquireOtherProductiveAssets"],
+    "capex":  ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets", "PaymentsToAcquireOtherProductiveAssets", "PaymentsToAcquireOtherPropertyPlantAndEquipment"],
     "sbc":    ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"],
     "int":    ["InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt", "InterestPaidNet"],
     "dil":    ["WeightedAverageNumberOfDilutedSharesOutstanding"],
@@ -678,9 +678,10 @@ def main():
         try: old = {c["ticker"]: c for c in json.load(open(a.out)).get("companies", [])}
         except Exception: pass
     out_map = dict(old)
+    CIK_OVERRIDES = {"XOM": 34088}
     for t in tick:
         sec_t = t.replace(".", "-")
-        cik = cikmap.get(sec_t)
+        cik = CIK_OVERRIDES.get(t, cikmap.get(sec_t))
         if not cik: print(t, "kein CIK"); continue
         try:
             facts = json.loads(fetch(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json", a.cache))["facts"]

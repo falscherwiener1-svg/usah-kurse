@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-05T16:15:44Z",
+ "generated": "2026-10-06T08:09:58Z",
  "model": "1.0",
  "rf": {
-  "rate": 0.0528,
-  "date": "2026-10-02"
+  "rate": 0.0531,
+  "date": "2026-10-05"
  },
  "erp": {
   "rate": 0.042,
@@ -9539,8 +9539,424 @@
    "cik": 59478,
    "sic": 2834,
    "model": "1.0",
-   "status": "daten_fehlen",
-   "reason": "TTM-Werte unvollständig (Quartalsreihe lückenhaft)."
+   "status": "ok",
+   "kurs": 1185.09,
+   "kurs_datum": "2026-09-29",
+   "fair_value": 743.41,
+   "bear": 248.1,
+   "base": 732.19,
+   "bull": 1261.17,
+   "abschlag_pct": -37.3,
+   "kgv_ttm": 39.7,
+   "fcf_rendite_pct": 1.72,
+   "implizites_wachstum_pct": 44.6,
+   "szenarien": {
+    "bear": {
+     "wert": 248.1,
+     "g1": 16.0,
+     "g_ewig": 2.0,
+     "marge_norm": 11.3,
+     "wacc": 8.67,
+     "anteil_endwert": 54.5,
+     "pfad": null
+    },
+    "base": {
+     "wert": 732.19,
+     "g1": 31.9,
+     "g_ewig": 2.5,
+     "marge_norm": 13.2,
+     "wacc": 7.92,
+     "anteil_endwert": 65.5,
+     "pfad": [
+      {
+       "j": 1,
+       "g": 31.9,
+       "marge": 21.0,
+       "umsatz": 105.11,
+       "fcff": 22.05
+      },
+      {
+       "j": 2,
+       "g": 28.7,
+       "marge": 19.0,
+       "umsatz": 135.25,
+       "fcff": 25.76
+      },
+      {
+       "j": 3,
+       "g": 25.4,
+       "marge": 17.1,
+       "umsatz": 169.61,
+       "fcff": 29.02
+      },
+      {
+       "j": 4,
+       "g": 22.1,
+       "marge": 15.2,
+       "umsatz": 207.14,
+       "fcff": 31.43
+      },
+      {
+       "j": 5,
+       "g": 18.9,
+       "marge": 13.2,
+       "umsatz": 246.21,
+       "fcff": 32.59
+      },
+      {
+       "j": 6,
+       "g": 15.6,
+       "marge": 13.2,
+       "umsatz": 284.58,
+       "fcff": 37.67
+      },
+      {
+       "j": 7,
+       "g": 12.3,
+       "marge": 13.2,
+       "umsatz": 319.63,
+       "fcff": 42.31
+      },
+      {
+       "j": 8,
+       "g": 9.0,
+       "marge": 13.2,
+       "umsatz": 348.53,
+       "fcff": 46.14
+      },
+      {
+       "j": 9,
+       "g": 5.8,
+       "marge": 13.2,
+       "umsatz": 368.65,
+       "fcff": 48.8
+      },
+      {
+       "j": 10,
+       "g": 2.5,
+       "marge": 13.2,
+       "umsatz": 377.86,
+       "fcff": 50.02
+      }
+     ]
+    },
+    "bull": {
+     "wert": 1261.17,
+     "g1": 37.9,
+     "g_ewig": 3.0,
+     "marge_norm": 14.6,
+     "wacc": 7.42,
+     "anteil_endwert": 72.0,
+     "pfad": null
+    }
+   },
+   "sensitivitaet": {
+    "g_ewig": [
+     2.0,
+     2.5,
+     3.0
+    ],
+    "zeilen": [
+     {
+      "wacc": 6.92,
+      "werte": [
+       831.0,
+       920.0,
+       1031.0
+      ]
+     },
+     {
+      "wacc": 7.42,
+      "werte": [
+       745.0,
+       816.0,
+       904.0
+      ]
+     },
+     {
+      "wacc": 7.92,
+      "werte": [
+       674.0,
+       732.0,
+       802.0
+      ]
+     },
+     {
+      "wacc": 8.42,
+      "werte": [
+       614.0,
+       662.0,
+       720.0
+      ]
+     },
+     {
+      "wacc": 8.92,
+      "werte": [
+       563.0,
+       604.0,
+       651.0
+      ]
+     }
+    ]
+   },
+   "annahmen": {
+    "umsatz_ttm": 79665800000,
+    "fcff_ttm": 18252517368,
+    "fcff_marge_ttm": 22.9,
+    "fcff_marge_norm": 13.2,
+    "fcff_margen_hist": [
+     22.7,
+     19.7,
+     1.6,
+     8.3,
+     13.9
+    ],
+    "wachstum_j1": 31.9,
+    "wachstum_quelle": "Guidance Geschäftsjahr: Umsatz 85.00–87.00 Mrd. $ (Mitte +31.9 % ggü. Vorjahr)",
+    "wachstum_ttm": 49.6,
+    "cagr_3j": 31.7,
+    "steuer": 20.5,
+    "beta": {
+     "raw": 0.49,
+     "adjusted": 0.66,
+     "months": 61
+    },
+    "beta_genutzt": 0.66,
+    "rf": {
+     "rate": 0.0531,
+     "date": "2026-10-05"
+    },
+    "erp": {
+     "rate": 0.042,
+     "month": "2026-10"
+    },
+    "ke": 8.08,
+    "kd": 6.06,
+    "rating_synth": "AAA",
+    "zinsdeckung": 37.5,
+    "wacc": 7.92,
+    "cash": 9071600000,
+    "schulden": 54908000000,
+    "bilanz_datum": "2026-06-30",
+    "aktien_verw": 893700000,
+    "aktien_quelle": "SEC WeightedAverageNumberOfDilutedSharesOutstanding (2026-06-30)",
+    "sbc_abgezogen": true,
+    "tags": {
+     "rev": "Revenues",
+     "pretax": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+     "ni": "NetIncomeLoss",
+     "tax": "IncomeTaxExpenseBenefit",
+     "cfo": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+     "sbc": "ShareBasedCompensation",
+     "int": "InterestExpenseNonoperating",
+     "dil": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "cash": "CashAndCashEquivalentsAtCarryingValue",
+     "ms_c": "ShortTermInvestments",
+     "debt": "LongTermDebtNoncurrent",
+     "debt_c": "DebtCurrent",
+     "cp": "CommercialPaper"
+    }
+   },
+   "quartale": [
+    {
+     "ende": "2024-09-30",
+     "umsatz": 11439100000,
+     "ni": 970300000,
+     "cfo": 3711900000,
+     "capex": 1350700000,
+     "sbc": 133200000,
+     "ebit": 1588400000,
+     "fcf": 2361200000,
+     "eps": 1.07,
+     "umsatz_yoy": 20.4,
+     "umsatz_qoq": 1.2,
+     "ebit_yoy": 271.8,
+     "ebit_qoq": -54.8,
+     "ni_yoy": null,
+     "ni_qoq": -67.3,
+     "fcf_yoy": 93.7,
+     "fcf_qoq": 878.1,
+     "eps_yoy": null
+    },
+    {
+     "ende": "2024-12-31",
+     "umsatz": 13533100000,
+     "ni": 4409800000,
+     "cfo": 2473900000,
+     "capex": 1496200000,
+     "sbc": 142300000,
+     "ebit": 5038300000,
+     "fcf": 977700000,
+     "eps": 4.87,
+     "umsatz_yoy": 44.7,
+     "umsatz_qoq": 18.3,
+     "ebit_yoy": 100.9,
+     "ebit_qoq": 217.2,
+     "ni_yoy": 101.4,
+     "ni_qoq": 354.5,
+     "fcf_yoy": null,
+     "fcf_qoq": -58.6,
+     "eps_yoy": 100.2
+    },
+    {
+     "ende": "2025-03-31",
+     "umsatz": 12729000000,
+     "ni": 2759000000,
+     "cfo": 1666000000,
+     "capex": 1510000000,
+     "sbc": 154000000,
+     "ebit": 3456000000,
+     "fcf": 156000000,
+     "eps": 3.06,
+     "umsatz_yoy": 45.2,
+     "umsatz_qoq": -5.9,
+     "ebit_yoy": 36.3,
+     "ebit_qoq": -31.4,
+     "ni_yoy": 23.0,
+     "ni_qoq": -37.4,
+     "fcf_yoy": -13.2,
+     "fcf_qoq": -84.0,
+     "eps_yoy": 23.3
+    },
+    {
+     "ende": "2025-06-30",
+     "umsatz": 15558000000,
+     "ni": 5661000000,
+     "cfo": 3087000000,
+     "capex": 1697000000,
+     "sbc": 185000000,
+     "ebit": 6777000000,
+     "fcf": 1390000000,
+     "eps": 6.29,
+     "umsatz_yoy": 37.6,
+     "umsatz_qoq": 22.2,
+     "ebit_yoy": 92.7,
+     "ebit_qoq": 96.1,
+     "ni_yoy": 90.8,
+     "ni_qoq": 105.2,
+     "fcf_yoy": 475.8,
+     "fcf_qoq": 791.0,
+     "eps_yoy": 91.7
+    },
+    {
+     "ende": "2025-09-30",
+     "umsatz": 17600800000,
+     "ni": 5582500000,
+     "cfo": 8835400000,
+     "capex": 2087300000,
+     "sbc": 150900000,
+     "ebit": 7232400000,
+     "fcf": 6748100000,
+     "eps": 6.21,
+     "umsatz_yoy": 53.9,
+     "umsatz_qoq": 13.1,
+     "ebit_yoy": 355.3,
+     "ebit_qoq": 6.7,
+     "ni_yoy": 475.3,
+     "ni_qoq": -1.4,
+     "fcf_yoy": 185.8,
+     "fcf_qoq": 385.5,
+     "eps_yoy": 479.2
+    },
+    {
+     "ende": "2025-12-31",
+     "umsatz": 19292000000,
+     "ni": 6637700000,
+     "cfo": 3224600000,
+     "capex": 2546700000,
+     "sbc": 136100000,
+     "ebit": 8266200000,
+     "fcf": 677900000,
+     "eps": 7.39,
+     "umsatz_yoy": 42.6,
+     "umsatz_qoq": 9.6,
+     "ebit_yoy": 64.1,
+     "ebit_qoq": 14.3,
+     "ni_yoy": 50.5,
+     "ni_qoq": 18.9,
+     "fcf_yoy": -30.7,
+     "fcf_qoq": -90.0,
+     "eps_yoy": 51.7
+    },
+    {
+     "ende": "2026-03-31",
+     "umsatz": 19799000000,
+     "ni": 7396000000,
+     "cfo": 5333000000,
+     "capex": 2326000000,
+     "sbc": 161000000,
+     "ebit": 8850000000,
+     "fcf": 3007000000,
+     "eps": 8.26,
+     "umsatz_yoy": 55.5,
+     "umsatz_qoq": 2.6,
+     "ebit_yoy": 156.1,
+     "ebit_qoq": 7.1,
+     "ni_yoy": 168.1,
+     "ni_qoq": 11.4,
+     "fcf_yoy": 1827.6,
+     "fcf_qoq": 343.6,
+     "eps_yoy": 169.6
+    },
+    {
+     "ende": "2026-06-30",
+     "umsatz": 22974000000,
+     "ni": 7095000000,
+     "cfo": 10690000000,
+     "capex": 2933000000,
+     "sbc": 201000000,
+     "ebit": 9247000000,
+     "fcf": 7757000000,
+     "eps": 7.94,
+     "umsatz_yoy": 47.7,
+     "umsatz_qoq": 16.0,
+     "ebit_yoy": 36.4,
+     "ebit_qoq": 4.5,
+     "ni_yoy": 25.3,
+     "ni_qoq": -4.1,
+     "fcf_yoy": 458.1,
+     "fcf_qoq": 158.0,
+     "eps_yoy": 26.2
+    }
+   ],
+   "guidance": {
+    "filed": "2026-08-05",
+    "report": "2026-08-05",
+    "urls": [
+     "https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/0000059478-26-000077-index-headers.html",
+     "https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/0000059478-26-000077-index.html",
+     "https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/q226lillysalesandearningsp.htm"
+    ],
+    "items": [
+     {
+      "metric": "Umsatz",
+      "period": "FY",
+      "low": 85000000000.0,
+      "high": 87000000000.0,
+      "text": "es compared to $0.14 in Q2 2025. • Increased 2026 full-year revenue guidance to be in the range of $85.0 billion to $87.0 billion and raised underlyi"
+     },
+     {
+      "metric": "Umsatz",
+      "period": "Q",
+      "low": 82000000000.0,
+      "high": 85000000000.0,
+      "text": "es from recent business development activity: Prior Updated Revenue $82 to $85 billion $85 to $87 billion"
+     },
+     {
+      "metric": "EPS",
+      "period": "Q",
+      "low": 35.5,
+      "high": 37.0,
+      "text": "o 48.5% 49.0% to 50.5% Tax Rate (1)(3) 18% to 19% unchanged Earnings per Share (1)(3)(4) $35.50 to $37.00 $35.50 to $36.50 (1"
+     }
+    ]
+   },
+   "stand_zahlen": "2026-06-30",
+   "warnungen": [],
+   "hinweise": [
+    "Kein operatives Ergebnis in XBRL – Vorsteuerergebnis als Näherung."
+   ]
   },
   {
    "ticker": "UNH",
@@ -13257,12 +13673,398 @@
   },
   {
    "ticker": "XOM",
-   "name": "ExxonMobil Holdings Corp",
-   "cik": 2115436,
+   "name": "EXXON MOBIL CORP",
+   "cik": 34088,
    "sic": 2911,
    "model": "1.0",
-   "status": "daten_fehlen",
-   "reason": "Umsatz oder operativer Cashflow in SEC-Daten nicht auffindbar."
+   "status": "ok",
+   "kurs": 161.41,
+   "kurs_datum": "2026-09-29",
+   "fair_value": 326.74,
+   "bear": 152.14,
+   "base": 311.11,
+   "bull": 532.58,
+   "abschlag_pct": 102.4,
+   "kgv_ttm": 21.7,
+   "fcf_rendite_pct": 4.31,
+   "implizites_wachstum_pct": 0.7,
+   "szenarien": {
+    "bear": {
+     "wert": 152.14,
+     "g1": 7.9,
+     "g_ewig": 2.0,
+     "marge_norm": 9.1,
+     "wacc": 8.42,
+     "anteil_endwert": 57.6,
+     "pfad": null
+    },
+    "base": {
+     "wert": 311.11,
+     "g1": 15.8,
+     "g_ewig": 2.5,
+     "marge_norm": 10.7,
+     "wacc": 7.67,
+     "anteil_endwert": 66.1,
+     "pfad": [
+      {
+       "j": 1,
+       "g": 15.8,
+       "marge": 8.9,
+       "umsatz": 427.09,
+       "fcff": 37.94
+      },
+      {
+       "j": 2,
+       "g": 14.3,
+       "marge": 9.3,
+       "umsatz": 488.32,
+       "fcff": 45.54
+      },
+      {
+       "j": 3,
+       "g": 12.9,
+       "marge": 9.8,
+       "umsatz": 551.11,
+       "fcff": 53.83
+      },
+      {
+       "j": 4,
+       "g": 11.4,
+       "marge": 10.2,
+       "umsatz": 613.82,
+       "fcff": 62.67
+      },
+      {
+       "j": 5,
+       "g": 9.9,
+       "marge": 10.7,
+       "umsatz": 674.58,
+       "fcff": 71.85
+      },
+      {
+       "j": 6,
+       "g": 8.4,
+       "marge": 10.7,
+       "umsatz": 731.37,
+       "fcff": 77.9
+      },
+      {
+       "j": 7,
+       "g": 6.9,
+       "marge": 10.7,
+       "umsatz": 782.13,
+       "fcff": 83.31
+      },
+      {
+       "j": 8,
+       "g": 5.5,
+       "marge": 10.7,
+       "umsatz": 824.83,
+       "fcff": 87.86
+      },
+      {
+       "j": 9,
+       "g": 4.0,
+       "marge": 10.7,
+       "umsatz": 857.65,
+       "fcff": 91.35
+      },
+      {
+       "j": 10,
+       "g": 2.5,
+       "marge": 10.7,
+       "umsatz": 879.09,
+       "fcff": 93.64
+      }
+     ]
+    },
+    "bull": {
+     "wert": 532.58,
+     "g1": 21.4,
+     "g_ewig": 3.0,
+     "marge_norm": 11.7,
+     "wacc": 7.17,
+     "anteil_endwert": 72.7,
+     "pfad": null
+    }
+   },
+   "sensitivitaet": {
+    "g_ewig": [
+     2.0,
+     2.5,
+     3.0
+    ],
+    "zeilen": [
+     {
+      "wacc": 6.67,
+      "werte": [
+       352.0,
+       391.0,
+       439.0
+      ]
+     },
+     {
+      "wacc": 7.17,
+      "werte": [
+       316.0,
+       347.0,
+       384.0
+      ]
+     },
+     {
+      "wacc": 7.67,
+      "werte": [
+       286.0,
+       311.0,
+       341.0
+      ]
+     },
+     {
+      "wacc": 8.17,
+      "werte": [
+       262.0,
+       282.0,
+       306.0
+      ]
+     },
+     {
+      "wacc": 8.67,
+      "werte": [
+       240.0,
+       257.0,
+       278.0
+      ]
+     }
+    ]
+   },
+   "annahmen": {
+    "umsatz_ttm": 368757000000.0,
+    "fcff_ttm": 31129371434,
+    "fcff_marge_ttm": 8.4,
+    "fcff_marge_norm": 10.7,
+    "fcff_margen_hist": [
+     12.9,
+     14.3,
+     9.9,
+     9.0,
+     7.2
+    ],
+    "wachstum_j1": 15.8,
+    "wachstum_quelle": "Keine Zahlen-Guidance im Quartalsbericht – Trend: 50 % TTM, 30 % letztes Quartal (YoY), 20 % 3-J.-CAGR",
+    "wachstum_ttm": 9.1,
+    "cagr_3j": -7.0,
+    "steuer": 25.6,
+    "beta": {
+     "raw": 0.18,
+     "adjusted": 0.45,
+     "months": 61
+    },
+    "beta_genutzt": 0.6,
+    "rf": {
+     "rate": 0.0531,
+     "date": "2026-10-05"
+    },
+    "erp": {
+     "rate": 0.042,
+     "month": "2026-10"
+    },
+    "ke": 7.83,
+    "kd": 6.06,
+    "rating_synth": "AAA",
+    "zinsdeckung": 58.5,
+    "wacc": 7.67,
+    "cash": 12342000000.0,
+    "schulden": 35288000000.0,
+    "bilanz_datum": "2026-06-30",
+    "aktien_verw": 4395000000,
+    "aktien_quelle": "SEC WeightedAverageNumberOfDilutedSharesOutstanding (2013-09-30)",
+    "sbc_abgezogen": true,
+    "tags": {
+     "rev": "Revenues",
+     "pretax": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+     "ni": "NetIncomeLoss",
+     "tax": "IncomeTaxExpenseBenefit",
+     "cfo": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "int": "InterestExpense",
+     "dil": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "cash": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+     "ms_c": "MarketableSecuritiesCurrent",
+     "debt": "LongTermDebtAndCapitalLeaseObligations",
+     "debt_c": "DebtCurrent",
+     "cp": "CommercialPaper"
+    }
+   },
+   "quartale": [
+    {
+     "ende": "2024-09-30",
+     "umsatz": 90016000000,
+     "ni": 8610000000,
+     "cfo": 17569000000,
+     "capex": 6160000000,
+     "sbc": null,
+     "ebit": 13026000000,
+     "fcf": 11409000000,
+     "eps": null,
+     "umsatz_yoy": -0.8,
+     "umsatz_qoq": -3.3,
+     "ebit_yoy": -4.9,
+     "ebit_qoq": -4.7,
+     "ni_yoy": -5.1,
+     "ni_qoq": -6.8,
+     "fcf_yoy": 3.3,
+     "fcf_qoq": 163.8
+    },
+    {
+     "ende": "2024-12-31",
+     "umsatz": 83426000000,
+     "ni": 7610000000,
+     "cfo": 12229000000,
+     "capex": 6837000000,
+     "sbc": null,
+     "ebit": 9813000000,
+     "fcf": 5392000000,
+     "eps": null,
+     "umsatz_yoy": -1.1,
+     "umsatz_qoq": -7.3,
+     "ebit_yoy": -7.6,
+     "ebit_qoq": -24.7,
+     "ni_yoy": -0.3,
+     "ni_qoq": -11.6,
+     "fcf_yoy": -27.7,
+     "fcf_qoq": -52.7
+    },
+    {
+     "ende": "2025-03-31",
+     "umsatz": 83130000000,
+     "ni": 7713000000,
+     "cfo": 12953000000,
+     "capex": 5898000000,
+     "sbc": null,
+     "ebit": 11600000000,
+     "fcf": 7055000000,
+     "eps": null,
+     "umsatz_yoy": 0.1,
+     "umsatz_qoq": -0.4,
+     "ebit_yoy": -6.2,
+     "ebit_qoq": 18.2,
+     "ni_yoy": -6.2,
+     "ni_qoq": 1.4,
+     "fcf_yoy": -26.4,
+     "fcf_qoq": 30.8
+    },
+    {
+     "ende": "2025-06-30",
+     "umsatz": 81506000000.0,
+     "ni": 7082000000.0,
+     "cfo": 11550000000.0,
+     "capex": 6283000000.0,
+     "sbc": null,
+     "ebit": 10705000000.0,
+     "fcf": 5267000000.0,
+     "eps": null,
+     "umsatz_yoy": -12.4,
+     "umsatz_qoq": -2.0,
+     "ebit_yoy": -21.7,
+     "ebit_qoq": -7.7,
+     "ni_yoy": -23.4,
+     "ni_qoq": -8.2,
+     "fcf_yoy": 21.8,
+     "fcf_qoq": -25.3
+    },
+    {
+     "ende": "2025-09-30",
+     "umsatz": 85294000000,
+     "ni": 7548000000,
+     "cfo": 14788000000.0,
+     "capex": 8727000000.0,
+     "sbc": null,
+     "ebit": 10932000000,
+     "fcf": 6061000000.0,
+     "eps": null,
+     "umsatz_yoy": -5.2,
+     "umsatz_qoq": 4.6,
+     "ebit_yoy": -16.1,
+     "ebit_qoq": 2.1,
+     "ni_yoy": -12.3,
+     "ni_qoq": 6.6,
+     "fcf_yoy": -46.9,
+     "fcf_qoq": 15.1
+    },
+    {
+     "ende": "2025-12-31",
+     "umsatz": 82308000000,
+     "ni": 6501000000,
+     "cfo": 12679000000,
+     "capex": 7450000000,
+     "sbc": null,
+     "ebit": 8031000000,
+     "fcf": 5229000000,
+     "eps": null,
+     "umsatz_yoy": -1.3,
+     "umsatz_qoq": -3.5,
+     "ebit_yoy": -18.2,
+     "ebit_qoq": -26.5,
+     "ni_yoy": -14.6,
+     "ni_qoq": -13.9,
+     "fcf_yoy": -3.0,
+     "fcf_qoq": -13.7
+    },
+    {
+     "ende": "2026-03-31",
+     "umsatz": 85138000000,
+     "ni": 4183000000,
+     "cfo": 8705000000,
+     "capex": 6470000000,
+     "sbc": null,
+     "ebit": 6967000000,
+     "fcf": 2235000000,
+     "eps": null,
+     "umsatz_yoy": 2.4,
+     "umsatz_qoq": 3.4,
+     "ebit_yoy": -39.9,
+     "ebit_qoq": -13.2,
+     "ni_yoy": -45.8,
+     "ni_qoq": -35.7,
+     "fcf_yoy": -68.3,
+     "fcf_qoq": -57.3
+    },
+    {
+     "ende": "2026-06-30",
+     "umsatz": 116017000000.0,
+     "ni": 14525000000.0,
+     "cfo": 23555000000.0,
+     "capex": 6527000000.0,
+     "sbc": null,
+     "ebit": 19424000000.0,
+     "fcf": 17028000000.0,
+     "eps": null,
+     "umsatz_yoy": 42.3,
+     "umsatz_qoq": 36.3,
+     "ebit_yoy": 81.4,
+     "ebit_qoq": 178.8,
+     "ni_yoy": 105.1,
+     "ni_qoq": 247.2,
+     "fcf_yoy": 223.3,
+     "fcf_qoq": 661.9
+    }
+   ],
+   "guidance": {
+    "filed": "2026-05-01",
+    "report": "2026-05-01",
+    "urls": [
+     "https://www.sec.gov/Archives/edgar/data/34088/000003408826000065/livef8k1q26991.htm",
+     "https://www.sec.gov/Archives/edgar/data/34088/000003408826000065/0000034088-26-000065-index-headers.html",
+     "https://www.sec.gov/Archives/edgar/data/34088/000003408826000065/0000034088-26-000065-index.html"
+    ],
+    "items": []
+   },
+   "stand_zahlen": "2026-06-30",
+   "warnungen": [],
+   "hinweise": [
+    "SEC-Datenbank noch ohne Bericht zum 2026-06-30 – 62 Werte direkt aus der Einreichung 0000034088-26-000093 ergänzt.",
+    "Kein operatives Ergebnis in XBRL – Vorsteuerergebnis als Näherung."
+   ]
   },
   {
    "ticker": "PYPL",
