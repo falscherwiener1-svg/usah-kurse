@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T15:13:28Z",
+ "generated": "2026-10-19T19:35:21Z",
  "model": "1.0",
  "rf": {
   "rate": 0.0509,
@@ -4124,7 +4124,7 @@
    "base": 33.25,
    "bull": 45.0,
    "abschlag_pct": -90.5,
-   "kgv_ttm": 330.0,
+   "kgv_ttm": 324.8,
    "fcf_rendite_pct": 0.46,
    "implizites_wachstum_pct": null,
    "szenarien": {
@@ -4359,22 +4359,22 @@
     {
      "ende": "2024-12-31",
      "umsatz": 25707000000,
-     "ni": 2128000000,
+     "ni": 2190000000,
      "cfo": 4814000000,
      "capex": 2780000000,
      "sbc": 579000000,
      "ebit": 1583000000,
      "fcf": 2034000000,
-     "eps": 0.61,
+     "eps": 0.63,
      "umsatz_yoy": 2.1,
      "umsatz_qoq": 2.1,
      "ebit_yoy": -23.3,
      "ebit_qoq": -41.7,
-     "ni_yoy": -73.2,
-     "ni_qoq": -2.1,
+     "ni_yoy": -72.3,
+     "ni_qoq": 0.8,
      "fcf_yoy": -1.4,
      "fcf_qoq": -25.8,
-     "eps_yoy": -73.1
+     "eps_yoy": -72.2
     },
     {
      "ende": "2025-03-31",
@@ -4391,7 +4391,7 @@
      "ebit_yoy": -65.9,
      "ebit_qoq": -74.8,
      "ni_yoy": -70.6,
-     "ni_qoq": -80.8,
+     "ni_qoq": -81.3,
      "fcf_yoy": null,
      "fcf_qoq": -67.4,
      "eps_yoy": -69.9
@@ -4439,22 +4439,22 @@
     {
      "ende": "2025-12-31",
      "umsatz": 24901000000,
-     "ni": 840000000,
+     "ni": 901000000,
      "cfo": 3813000000,
      "capex": 2393000000,
      "sbc": 954000000,
      "ebit": 1409000000,
      "fcf": 1420000000,
-     "eps": 0.24,
+     "eps": 0.26,
      "umsatz_yoy": -3.1,
      "umsatz_qoq": -11.4,
      "ebit_yoy": -11.0,
      "ebit_qoq": -13.2,
-     "ni_yoy": -60.5,
-     "ni_qoq": -38.8,
+     "ni_yoy": -58.9,
+     "ni_qoq": -34.4,
      "fcf_yoy": -30.2,
      "fcf_qoq": -64.4,
-     "eps_yoy": -60.6
+     "eps_yoy": -58.5
     },
     {
      "ende": "2026-03-31",
@@ -4471,7 +4471,7 @@
      "ebit_yoy": 135.8,
      "ebit_qoq": -33.2,
      "ni_yoy": 16.6,
-     "ni_qoq": -43.2,
+     "ni_qoq": -47.1,
      "fcf_yoy": 117.5,
      "fcf_qoq": 1.7,
      "eps_yoy": 11.9
