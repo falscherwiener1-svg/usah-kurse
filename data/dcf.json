@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T15:44:32Z",
+ "generated": "2026-10-26T19:40:14Z",
  "model": "1.0",
  "rf": {
   "rate": 0.05,
@@ -14858,22 +14858,14 @@
     }
    ],
    "guidance": {
-    "filed": "2026-07-24",
-    "report": "2026-07-24",
+    "filed": "2026-10-26",
+    "report": "2026-10-26",
     "urls": [
-     "https://www.sec.gov/Archives/edgar/data/732712/000073271226000040/0000732712-26-000040-index-headers.html",
-     "https://www.sec.gov/Archives/edgar/data/732712/000073271226000040/0000732712-26-000040-index.html",
-     "https://www.sec.gov/Archives/edgar/data/732712/000073271226000040/a2026q2exhibit99.htm"
+     "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/0000732712-26-000049-index-headers.html",
+     "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/0000732712-26-000049-index.html",
+     "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/a2026q3exhibit99.htm"
     ],
-    "items": [
-     {
-      "metric": "EPS (bereinigt)",
-      "period": null,
-      "low": 4.99,
-      "high": 5.04,
-      "text": "2.8 percent increase reported in the second-quarter 2026. • Adjusted EPS 1 of $4.99 to $5.04, or year-over-year"
-     }
-    ]
+    "items": []
    },
    "stand_zahlen": "2026-06-30",
    "warnungen": [],
