@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T17:44:51Z",
+ "generated": "2026-10-27T19:04:27Z",
  "model": "1.0",
  "rf": {
   "rate": 0.05,
@@ -26833,7 +26833,7 @@
    "sic": 3721,
    "model": "1.0",
    "status": "ungeeignet",
-   "reason": "Invertierte Szenarien (Bull -127.22 $ < Bear -55.65 $) durch negativen TTM-Cashflow. Ein Standard-DCF ist in dieser Phase (z.B. starker CapEx-Zyklus) methodisch nicht belastbar."
+   "reason": "Invertierte Szenarien (Bull -102.52 $ < Bear -52.35 $) durch negativen TTM-Cashflow. Ein Standard-DCF ist in dieser Phase (z.B. starker CapEx-Zyklus) methodisch nicht belastbar."
   },
   {
    "ticker": "CPB",
