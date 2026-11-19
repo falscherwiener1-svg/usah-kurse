@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T21:41:11Z",
+ "generated": "2026-11-19T19:36:53Z",
  "model": "1.0",
  "rf": {
   "rate": 0.0507,
@@ -17789,111 +17789,111 @@
    "status": "ok",
    "kurs": 322.5,
    "kurs_datum": "2026-11-12",
-   "fair_value": 129.45,
-   "bear": 55.77,
-   "base": 127.93,
-   "bull": 206.18,
-   "abschlag_pct": -59.9,
-   "kgv_ttm": 842.5,
-   "fcf_rendite_pct": 1.59,
-   "implizites_wachstum_pct": 52.6,
+   "fair_value": 133.11,
+   "bear": 57.06,
+   "base": 131.52,
+   "bull": 212.34,
+   "abschlag_pct": -58.7,
+   "kgv_ttm": 594.5,
+   "fcf_rendite_pct": 1.58,
+   "implizites_wachstum_pct": 51.7,
    "szenarien": {
     "bear": {
-     "wert": 55.77,
+     "wert": 57.06,
      "g1": 13.3,
      "g_ewig": 2.0,
      "marge_norm": 18.1,
-     "wacc": 9.97,
-     "anteil_endwert": 51.4,
+     "wacc": 9.98,
+     "anteil_endwert": 51.9,
      "pfad": null
     },
     "base": {
-     "wert": 127.93,
+     "wert": 131.52,
      "g1": 26.7,
      "g_ewig": 2.5,
      "marge_norm": 21.3,
-     "wacc": 9.22,
-     "anteil_endwert": 60.6,
+     "wacc": 9.23,
+     "anteil_endwert": 61.0,
      "pfad": [
       {
        "j": 1,
        "g": 26.7,
-       "marge": 20.6,
-       "umsatz": 14.54,
-       "fcff": 2.99
+       "marge": 18.8,
+       "umsatz": 15.78,
+       "fcff": 2.97
       },
       {
        "j": 2,
        "g": 24.0,
-       "marge": 20.7,
-       "umsatz": 18.04,
-       "fcff": 3.74
+       "marge": 19.4,
+       "umsatz": 19.56,
+       "fcff": 3.8
       },
       {
        "j": 3,
        "g": 21.3,
-       "marge": 20.9,
-       "umsatz": 21.88,
-       "fcff": 4.58
+       "marge": 20.1,
+       "umsatz": 23.73,
+       "fcff": 4.76
       },
       {
        "j": 4,
        "g": 18.6,
-       "marge": 21.1,
-       "umsatz": 25.96,
-       "fcff": 5.47
+       "marge": 20.7,
+       "umsatz": 28.16,
+       "fcff": 5.82
       },
       {
        "j": 5,
        "g": 15.9,
        "marge": 21.3,
-       "umsatz": 30.1,
-       "fcff": 6.4
+       "umsatz": 32.65,
+       "fcff": 6.95
       },
       {
        "j": 6,
        "g": 13.3,
        "marge": 21.3,
-       "umsatz": 34.09,
-       "fcff": 7.25
+       "umsatz": 36.97,
+       "fcff": 7.87
       },
       {
        "j": 7,
        "g": 10.6,
        "marge": 21.3,
-       "umsatz": 37.69,
-       "fcff": 8.02
+       "umsatz": 40.88,
+       "fcff": 8.7
       },
       {
        "j": 8,
        "g": 7.9,
        "marge": 21.3,
-       "umsatz": 40.66,
-       "fcff": 8.65
+       "umsatz": 44.1,
+       "fcff": 9.39
       },
       {
        "j": 9,
        "g": 5.2,
        "marge": 21.3,
-       "umsatz": 42.77,
-       "fcff": 9.1
+       "umsatz": 46.39,
+       "fcff": 9.87
       },
       {
        "j": 10,
        "g": 2.5,
        "marge": 21.3,
-       "umsatz": 43.84,
-       "fcff": 9.32
+       "umsatz": 47.55,
+       "fcff": 10.12
       }
      ]
     },
     "bull": {
-     "wert": 206.18,
+     "wert": 212.34,
      "g1": 32.7,
      "g_ewig": 3.0,
      "marge_norm": 23.4,
-     "wacc": 8.72,
-     "anteil_endwert": 66.6,
+     "wacc": 8.73,
+     "anteil_endwert": 66.9,
      "pfad": null
     }
    },
@@ -17905,51 +17905,51 @@
     ],
     "zeilen": [
      {
-      "wacc": 8.22,
+      "wacc": 8.23,
       "werte": [
-       141.0,
-       152.0,
-       165.0
+       145.0,
+       156.0,
+       170.0
       ]
      },
      {
-      "wacc": 8.72,
+      "wacc": 8.73,
       "werte": [
-       130.0,
-       139.0,
-       150.0
+       134.0,
+       143.0,
+       154.0
       ]
      },
      {
-      "wacc": 9.22,
+      "wacc": 9.23,
       "werte": [
-       120.0,
-       128.0,
-       137.0
+       124.0,
+       132.0,
+       141.0
       ]
      },
      {
-      "wacc": 9.72,
+      "wacc": 9.73,
       "werte": [
-       112.0,
-       118.0,
-       126.0
+       115.0,
+       122.0,
+       129.0
       ]
      },
      {
-      "wacc": 10.22,
+      "wacc": 10.23,
       "werte": [
-       104.0,
-       110.0,
-       117.0
+       107.0,
+       113.0,
+       120.0
       ]
      }
     ]
    },
    "annahmen": {
-    "umsatz_ttm": 11480000000,
-    "fcff_ttm": 2339000000,
-    "fcff_marge_ttm": 20.4,
+    "umsatz_ttm": 12451000000,
+    "fcff_ttm": 2268000000,
+    "fcff_marge_ttm": 18.2,
     "fcff_marge_norm": 21.3,
     "fcff_margen_hist": [
      14.2,
@@ -17960,9 +17960,9 @@
     ],
     "wachstum_j1": 26.7,
     "wachstum_quelle": "Guidance Geschäftsjahr: Umsatz 14.52–14.57 Mrd. $ (Mitte +26.7 % ggü. Vorjahr)",
-    "wachstum_ttm": 24.5,
+    "wachstum_ttm": 30.3,
     "cagr_3j": 18.5,
-    "steuer": 28.0,
+    "steuer": 12.0,
     "beta": {
      "raw": 0.92,
      "adjusted": 0.95,
@@ -17981,12 +17981,12 @@
     "kd": 6.27,
     "rating_synth": "A+",
     "zinsdeckung": 6,
-    "wacc": 9.22,
-    "cash": 3080000000,
+    "wacc": 9.23,
+    "cash": 3064000000,
     "schulden": 1991500000,
-    "bilanz_datum": "2026-07-31",
-    "aktien_verw": 801000000,
-    "aktien_quelle": "SEC WeightedAverageNumberOfDilutedSharesOutstanding (2026-04-30)",
+    "bilanz_datum": "2026-10-31",
+    "aktien_verw": 838000000,
+    "aktien_quelle": "SEC WeightedAverageNumberOfDilutedSharesOutstanding (2026-10-31)",
     "sbc_abgezogen": true,
     "tags": {
      "rev": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -18005,26 +18005,6 @@
     }
    },
    "quartale": [
-    {
-     "ende": "2024-10-31",
-     "umsatz": 2139000000,
-     "ni": 351000000,
-     "cfo": 1510000000,
-     "capex": 44000000,
-     "sbc": 295000000,
-     "ebit": 286000000,
-     "fcf": 1466000000,
-     "eps": 0.5,
-     "umsatz_yoy": 13.9,
-     "umsatz_qoq": -2.3,
-     "ebit_yoy": 32.9,
-     "ebit_qoq": 19.9,
-     "ni_yoy": 80.7,
-     "ni_qoq": -1.9,
-     "fcf_yoy": -1.6,
-     "fcf_qoq": 214.9,
-     "eps_yoy": -9.9
-    },
     {
      "ende": "2025-01-31",
      "umsatz": 2257000000,
@@ -18164,6 +18144,26 @@
      "fcf_yoy": 34.3,
      "fcf_qoq": 59.1,
      "eps_yoy": -197.5
+    },
+    {
+     "ende": "2026-10-31",
+     "umsatz": 3445000000,
+     "ni": 482000000,
+     "cfo": 1929000000,
+     "capex": 87000000,
+     "sbc": 596000000,
+     "ebit": 96000000,
+     "fcf": 1842000000,
+     "eps": 0.58,
+     "umsatz_yoy": 39.2,
+     "umsatz_qoq": 1.0,
+     "ebit_yoy": -68.9,
+     "ebit_qoq": -44.2,
+     "ni_yoy": 44.3,
+     "ni_qoq": null,
+     "fcf_yoy": 9.2,
+     "fcf_qoq": 46.9,
+     "eps_yoy": 23.1
     }
    ],
    "guidance": {
@@ -18191,7 +18191,7 @@
      }
     ]
    },
-   "stand_zahlen": "2026-07-31",
+   "stand_zahlen": "2026-10-31",
    "warnungen": [],
    "hinweise": []
   },
@@ -20663,27 +20663,20 @@
     }
    ],
    "guidance": {
-    "filed": "2026-08-20",
-    "report": "2026-08-20",
+    "filed": "2026-11-19",
+    "report": "2026-11-19",
     "urls": [
-     "https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/0000104169-26-000145-index-headers.html",
-     "https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/0000104169-26-000145-index.html",
-     "https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/earningspresentationfy27.htm"
+     "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/0000104169-26-000168-index-headers.html",
+     "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/0000104169-26-000168-index.html",
+     "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningspresentationfy27.htm"
     ],
     "items": [
-     {
-      "metric": "EPS (bereinigt)",
-      "period": "Q",
-      "low": 0.62,
-      "high": 0.64,
-      "text": "e 3.0% to 3.75% Operating income (cc) Increase 2.0% to 4.0% Adjusted EPS $0.62 to $0.64 Fiscal year 2027 Th"
-     },
      {
       "metric": "EPS",
       "period": null,
       "low": 2.75,
       "high": 2.85,
-      "text": "rate Approximately 23.5% to 24.5% Unchanged Unchanged Adj. EPS $2.75 to $2.85 Unchanged $2.80 to"
+      "text": "rate Approximately 23.5% to 24.5% Unchanged Unchanged Adj. EPS $2.75 to $2.85 $2.80 to $2.87 $2.8"
      }
     ]
    },
